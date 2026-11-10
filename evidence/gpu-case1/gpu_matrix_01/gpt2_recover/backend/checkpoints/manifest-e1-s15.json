@@ -1,0 +1,11 @@
+{
+  "file": "checkpoints/checkpoint-e1-s15.pt",
+  "sha256": "99445f53eaffe923a6e31c2e9656209a012f3a1a7474d67525dfaa7d9d8dcc08",
+  "step": 15,
+  "epoch": 1,
+  "world_size": 2,
+  "model": "gpt2",
+  "sequence_length": 128,
+  "committed_at": 1793682811.433368,
+  "size_bytes": 1493476631
+}

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.pdf binary
+# Preserve public evidence bytes for SHA256 verification (see docs/PRIVACY.md).
+evidence/** -text
+demos/live/vendor/** -text
+demos/live/data/** -text
+demos/live/tcp_source_provenance.json -text

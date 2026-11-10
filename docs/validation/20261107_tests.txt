@@ -1,0 +1,289 @@
+/Users/project-user/Codex/Homework/output/fabric_refactor_20261102/FabricSandbox_v2/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+[not run; use --live] tests.agent.test_ddp.LiveCPUDDPTests.test_worker_fault_recovers_from_committed_checkpoint: starts CPU DDP workers and binds a rendezvous port
+[not run; use --live] tests.agent.test_tcp.TCPLiveTests.test_actual_failure_replan_retry_and_new_payload: starts real TCP workers and binds loopback ports
+[not run; use --live] tests.agent.test_tcp.TCPLiveTests.test_no_available_channel: starts real TCP workers and binds loopback ports
+[not run; use --live] tests.agent.test_tcp.TCPLiveTests.test_real_receiver_rejects_corrupt_payload: starts real TCP workers and binds loopback ports
+[not run; use --live] tests.agent.test_tcp.TCPLiveTests.test_receiver_failure_is_not_misdiagnosed_as_channel_only: starts real TCP workers and binds loopback ports
+Running 229 tests; 5 live tests not selected.
+test_persistent_failure_exhausts_two_attempts_without_third_apply (tests.agent.test_budget_and_evidence.BudgetAndEvidenceTests.test_persistent_failure_exhausts_two_attempts_without_third_apply) ... ok
+test_success_claim_without_post_execution_evidence_is_not_recovery (tests.agent.test_budget_and_evidence.BudgetAndEvidenceTests.test_success_claim_without_post_execution_evidence_is_not_recovery) ... ok
+test_gpu_matrix_stops_after_failed_acceptance (tests.agent.test_cli.CLITest.test_gpu_matrix_stops_after_failed_acceptance) ... 
+Starting tiny_smoke; interpreter=/Users/project-user/Codex/Homework/output/fabric_refactor_20261102/FabricSandbox_v2/.venv/bin/python; allowed_pool=['0', '1', '2']
+Stopped after failed acceptance: tiny_smoke. Inspect /private/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmphqi36wpj/matrix/tiny_smoke. Use a NEW directory when retrying.
+ok
+test_monitored_tcp_driver_with_in_memory_protocol (tests.agent.test_cli.CLITest.test_monitored_tcp_driver_with_in_memory_protocol) ... [   0.00s] started: 
+[   0.00s] monitor_observation: 
+[   0.32s] monitor_observation: 
+[   0.32s] anomaly_detected: 
+[   0.32s] tool_start: observe
+[   0.32s] tool_result: observe
+[   0.32s] tool_start: diagnose
+[   0.33s] tool_result: diagnose
+[   0.33s] tool_start: propose
+[   0.33s] tool_result: propose
+[   0.33s] selection: 
+[   0.33s] tool_start: validate
+[   0.33s] tool_result: validate
+[   0.33s] tool_start: apply
+[   0.34s] tool_result: apply
+[   0.34s] tool_start: verify
+[   0.34s] terminal: recovered
+[   0.34s] tool_result: verify
+{"status": "recovered", "checks_passed": true, "result": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/recover/result.json", "report": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/recover/report.html"}
+[   0.00s] started: 
+[   0.00s] monitor_observation: 
+[   0.32s] monitor_observation: 
+[   0.32s] anomaly_detected: 
+[   0.32s] tool_start: observe
+[   0.32s] tool_result: observe
+[   0.32s] tool_start: diagnose
+[   0.33s] tool_result: diagnose
+[   0.33s] tool_start: propose
+[   0.33s] terminal: blocked
+[   0.33s] tool_result: propose
+{"status": "blocked", "checks_passed": true, "result": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/blocked/result.json", "report": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/blocked/report.html"}
+[   0.00s] started: 
+[   0.00s] monitor_observation: 
+[   0.32s] monitor_observation: 
+[   0.32s] anomaly_detected: 
+[   0.32s] tool_start: observe
+[   0.33s] tool_result: observe
+[   0.33s] tool_start: diagnose
+[   0.33s] terminal: inconclusive
+[   0.33s] tool_result: diagnose
+{"status": "inconclusive", "checks_passed": true, "result": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/receiver-down/result.json", "report": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/receiver-down/report.html"}
+{"status": "healthy", "checks_passed": true, "result": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/baseline/result.json", "report": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/baseline/report.html"}
+{"status": "unrecovered_control", "checks_passed": true, "result": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/no-repair/result.json", "report": "/var/folders/bq/ttxy_cks507d2sm_0smwpl900000gn/T/tmp6s6rnag0/no-repair/report.html"}
+ok
+test_apply_requires_issued_validated_candidate (tests.agent.test_controller.ControllerTest.test_apply_requires_issued_validated_candidate) ... ok
+test_failed_verification_cannot_be_overridden_by_healthy_observation (tests.agent.test_controller.ControllerTest.test_failed_verification_cannot_be_overridden_by_healthy_observation) ... ok
+test_forged_evidence_is_not_a_diagnosis (tests.agent.test_controller.ControllerTest.test_forged_evidence_is_not_a_diagnosis) ... ok
+test_html_cannot_close_script_from_untrusted_evidence (tests.agent.test_controller.ControllerTest.test_html_cannot_close_script_from_untrusted_evidence) ... ok
+test_live_revalidation_rejects_version_change (tests.agent.test_controller.ControllerTest.test_live_revalidation_rejects_version_change) ... ok
+test_llm_calls_real_whitelisted_adapter_tools (tests.agent.test_controller.ControllerTest.test_llm_calls_real_whitelisted_adapter_tools) ... ok
+test_malformed_tool_arguments_are_bounded (tests.agent.test_controller.ControllerTest.test_malformed_tool_arguments_are_bounded) ... ok
+test_monitor_observes_health_before_independent_anomaly (tests.agent.test_controller.ControllerTest.test_monitor_observes_health_before_independent_anomaly) ... ok
+test_monitor_timeout_does_not_invent_a_failure_or_repair (tests.agent.test_controller.ControllerTest.test_monitor_timeout_does_not_invent_a_failure_or_repair) ... ok
+test_no_fault_no_mutation (tests.agent.test_controller.ControllerTest.test_no_fault_no_mutation) ... ok
+test_pending_execution_only_allows_verification (tests.agent.test_controller.ControllerTest.test_pending_execution_only_allows_verification) ... ok
+test_provider_failure_falls_back_but_backend_failure_does_not (tests.agent.test_controller.ControllerTest.test_provider_failure_falls_back_but_backend_failure_does_not) ... ok
+test_resource_shortage_never_executes (tests.agent.test_controller.ControllerTest.test_resource_shortage_never_executes) ... ok
+test_rule_recovery_retains_rejected_candidate_and_new_evidence (tests.agent.test_controller.ControllerTest.test_rule_recovery_retains_rejected_candidate_and_new_evidence) ... ok
+test_ambiguous_group_failure_is_conservative (tests.agent.test_ddp.DDPControlTests.test_ambiguous_group_failure_is_conservative) ... ok
+test_checkpoint_outside_output_is_rejected (tests.agent.test_ddp.DDPControlTests.test_checkpoint_outside_output_is_rejected) ... ok
+test_cleanup_handles_worker_in_a_separate_session (tests.agent.test_ddp.DDPControlTests.test_cleanup_handles_worker_in_a_separate_session) ... ok
+test_completion_without_checkpoint_restore_is_not_recovery (tests.agent.test_ddp.DDPControlTests.test_completion_without_checkpoint_restore_is_not_recovery) ... ok
+test_duplicate_execution_returns_receipt_without_second_launch (tests.agent.test_ddp.DDPControlTests.test_duplicate_execution_returns_receipt_without_second_launch) ... ok
+test_fixed_group_uses_healthy_slot_and_spare (tests.agent.test_ddp.DDPControlTests.test_fixed_group_uses_healthy_slot_and_spare) ... ok
+test_ground_truth_is_not_used_as_diagnostic_evidence (tests.agent.test_ddp.DDPControlTests.test_ground_truth_is_not_used_as_diagnostic_evidence) ... ok
+test_hash_mismatch_prevents_restart (tests.agent.test_ddp.DDPControlTests.test_hash_mismatch_prevents_restart) ... ok
+test_no_spare_is_blocked_instead_of_reducing_world_size (tests.agent.test_ddp.DDPControlTests.test_no_spare_is_blocked_instead_of_reducing_world_size) ... ok
+test_old_torch_without_uuid_is_explicitly_logical_only (tests.agent.test_ddp.DDPControlTests.test_old_torch_without_uuid_is_explicitly_logical_only) ... ok
+test_recycled_pid_is_not_owned (tests.agent.test_ddp.DDPControlTests.test_recycled_pid_is_not_owned) ... ok
+test_stale_or_unauthorized_plan_cannot_execute (tests.agent.test_ddp.DDPControlTests.test_stale_or_unauthorized_plan_cannot_execute) ... ok
+test_uuid_mismatch_is_not_accepted_as_physical_mapping (tests.agent.test_ddp.DDPControlTests.test_uuid_mismatch_is_not_accepted_as_physical_mapping) ... ok
+test_import_rejects_corrupt_summary_and_impossible_memory (tests.agent.test_legacy_bridge.LegacyBridgeTests.test_import_rejects_corrupt_summary_and_impossible_memory) ... ok
+test_import_rejects_nonfinite_samples_and_wrong_model (tests.agent.test_legacy_bridge.LegacyBridgeTests.test_import_rejects_nonfinite_samples_and_wrong_model) ... ok
+test_import_rejects_standalone_collective (tests.agent.test_legacy_bridge.LegacyBridgeTests.test_import_rejects_standalone_collective) ... ok
+test_import_runs_two_simulations_with_honest_provenance (tests.agent.test_legacy_bridge.LegacyBridgeTests.test_import_runs_two_simulations_with_honest_provenance) ... ok
+test_planning_candidates_share_fixed_baseline (tests.agent.test_legacy_bridge.LegacyBridgeTests.test_planning_candidates_share_fixed_baseline) ... ok
+test_diagnosis_requires_independent_receiver_evidence (tests.agent.test_tcp.TCPPureTests.test_diagnosis_requires_independent_receiver_evidence) ... ok
+test_idempotency_and_stale_version (tests.agent.test_tcp.TCPPureTests.test_idempotency_and_stale_version) ... ok
+test_new_payload_and_pending_retry_with_in_memory_transport (tests.agent.test_tcp.TCPPureTests.test_new_payload_and_pending_retry_with_in_memory_transport)
+Exercise protocol accounting without claiming actual socket execution. ... ok
+test_payload_dedup_and_checksum (tests.agent.test_tcp.TCPPureTests.test_payload_dedup_and_checksum) ... ok
+test_plan_write_failure_does_not_change_running_channel (tests.agent.test_tcp.TCPPureTests.test_plan_write_failure_does_not_change_running_channel) ... ok
+test_unavailable_and_tampered_candidates_are_rejected (tests.agent.test_tcp.TCPPureTests.test_unavailable_and_tampered_candidates_are_rejected) ... ok
+test_all_mutations_require_editor_including_bootstrap (tests.integration.test_auth_assistant.SecurityAndAssistantTest.test_all_mutations_require_editor_including_bootstrap) ... ok
+test_demo_mode_rejects_non_loopback_and_does_not_trust_host_header (tests.integration.test_auth_assistant.SecurityAndAssistantTest.test_demo_mode_rejects_non_loopback_and_does_not_trust_host_header) ... ok
+test_health_public_but_reads_require_authentication (tests.integration.test_auth_assistant.SecurityAndAssistantTest.test_health_public_but_reads_require_authentication) ... ok
+test_missing_run_and_oversize_question_are_rejected (tests.integration.test_auth_assistant.SecurityAndAssistantTest.test_missing_run_and_oversize_question_are_rejected) ... ok
+test_policy_rejects_weak_duplicate_or_missing_production_tokens (tests.integration.test_auth_assistant.SecurityAndAssistantTest.test_policy_rejects_weak_duplicate_or_missing_production_tokens) ... ok
+test_read_only_assistant_uses_evidence_and_cannot_mutate (tests.integration.test_auth_assistant.SecurityAndAssistantTest.test_read_only_assistant_uses_evidence_and_cannot_mutate) ... ok
+test_combined_failure_modes_are_explicitly_rejected (tests.integration.test_review_run_semantics.ReviewRunSemanticsTest.test_combined_failure_modes_are_explicitly_rejected) ... ok
+test_unplaced_job_is_degraded_even_when_all_created_flows_are_routable (tests.integration.test_review_run_semantics.ReviewRunSemanticsTest.test_unplaced_job_is_degraded_even_when_all_created_flows_are_routable) ... ok
+test_demo_bootstrap_creates_validated_revision (tests.integration.test_s7_gateway.S7GatewayApiTest.test_demo_bootstrap_creates_validated_revision) ... ok
+test_draft_cannot_run (tests.integration.test_s7_gateway.S7GatewayApiTest.test_draft_cannot_run) ... ok
+test_failed_worker_is_reassigned_in_api_run (tests.integration.test_s7_gateway.S7GatewayApiTest.test_failed_worker_is_reassigned_in_api_run) ... ok
+test_fault_scenario_returns_replanning_result (tests.integration.test_s7_gateway.S7GatewayApiTest.test_fault_scenario_returns_replanning_result) ... ok
+test_health_and_project_crud (tests.integration.test_s7_gateway.S7GatewayApiTest.test_health_and_project_crud) ... ok
+test_revision_diff_endpoint (tests.integration.test_s7_gateway.S7GatewayApiTest.test_revision_diff_endpoint) ... ok
+test_sse_events_are_available (tests.integration.test_s7_gateway.S7GatewayApiTest.test_sse_events_are_available) ... ok
+test_validate_commit_and_run (tests.integration.test_s7_gateway.S7GatewayApiTest.test_validate_commit_and_run) ... ok
+test_memory_and_sqlite_repositories_share_lifecycle_contract (tests.integration.test_s8_persistence.S8PersistenceTest.test_memory_and_sqlite_repositories_share_lifecycle_contract) ... ok
+test_postgres_migration_contains_required_tables (tests.integration.test_s8_persistence.S8PersistenceTest.test_postgres_migration_contains_required_tables) ... ok
+test_sqlite_revision_lifecycle_survives_repository_reopen (tests.integration.test_s8_persistence.S8PersistenceTest.test_sqlite_revision_lifecycle_survives_repository_reopen) ... ok
+test_all_workers_down_fails_cleanly (tests.integration.test_s9_distributed.S9DistributedEvaluationTest.test_all_workers_down_fails_cleanly) ... ok
+test_failed_worker_work_is_reassigned (tests.integration.test_s9_distributed.S9DistributedEvaluationTest.test_failed_worker_work_is_reassigned) ... ok
+test_jobs_are_partitioned_deterministically (tests.integration.test_s9_distributed.S9DistributedEvaluationTest.test_jobs_are_partitioned_deterministically) ... ok
+test_worker_results_merge_to_complete_evaluation (tests.integration.test_s9_distributed.S9DistributedEvaluationTest.test_worker_results_merge_to_complete_evaluation) ... ok
+test_business_rejection_is_a_completed_evaluation (tests.simulation.test_api_v2.SimulationApiTests.test_business_rejection_is_a_completed_evaluation) ... ok
+test_invalid_input_and_demo_page (tests.simulation.test_api_v2.SimulationApiTests.test_invalid_input_and_demo_page) ... ok
+test_legacy_serves_an_existing_build (tests.simulation.test_api_v2.SimulationApiTests.test_legacy_serves_an_existing_build) ... ok
+test_legacy_without_build_explains_how_to_enable_it (tests.simulation.test_api_v2.SimulationApiTests.test_legacy_without_build_explains_how_to_enable_it) ... ok
+test_submit_poll_evidence_and_read_only_explain (tests.simulation.test_api_v2.SimulationApiTests.test_submit_poll_evidence_and_read_only_explain) ... ok
+test_viewer_cannot_mutate_and_unknown_token_rejected (tests.simulation.test_api_v2.SimulationApiTests.test_viewer_cannot_mutate_and_unknown_token_rejected) ... ok
+test_explain_never_invents_completed_results (tests.simulation.test_api_v2.SimulationServiceTests.test_explain_never_invents_completed_results) ... ok
+test_http_busy_and_status_queries_while_computing (tests.simulation.test_api_v2.SimulationServiceTests.test_http_busy_and_status_queries_while_computing) ... ok
+test_queue_is_bounded_and_input_is_frozen (tests.simulation.test_api_v2.SimulationServiceTests.test_queue_is_bounded_and_input_is_frozen) ... ok
+test_restart_preserves_completed_and_marks_unfinished_interrupted (tests.simulation.test_api_v2.SimulationServiceTests.test_restart_preserves_completed_and_marks_unfinished_interrupted) ... ok
+test_dtype_and_false_measurement_fail_preflight (tests.simulation.test_contract_v2.ContractV2Tests.test_dtype_and_false_measurement_fail_preflight) ... ok
+test_excessive_work_is_bounded (tests.simulation.test_contract_v2.ContractV2Tests.test_excessive_work_is_bounded) ... ok
+test_hash_binds_configuration_and_input_is_copied (tests.simulation.test_contract_v2.ContractV2Tests.test_hash_binds_configuration_and_input_is_copied) ... ok
+test_input_and_implementation_fingerprints_are_present (tests.simulation.test_contract_v2.ContractV2Tests.test_input_and_implementation_fingerprints_are_present) ... ok
+test_normalized_tp_defaults_execute (tests.simulation.test_contract_v2.ContractV2Tests.test_normalized_tp_defaults_execute) ... ok
+test_unhashable_values_are_controlled_validation_errors (tests.simulation.test_contract_v2.ContractV2Tests.test_unhashable_values_are_controlled_validation_errors) ... ok
+test_cancel_covers_pending_latency_and_old_collective (tests.simulation.test_core_v2.CoreV2Tests.test_cancel_covers_pending_latency_and_old_collective) ... ok
+test_cross_rack_uses_both_directed_uplinks (tests.simulation.test_core_v2.CoreV2Tests.test_cross_rack_uses_both_directed_uplinks) ... ok
+test_event_beyond_horizon_is_not_run_early (tests.simulation.test_core_v2.CoreV2Tests.test_event_beyond_horizon_is_not_run_early) ... ok
+test_failed_resource_stalls_then_repair_resumes (tests.simulation.test_core_v2.CoreV2Tests.test_failed_resource_stalls_then_repair_resumes) ... ok
+test_failure_at_completion_time_prevents_completion_callback (tests.simulation.test_core_v2.CoreV2Tests.test_failure_at_completion_time_prevents_completion_callback) ... ok
+test_full_duplex_directions_have_independent_capacity (tests.simulation.test_core_v2.CoreV2Tests.test_full_duplex_directions_have_independent_capacity) ... ok
+test_horizon_preserves_remaining_bytes_for_resume (tests.simulation.test_core_v2.CoreV2Tests.test_horizon_preserves_remaining_bytes_for_resume) ... ok
+test_invalid_payloads_and_nonfinite_time_rejected (tests.simulation.test_core_v2.CoreV2Tests.test_invalid_payloads_and_nonfinite_time_rejected) ... ok
+test_local_bus_is_finite_and_shared_both_directions (tests.simulation.test_core_v2.CoreV2Tests.test_local_bus_is_finite_and_shared_both_directions) ... ok
+test_node_and_resource_failures_restore_independently (tests.simulation.test_core_v2.CoreV2Tests.test_node_and_resource_failures_restore_independently) ... ok
+test_rates_reallocate_when_short_competing_flow_finishes (tests.simulation.test_core_v2.CoreV2Tests.test_rates_reallocate_when_short_competing_flow_finishes) ... ok
+test_ring_matches_byte_conservation_and_analytical_time (tests.simulation.test_core_v2.CoreV2Tests.test_ring_matches_byte_conservation_and_analytical_time) ... ok
+test_zero_rate_without_repair_ends_at_horizon (tests.simulation.test_core_v2.CoreV2Tests.test_zero_rate_without_repair_ends_at_horizon) ... ok
+test_zero_time_callback_loop_is_bounded (tests.simulation.test_core_v2.CoreV2Tests.test_zero_time_callback_loop_is_bounded) ... ok
+test_different_gpu_owners_still_compete_on_network (tests.simulation.test_cross_scenario_v2.CrossScenarioTests.test_different_gpu_owners_still_compete_on_network) ... ok
+test_domain_failure_is_not_a_failed_simulation (tests.simulation.test_cross_scenario_v2.CrossScenarioTests.test_domain_failure_is_not_a_failed_simulation) ... ok
+test_input_snapshot_unchanged_and_replay_deterministic (tests.simulation.test_cross_scenario_v2.CrossScenarioTests.test_input_snapshot_unchanged_and_replay_deterministic) ... ok
+test_same_capacity_contract_in_both_scenarios (tests.simulation.test_cross_scenario_v2.CrossScenarioTests.test_same_capacity_contract_in_both_scenarios) ... ok
+test_tp_comparisons_keep_requested_generation_work (tests.simulation.test_cross_scenario_v2.CrossScenarioTests.test_tp_comparisons_keep_requested_generation_work) ... ok
+test_bad_fixed_placement_memory_cannot_wait_forever (tests.simulation.test_ddp_v2.DDPScenarios.test_bad_fixed_placement_memory_cannot_wait_forever) ... ok
+test_censored_restore_reports_observed_pending_downtime (tests.simulation.test_ddp_v2.DDPScenarios.test_censored_restore_reports_observed_pending_downtime) ... ok
+test_disjoint_gpus_compete_on_shared_network (tests.simulation.test_ddp_v2.DDPScenarios.test_disjoint_gpus_compete_on_shared_network) ... ok
+test_failure_during_checkpoint_does_not_commit_partial_save (tests.simulation.test_ddp_v2.DDPScenarios.test_failure_during_checkpoint_does_not_commit_partial_save) ... ok
+test_failure_during_restore_does_not_erase_prior_downtime (tests.simulation.test_ddp_v2.DDPScenarios.test_failure_during_restore_does_not_erase_prior_downtime) ... ok
+test_failure_rollback_keeps_world_size_and_unaffected_job (tests.simulation.test_ddp_v2.DDPScenarios.test_failure_rollback_keeps_world_size_and_unaffected_job) ... ok
+test_gang_admission_waits_without_partial_gpu_ownership (tests.simulation.test_ddp_v2.DDPScenarios.test_gang_admission_waits_without_partial_gpu_ownership) ... ok
+test_horizon_does_not_falsely_complete_or_partially_admit (tests.simulation.test_ddp_v2.DDPScenarios.test_horizon_does_not_falsely_complete_or_partially_admit) ... ok
+test_insufficient_single_gpu_memory_is_permanent_not_queue (tests.simulation.test_ddp_v2.DDPScenarios.test_insufficient_single_gpu_memory_is_permanent_not_queue) ... ok
+test_link_failure_during_compute_also_invalidates_future_ring (tests.simulation.test_ddp_v2.DDPScenarios.test_link_failure_during_compute_also_invalidates_future_ring) ... ok
+test_model_profile_cannot_claim_wrong_gradient_or_impossible_memory (tests.simulation.test_ddp_v2.DDPScenarios.test_model_profile_cannot_claim_wrong_gradient_or_impossible_memory) ... ok
+test_no_spare_waits_for_other_job_instead_of_shrinking (tests.simulation.test_ddp_v2.DDPScenarios.test_no_spare_waits_for_other_job_instead_of_shrinking) ... ok
+test_one_rank_has_no_collective_wire_traffic (tests.simulation.test_ddp_v2.DDPScenarios.test_one_rank_has_no_collective_wire_traffic) ... ok
+test_physical_placement_changes_time_not_logical_bytes (tests.simulation.test_ddp_v2.DDPScenarios.test_physical_placement_changes_time_not_logical_bytes) ... ok
+test_profile_bytes_and_input_not_mutated (tests.simulation.test_ddp_v2.DDPScenarios.test_profile_bytes_and_input_not_mutated) ... ok
+test_profile_provenance_does_not_label_default_recovery_as_measured (tests.simulation.test_ddp_v2.DDPScenarios.test_profile_provenance_does_not_label_default_recovery_as_measured) ... ok
+test_rank_compute_slowdown_increases_step_cost (tests.simulation.test_ddp_v2.DDPScenarios.test_rank_compute_slowdown_increases_step_cost) ... ok
+test_replay_is_deterministic_and_counterfactual_is_controlled (tests.simulation.test_ddp_v2.DDPScenarios.test_replay_is_deterministic_and_counterfactual_is_controlled) ... ok
+test_simultaneous_arrivals_use_priority_not_json_list_order (tests.simulation.test_ddp_v2.DDPScenarios.test_simultaneous_arrivals_use_priority_not_json_list_order) ... ok
+test_busy_replica_queues_then_releases_request_memory (tests.simulation.test_tp_v2.TensorParallelTests.test_busy_replica_queues_then_releases_request_memory) ... ok
+test_decode_and_kv_have_no_off_by_one (tests.simulation.test_tp_v2.TensorParallelTests.test_decode_and_kv_have_no_off_by_one) ... ok
+test_deterministic_and_input_immutable (tests.simulation.test_tp_v2.TensorParallelTests.test_deterministic_and_input_immutable) ... ok
+test_each_forward_has_two_collectives_per_layer (tests.simulation.test_tp_v2.TensorParallelTests.test_each_forward_has_two_collectives_per_layer) ... ok
+test_failure_after_first_token_does_not_commit_late_decode (tests.simulation.test_tp_v2.TensorParallelTests.test_failure_after_first_token_does_not_commit_late_decode) ... ok
+test_failure_during_transfer_startup_cancels_pending_traffic (tests.simulation.test_tp_v2.TensorParallelTests.test_failure_during_transfer_startup_cancels_pending_traffic) ... ok
+test_gpu_and_head_constraints_reject_invalid_deployment (tests.simulation.test_tp_v2.TensorParallelTests.test_gpu_and_head_constraints_reject_invalid_deployment) ... ok
+test_horizon_is_not_success (tests.simulation.test_tp_v2.TensorParallelTests.test_horizon_is_not_success) ... ok
+test_long_request_is_rejected_without_blocking_small_request (tests.simulation.test_tp_v2.TensorParallelTests.test_long_request_is_rejected_without_blocking_small_request) ... ok
+test_nan_and_unknown_fault_rejected (tests.simulation.test_tp_v2.TensorParallelTests.test_nan_and_unknown_fault_rejected) ... ok
+test_no_repair_is_not_reported_as_reaching_horizon (tests.simulation.test_tp_v2.TensorParallelTests.test_no_repair_is_not_reported_as_reaching_horizon) ... ok
+test_oversized_model_context_is_business_rejection (tests.simulation.test_tp_v2.TensorParallelTests.test_oversized_model_context_is_business_rejection) ... ok
+test_prefill_produces_first_token_without_extra_decode (tests.simulation.test_tp_v2.TensorParallelTests.test_prefill_produces_first_token_without_extra_decode) ... ok
+test_qwen_kv_formula (tests.simulation.test_tp_v2.TensorParallelTests.test_qwen_kv_formula) ... ok
+test_replica_failure_discards_active_request_and_keeps_others (tests.simulation.test_tp_v2.TensorParallelTests.test_replica_failure_discards_active_request_and_keeps_others) ... ok
+test_resource_failure_during_compute_aborts_future_collective (tests.simulation.test_tp_v2.TensorParallelTests.test_resource_failure_during_compute_aborts_future_collective) ... ok
+test_environment_check_passes (tests.unit.test_fresh_workspace.FreshWorkspaceTest.test_environment_check_passes) ... skipped 'Optional local setup check; enable with scripts/run_tests.py --local-env'
+test_environment_configuration_files_exist (tests.unit.test_fresh_workspace.FreshWorkspaceTest.test_environment_configuration_files_exist) ... ok
+test_expected_layout_exists (tests.unit.test_fresh_workspace.FreshWorkspaceTest.test_expected_layout_exists) ... ok
+test_optional_local_configuration_files_exist (tests.unit.test_fresh_workspace.FreshWorkspaceTest.test_optional_local_configuration_files_exist) ... skipped 'Optional local setup check; enable with scripts/run_tests.py --local-env'
+test_project_uses_root_venv (tests.unit.test_fresh_workspace.FreshWorkspaceTest.test_project_uses_root_venv) ... skipped 'Optional local setup check; enable with scripts/run_tests.py --local-env'
+test_shared_packages_import (tests.unit.test_fresh_workspace.FreshWorkspaceTest.test_shared_packages_import) ... ok
+test_supported_python_version (tests.unit.test_fresh_workspace.FreshWorkspaceTest.test_supported_python_version) ... ok
+test_aggregation_reallocates_shared_bottleneck_for_all_flow_fields (tests.unit.test_review_flow_consistency.GlobalFlowConsistencyTest.test_aggregation_reallocates_shared_bottleneck_for_all_flow_fields) ... ok
+test_duplicate_partition_is_rejected (tests.unit.test_review_flow_consistency.GlobalFlowConsistencyTest.test_duplicate_partition_is_rejected) ... ok
+test_remote_bottleneck_leaves_downstream_capacity_unused (tests.unit.test_review_flow_consistency.GlobalFlowConsistencyTest.test_remote_bottleneck_leaves_downstream_capacity_unused) ... ok
+test_unknown_failed_worker_is_rejected (tests.unit.test_review_flow_consistency.GlobalFlowConsistencyTest.test_unknown_failed_worker_is_rejected) ... ok
+test_worker_count_and_failure_preserve_routes_and_rates (tests.unit.test_review_flow_consistency.GlobalFlowConsistencyTest.test_worker_count_and_failure_preserve_routes_and_rates) ... ok
+test_candidate_strategies_use_same_actual_deployment (tests.unit.test_s10_faults.S10FaultReplanningTest.test_candidate_strategies_use_same_actual_deployment) ... ok
+test_fault_scenario_is_deterministic (tests.unit.test_s10_faults.S10FaultReplanningTest.test_fault_scenario_is_deterministic) ... ok
+test_leaf_switch_fault_marks_attached_node_unavailable (tests.unit.test_s10_faults.S10FaultReplanningTest.test_leaf_switch_fault_marks_attached_node_unavailable) ... ok
+test_link_fault_removes_only_target_link (tests.unit.test_s10_faults.S10FaultReplanningTest.test_link_fault_removes_only_target_link) ... ok
+test_node_fault_replans_affected_jobs_onto_remaining_capacity (tests.unit.test_s10_faults.S10FaultReplanningTest.test_node_fault_replans_affected_jobs_onto_remaining_capacity) ... ok
+test_partial_current_group_is_rejected (tests.unit.test_s10_faults.S10FaultReplanningTest.test_partial_current_group_is_rejected) ... ok
+test_single_spine_link_failure_replans_without_migration (tests.unit.test_s10_faults.S10FaultReplanningTest.test_single_spine_link_failure_replans_without_migration) ... ok
+test_stale_current_placement_is_rejected (tests.unit.test_s10_faults.S10FaultReplanningTest.test_stale_current_placement_is_rejected) ... ok
+test_unknown_fault_target_is_rejected (tests.unit.test_s10_faults.S10FaultReplanningTest.test_unknown_fault_target_is_rejected) ... ok
+test_all_schema_files_are_valid_json (tests.unit.test_s1_contracts.S1DomainContractTest.test_all_schema_files_are_valid_json) ... ok
+test_event_envelope_round_trip (tests.unit.test_s1_contracts.S1DomainContractTest.test_event_envelope_round_trip) ... ok
+test_gpu_rails_are_explicit (tests.unit.test_s1_contracts.S1DomainContractTest.test_gpu_rails_are_explicit) ... ok
+test_inspection_command_prints_summary (tests.unit.test_s1_contracts.S1DomainContractTest.test_inspection_command_prints_summary) ... ok
+test_jobs_use_supported_communication_modes (tests.unit.test_s1_contracts.S1DomainContractTest.test_jobs_use_supported_communication_modes) ... ok
+test_micro_fixture_has_expected_shape (tests.unit.test_s1_contracts.S1DomainContractTest.test_micro_fixture_has_expected_shape) ... ok
+test_revision_json_round_trip_is_lossless (tests.unit.test_s1_contracts.S1DomainContractTest.test_revision_json_round_trip_is_lossless) ... ok
+test_unsupported_schema_version_is_rejected (tests.unit.test_s1_contracts.S1DomainContractTest.test_unsupported_schema_version_is_rejected) ... ok
+test_default_generator_matches_mvp_scale (tests.unit.test_s2_topology.S2TopologyGenerationTest.test_default_generator_matches_mvp_scale) ... ok
+test_generated_rails_are_deterministic (tests.unit.test_s2_topology.S2TopologyGenerationTest.test_generated_rails_are_deterministic) ... ok
+test_generated_topology_is_valid (tests.unit.test_s2_topology.S2TopologyGenerationTest.test_generated_topology_is_valid) ... ok
+test_invalid_generator_parameters_are_rejected (tests.unit.test_s2_topology.S2TopologyGenerationTest.test_invalid_generator_parameters_are_rejected) ... ok
+test_disconnected_topology_is_reported (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_disconnected_topology_is_reported) ... ok
+test_duplicate_entity_id_is_reported (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_duplicate_entity_id_is_reported) ... ok
+test_duplicate_rail_is_reported (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_duplicate_rail_is_reported) ... ok
+test_inspection_command_prints_mvp_result (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_inspection_command_prints_mvp_result) ... ok
+test_job_larger_than_topology_is_reported (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_job_larger_than_topology_is_reported) ... ok
+test_link_kind_mismatch_is_reported (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_link_kind_mismatch_is_reported) ... ok
+test_micro_fixture_and_jobs_are_valid (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_micro_fixture_and_jobs_are_valid) ... ok
+test_missing_reference_is_reported (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_missing_reference_is_reported) ... ok
+test_node_rack_leaf_mismatch_is_reported (tests.unit.test_s2_topology.S2TopologyValidatorTest.test_node_rack_leaf_mismatch_is_reported) ... ok
+test_fixture_is_valid_before_placement (tests.unit.test_s3_first_fit.S3FirstFitPlacementTest.test_fixture_is_valid_before_placement) ... ok
+test_inspection_command_prints_assignments (tests.unit.test_s3_first_fit.S3FirstFitPlacementTest.test_inspection_command_prints_assignments) ... ok
+test_job_that_does_not_fit_is_entirely_unplaced (tests.unit.test_s3_first_fit.S3FirstFitPlacementTest.test_job_that_does_not_fit_is_entirely_unplaced) ... ok
+test_jobs_are_ordered_by_priority_then_id (tests.unit.test_s3_first_fit.S3FirstFitPlacementTest.test_jobs_are_ordered_by_priority_then_id) ... ok
+test_micro_jobs_fill_nodes_in_deterministic_order (tests.unit.test_s3_first_fit.S3FirstFitPlacementTest.test_micro_jobs_fill_nodes_in_deterministic_order) ... ok
+test_placement_does_not_overlap_gpu_ids (tests.unit.test_s3_first_fit.S3FirstFitPlacementTest.test_placement_does_not_overlap_gpu_ids) ... ok
+test_repeated_placements_are_identical (tests.unit.test_s3_first_fit.S3FirstFitPlacementTest.test_repeated_placements_are_identical) ... ok
+test_both_strategies_place_all_gpus_without_overlap (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_both_strategies_place_all_gpus_without_overlap) ... ok
+test_fixture_is_valid (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_fixture_is_valid) ... ok
+test_inspection_command_compares_strategies (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_inspection_command_compares_strategies) ... ok
+test_oversized_job_is_not_partially_placed (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_oversized_job_is_not_partially_placed) ... ok
+test_rail_aware_balances_the_multi_node_job (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_rail_aware_balances_the_multi_node_job) ... ok
+test_rail_aware_improves_alignment_over_first_fit (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_rail_aware_improves_alignment_over_first_fit) ... ok
+test_repeated_rail_aware_placements_are_identical (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_repeated_rail_aware_placements_are_identical) ... ok
+test_single_node_job_stays_on_one_node (tests.unit.test_s4_rail_aware.S4RailAwarePlacementTest.test_single_node_job_stays_on_one_node) ... ok
+test_cross_node_flows_are_routed_through_leaf_links (tests.unit.test_s5_evaluation.S5EvaluationTest.test_cross_node_flows_are_routed_through_leaf_links) ... ok
+test_evaluation_is_deterministic (tests.unit.test_s5_evaluation.S5EvaluationTest.test_evaluation_is_deterministic) ... ok
+test_generated_topology_has_eight_to_one_oversubscription (tests.unit.test_s5_evaluation.S5EvaluationTest.test_generated_topology_has_eight_to_one_oversubscription) ... ok
+test_high_demand_marks_bottlenecks (tests.unit.test_s5_evaluation.S5EvaluationTest.test_high_demand_marks_bottlenecks) ... ok
+test_inspection_command_prints_paths_and_metrics (tests.unit.test_s5_evaluation.S5EvaluationTest.test_inspection_command_prints_paths_and_metrics) ... ok
+test_micro_leaf_oversubscription_and_bisection_proxy (tests.unit.test_s5_evaluation.S5EvaluationTest.test_micro_leaf_oversubscription_and_bisection_proxy) ... ok
+test_ring_and_all_to_all_generate_expected_traffic_units (tests.unit.test_s5_evaluation.S5EvaluationTest.test_ring_and_all_to_all_generate_expected_traffic_units) ... ok
+test_single_node_job_has_no_fabric_throughput_proxy (tests.unit.test_s5_evaluation.S5EvaluationTest.test_single_node_job_has_no_fabric_throughput_proxy) ... ok
+test_uncontended_throughput_equals_flow_unit_demand (tests.unit.test_s5_evaluation.S5EvaluationTest.test_uncontended_throughput_equals_flow_unit_demand) ... ok
+test_compare_reports_added_and_removed_jobs (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_compare_reports_added_and_removed_jobs) ... ok
+test_content_hash_ignores_engine_revision_id (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_content_hash_ignores_engine_revision_id) ... ok
+test_draft_validate_commit_lifecycle (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_draft_validate_commit_lifecycle) ... ok
+test_inspection_command_shows_lifecycle_and_diff (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_inspection_command_shows_lifecycle_and_diff) ... ok
+test_invalid_revision_remains_uncommittable (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_invalid_revision_remains_uncommittable) ... ok
+test_second_draft_tracks_committed_parent_and_diff (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_second_draft_tracks_committed_parent_and_diff) ... ok
+test_stale_revision_cannot_commit_after_newer_revision (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_stale_revision_cannot_commit_after_newer_revision) ... ok
+test_status_change_does_not_mutate_previous_revision (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_status_change_does_not_mutate_previous_revision) ... ok
+test_unvalidated_revision_cannot_be_committed (tests.unit.test_s6_revision_lifecycle.S6RevisionLifecycleTest.test_unvalidated_revision_cannot_be_committed) ... ok
+test_answer_preserves_exact_evidence_and_unit_meaning (tests.unit.test_security_assistant_pure.PureAssistantTest.test_answer_preserves_exact_evidence_and_unit_meaning) ... ok
+test_failed_run_does_not_invent_metrics (tests.unit.test_security_assistant_pure.PureAssistantTest.test_failed_run_does_not_invent_metrics) ... ok
+test_fault_and_worker_records_are_grounded (tests.unit.test_security_assistant_pure.PureAssistantTest.test_fault_and_worker_records_are_grounded) ... ok
+test_model_question_selects_explicit_limits (tests.unit.test_security_assistant_pure.PureAssistantTest.test_model_question_selects_explicit_limits) ... ok
+test_no_active_flows_discloses_node_local_boundary (tests.unit.test_security_assistant_pure.PureAssistantTest.test_no_active_flows_discloses_node_local_boundary) ... ok
+test_prompt_cannot_modify_input_or_execute_actions (tests.unit.test_security_assistant_pure.PureAssistantTest.test_prompt_cannot_modify_input_or_execute_actions) ... ok
+test_unplaced_and_unroutable_are_both_explained (tests.unit.test_security_assistant_pure.PureAssistantTest.test_unplaced_and_unroutable_are_both_explained) ... ok
+test_cross_site_browser_origins_rejected (tests.unit.test_security_assistant_pure.PureSecurityTest.test_cross_site_browser_origins_rejected) ... ok
+test_editor_classification_covers_readonly_post_exception (tests.unit.test_security_assistant_pure.PureSecurityTest.test_editor_classification_covers_readonly_post_exception) ... ok
+test_invalid_credentials_never_fall_back_to_local_access (tests.unit.test_security_assistant_pure.PureSecurityTest.test_invalid_credentials_never_fall_back_to_local_access) ... ok
+test_local_mode_rejects_proxy_metadata_and_rebinding_host (tests.unit.test_security_assistant_pure.PureSecurityTest.test_local_mode_rejects_proxy_metadata_and_rebinding_host) ... ok
+test_local_mode_requires_real_loopback_peer (tests.unit.test_security_assistant_pure.PureSecurityTest.test_local_mode_requires_real_loopback_peer) ... ok
+test_loopback_context_accepts_expected_hosts_and_browser_origins (tests.unit.test_security_assistant_pure.PureSecurityTest.test_loopback_context_accepts_expected_hosts_and_browser_origins) ... ok
+test_nonlocal_environment_requires_token (tests.unit.test_security_assistant_pure.PureSecurityTest.test_nonlocal_environment_requires_token) ... ok
+test_role_mapping_is_independent_of_transport_peer (tests.unit.test_security_assistant_pure.PureSecurityTest.test_role_mapping_is_independent_of_transport_peer) ... ok
+test_single_configured_role_is_supported (tests.unit.test_security_assistant_pure.PureSecurityTest.test_single_configured_role_is_supported) ... ok
+test_weak_duplicate_and_nonascii_configuration_rejected (tests.unit.test_security_assistant_pure.PureSecurityTest.test_weak_duplicate_and_nonascii_configuration_rejected) ... ok
+test_default_excludes_only_known_live_classes_and_keeps_import_failures (tests.unit.test_test_runner.TestRunnerSelectionTests.test_default_excludes_only_known_live_classes_and_keeps_import_failures) ... ok
+test_explicit_live_includes_every_test (tests.unit.test_test_runner.TestRunnerSelectionTests.test_explicit_live_includes_every_test) ... ok
+
+----------------------------------------------------------------------
+Ran 229 tests in 3.254s
+
+OK (skipped=3)

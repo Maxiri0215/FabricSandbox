@@ -1,0 +1,32 @@
+{
+  "source": "agent_demo",
+  "copied_without_modification": [
+    {
+      "file": "__init__.py",
+      "sha256": "7506f9a4b44772c2cabab60cedced6aa920c218f130fe58b9d531f92a31ed77b"
+    },
+    {
+      "file": "common.py",
+      "sha256": "750bc11db60d386ebae01babeea2baf55f0b4ce4b62fca2ed034754d7a02faf0"
+    },
+    {
+      "file": "contracts.py",
+      "sha256": "9741b23614e40ddd4cbb2a5ec0b2199fae2d6ee3fd2effebb06762958921bc65"
+    },
+    {
+      "file": "controller.py",
+      "sha256": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19"
+    },
+    {
+      "file": "tcp_backend.py",
+      "sha256": "5881a669dc19966d3609105faf152e02e20f659ccec20e4ef57901f0bb3ccd9e"
+    },
+    {
+      "file": "tcp_worker.py",
+      "sha256": "64a4928c8bf2359868c704f5b0c87be282fc0b0de3df6f8d62047f02a5e257e5"
+    }
+  ],
+  "historical_source": "/Users/project-user/Codex/Homework/output/case1_evidence_20261103_072943/source_executed/agent_demo",
+  "path_base": "repository_root",
+  "privacy_note": "Historical source path is anonymized. Copied production source bytes and recorded hashes remain unchanged."
+}

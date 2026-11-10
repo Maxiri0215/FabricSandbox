@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "scenario": "analytical_ring",
+  "summary": {
+    "expected_ms": 8.05306368,
+    "observed_ms": 8.05306368
+  },
+  "jobs": [
+    {
+      "id": "analytical",
+      "state": "completed",
+      "completion_ms": 8.05306368
+    }
+  ],
+  "invariant_checks": [
+    {
+      "name": "one_completion",
+      "passed": true,
+      "detail": [
+        8.05306368
+      ]
+    },
+    {
+      "name": "analytic_time",
+      "passed": true,
+      "detail": {
+        "expected_ms": 8.05306368,
+        "observed_ms": 8.05306368
+      }
+    },
+    {
+      "name": "exact_group_bytes",
+      "passed": true,
+      "detail": {
+        "expected_bytes": 402653184,
+        "observed_bytes": 402653184.0
+      }
+    },
+    {
+      "name": "capacity",
+      "passed": true,
+      "detail": 1.0
+    }
+  ],
+  "engine_stats": {
+    "processed_events": 49,
+    "total_sent_bytes": 402653184.0,
+    "completed_transfer_bytes": 402653184,
+    "completed_flows": 24,
+    "cancelled_flows": 0,
+    "pending_flows": 0,
+    "active_flows": 0,
+    "capacity_checks": 98,
+    "max_capacity_ratio": 1.0,
+    "horizon_reached": false,
+    "simulated_time_ms": 8.05306368
+  },
+  "engine_wall_ms": 0.4705830942839384,
+  "assumptions": [
+    "Analytical calibration fixture, not measured GPU performance."
+  ],
+  "_archive": {
+    "kind": "EXCERPT_NOT_RERUN",
+    "source_file": "evidence/v2/revalidated/E0_analytic/result.json",
+    "source_sha256": "05b5d8328f4b5af4cc565e3f2e1d390c28613f4ca7b45fe999bbc74363a0d09f",
+    "source_size_bytes": 27735,
+    "omitted_fields": [
+      "events",
+      "resource_samples"
+    ],
+    "note": "All retained original fields are unchanged; full event and capacity-sample arrays are omitted to keep the repository small."
+  }
+}

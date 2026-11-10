@@ -1,0 +1,30 @@
+{
+  "production_unchanged_since_GPU": true,
+  "changed_files": [
+    "README.md",
+    "docs/refactor/AGENT_EXECUTION.md",
+    "docs/refactor/architecture_report.md",
+    "docs/refactor/rubric_mapping.md",
+    "tests/agent/test_budget_and_evidence.py"
+  ],
+  "source_manifest_sha256": "ee84bbb0e9595cc31f4e4f2c86c293e1698aff335bfef5cab52ae63b7726b882",
+  "native_pptx_exported": false,
+  "new_pdf_exported": false,
+  "offline_presentation_slides": 12,
+  "architecture_page_units": 10,
+  "retained_server_checkpoints": 14,
+  "server_checkpoint_sizes_unchanged": true,
+  "not_verified": [
+    "external LLM API",
+    "cross-server/RDMA/physical hardware faults",
+    "real Qwen TP",
+    "Web Agent integration",
+    "systematic scaling benchmark"
+  ],
+  "team_fields_pending": [
+    "names and human contribution confirmation",
+    "Git URL and publish",
+    "course project approval confirmation",
+    "onsite oral demo"
+  ]
+}

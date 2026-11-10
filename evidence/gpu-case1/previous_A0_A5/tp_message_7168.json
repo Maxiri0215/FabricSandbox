@@ -1,0 +1,135 @@
+{
+  "status": "COMPLETED",
+  "source": "MEASURED",
+  "kind": "nccl_allreduce",
+  "world_size": 2,
+  "payload_bytes_per_rank": 7168,
+  "dtype": "bfloat16",
+  "warmup": 5,
+  "repeat": 20,
+  "timing_slowest_rank": {
+    "count": 20,
+    "median_ms": 0.14745600521564484,
+    "min_ms": 0.13926400244235992,
+    "max_ms": 0.2519040107727051,
+    "mean_ms": 0.15411200150847434,
+    "stdev_ms": 0.0253072970249178,
+    "p95_ms": 0.18432000279426575
+  },
+  "slowest_rank_samples_ms": [
+    0.14847999811172485,
+    0.1658879965543747,
+    0.15564799308776855,
+    0.2519040107727051,
+    0.14745600521564484,
+    0.14028799533843994,
+    0.14336000382900238,
+    0.18432000279426575,
+    0.14847999811172485,
+    0.14131200313568115,
+    0.15360000729560852,
+    0.14233599603176117,
+    0.13926400244235992,
+    0.14131200313568115,
+    0.1454080045223236,
+    0.14336000382900238,
+    0.14028799533843994,
+    0.14950400590896606,
+    0.1525759994983673,
+    0.14745600521564484
+  ],
+  "algorithm_bandwidth_GBps": 0.0486111093916946,
+  "normalized_bus_bandwidth_GBps": 0.0486111093916946,
+  "ranks": [
+    {
+      "rank": 0,
+      "device": {
+        "logical_device": 0,
+        "name": "NVIDIA GeForce RTX 3090",
+        "total_memory_bytes": 25307578368,
+        "uuid": "00000000-0000-0000-0000-000000000001",
+        "compute_capability": [
+          8,
+          6
+        ]
+      },
+      "samples_ms": [
+        0.14847999811172485,
+        0.16179199516773224,
+        0.1515520066022873,
+        0.2519040107727051,
+        0.14028799533843994,
+        0.14028799533843994,
+        0.14028799533843994,
+        0.18432000279426575,
+        0.14847999811172485,
+        0.1382399946451187,
+        0.15360000729560852,
+        0.13926400244235992,
+        0.13926400244235992,
+        0.13926400244235992,
+        0.1454080045223236,
+        0.13926400244235992,
+        0.14028799533843994,
+        0.14950400590896606,
+        0.13926400244235992,
+        0.14336000382900238
+      ],
+      "correct": true
+    },
+    {
+      "rank": 1,
+      "device": {
+        "logical_device": 1,
+        "name": "NVIDIA GeForce RTX 3090",
+        "total_memory_bytes": 25307578368,
+        "uuid": "00000000-0000-0000-0000-000000000002",
+        "compute_capability": [
+          8,
+          6
+        ]
+      },
+      "samples_ms": [
+        0.1443839967250824,
+        0.1658879965543747,
+        0.15564799308776855,
+        0.14336000382900238,
+        0.14745600521564484,
+        0.13926400244235992,
+        0.14336000382900238,
+        0.14233599603176117,
+        0.14336000382900238,
+        0.14131200313568115,
+        0.14336000382900238,
+        0.14233599603176117,
+        0.13926400244235992,
+        0.14131200313568115,
+        0.13926400244235992,
+        0.14336000382900238,
+        0.14028799533843994,
+        0.14131200313568115,
+        0.1525759994983673,
+        0.14745600521564484
+      ],
+      "correct": true
+    }
+  ],
+  "metadata": {
+    "python": "3.12.15",
+    "platform": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_visible_devices": "0,1",
+    "nccl_environment": {},
+    "transformers": "4.52.4",
+    "gpu_inventory": "GPU 0: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000001)\nGPU 1: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000002)\nGPU 2: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000003)\nGPU 3: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000004)\nGPU 4: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000005)\nGPU 5: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000006)\nGPU 6: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000007)\nGPU 7: NVIDIA GeForce RTX 3090 (UUID: GPU-00000000-0000-0000-0000-000000000008)\n",
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU1\tNODE\t X \tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU2\tNODE\tNODE\t X \tNODE\tSYS\tSYS\tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU3\tNODE\tNODE\tNODE\t X \tSYS\tSYS\tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU4\tSYS\tSYS\tSYS\tSYS\t X \tNODE\tNODE\tNODE\t32-63,96-127\t1\t\tN/A\nGPU5\tSYS\tSYS\tSYS\tSYS\tNODE\t X \tNODE\tNODE\t32-63,96-127\t1\t\tN/A\nGPU6\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tNODE\t32-63,96-127\t1\t\tN/A\nGPU7\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\t X \t32-63,96-127\t1\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n"
+  },
+  "limitations": [
+    "This is standalone collective timing, not a training-throughput result.",
+    "The actual NCCL algorithm/transport is not inferred from topology; inspect logs separately when needed.",
+    "Single-host GPU measurements do not calibrate cross-server Leaf-Spine links.",
+    "Slowest-rank durations are compared within each repetition; clocks are not used for cross-rank timestamp subtraction."
+  ],
+  "recorded_at_utc": "2026-11-02T17:48:59.635943+00:00"
+}

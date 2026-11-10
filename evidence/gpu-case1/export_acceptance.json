@@ -1,0 +1,331 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "gpt2_baseline",
+      "name": "two_ranks_fixed_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "actual_parameter_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "single_worker_run_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "recorded_acceptance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "model_matches_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "baseline_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "two_ranks_fixed_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "actual_parameter_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "single_worker_run_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "recorded_acceptance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "model_matches_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "checkpoint_committed_before_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "control_not_completed_no_restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "two_ranks_fixed_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "actual_parameter_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "single_worker_run_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "recorded_acceptance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "model_matches_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "checkpoint_committed_before_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "verified_recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "attempt_1_frozen_source_matches_receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "attempt_1_loaded_source_step_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "attempt_1_fresh_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "two_ranks_fixed_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "actual_parameter_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "single_worker_run_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "recorded_acceptance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "model_matches_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "checkpoint_committed_before_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "control_not_completed_no_restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "two_ranks_fixed_size",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "actual_parameter_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "single_worker_run_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "recorded_acceptance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "model_matches_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "checkpoint_committed_before_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "verified_recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "attempt_1_frozen_source_matches_receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "attempt_1_loaded_source_step_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "attempt_1_fresh_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "checkpoint_at_export_0_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "checkpoint_at_export_0_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "checkpoint_at_export_0_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_baseline",
+      "name": "checkpoint_at_export_0_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_blocked",
+      "name": "checkpoint_at_export_0_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_no_repair",
+      "name": "checkpoint_at_export_0_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "checkpoint_at_export_0_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "checkpoint_at_export_1_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "checkpoint_at_export_1_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "gpt2_recover",
+      "name": "checkpoint_at_export_1_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "checkpoint_at_export_0_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "checkpoint_at_export_1_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "checkpoint_at_export_1_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "tiny_smoke",
+      "name": "checkpoint_at_export_1_20",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "main_incident_eligible": true,
+  "main_incident_id": "incident-20361f4c7c3942d3bd13e11d7da1dfbb"
+}

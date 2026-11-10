@@ -1,0 +1,34 @@
+--- a/agent_demo/ddp_worker.py
++++ b/agent_demo/ddp_worker.py
+@@ -216,9 +216,9 @@
+                     atomic_json(args.output / "checkpoint_manifest.json", manifest)
+                     atomic_json(folder / f"manifest-e{args.epoch}-s{step}.json", manifest)
+                     outcome[0] = {"ok": True, "manifest": manifest}
+-                    files = sorted(folder.glob("checkpoint-*.pt"), key=lambda x: x.stat().st_mtime)
+-                    for old in files[:-2]:
+-                        old.unlink()
++                    # This is an evidence-producing experiment: retain every
++                    # committed checkpoint, including the exact recovery source.
++                    # Lightweight handoff archives exclude the .pt payloads.
+                 except Exception as exc:
+                     outcome[0] = {"ok": False, "error": f"{type(exc).__name__}: {exc}"}
+             dist.broadcast_object_list(outcome, src=0)
+--- a/tests/agent/test_ddp.py
++++ b/tests/agent/test_ddp.py
+@@ -181,6 +181,16 @@
+                 receipt = adapter.apply(candidate, idempotency_key="live-test")
+                 result = adapter.verify(receipt)
+                 self.assertTrue(result["recovered"], result)
++                # Later commits must not delete the recovery source or leave
++                # archived checkpoint manifests referring to missing evidence.
++                manifests = list((Path(folder) / "checkpoints").glob("manifest-*.json"))
++                self.assertGreater(len(manifests), 2)
++                from agent_demo.common import read_json
++                for path in manifests:
++                    manifest = read_json(path)
++                    payload = Path(folder) / manifest["file"]
++                    self.assertTrue(payload.is_file(), str(payload))
++                    self.assertEqual(hashlib.sha256(payload.read_bytes()).hexdigest(), manifest["sha256"])
+             finally:
+                 adapter.close()
+ 

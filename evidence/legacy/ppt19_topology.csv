@@ -1,0 +1,5 @@
+resource_gpus,job_gpus,placement_median_ms,evaluation_median_ms,placement_min_ms,placement_max_ms,evaluation_min_ms,evaluation_max_ms,repeats
+16,16,0.0183,0.0387,0.0176,0.0206,0.0367,0.0721,20
+64,16,0.1003,0.0581,0.0971,0.1219,0.0558,0.091,20
+256,16,0.4252,0.1249,0.414,0.4665,0.1206,0.18,20
+1024,16,1.7373,0.3323,1.712,1.8186,0.3057,0.3617,20

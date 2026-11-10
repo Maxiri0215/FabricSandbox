@@ -1,0 +1,38 @@
+{
+  "backend": "live_gpu",
+  "candidate_id": "ddp-v0-1",
+  "idempotency_key": "incident-9ccb9537730a414fb022e741e8e8d6c0:1:cbf774d60dd15d2d8935239d6f336d3f5da50687ceb0555240452267953e7eed",
+  "version": 1,
+  "old_epoch": 0,
+  "new_epoch": 1,
+  "from_slots": [
+    "2",
+    "3"
+  ],
+  "to_slots": [
+    "2",
+    "4"
+  ],
+  "old_worker_pids": [
+    276998,
+    276999
+  ],
+  "launcher_pid": 277072,
+  "checkpoint": {
+    "file": "checkpoints/checkpoint-e0-s5.pt",
+    "sha256": "ee88500c6ce05f03e2753c7dac0ea158381b2825fe9d4400734b54ca2b2c4ea4",
+    "step": 5,
+    "epoch": 0,
+    "world_size": 2,
+    "model": "tiny",
+    "sequence_length": 128,
+    "committed_at": 1793682527.1042259,
+    "size_bytes": 62055
+  },
+  "started_at": 1793682528.1836605,
+  "status": "started",
+  "world_size": 2,
+  "last_common_reported_step": 7,
+  "rollback_reported_steps": 2,
+  "observed_failure_at": 1793682527.2954495
+}

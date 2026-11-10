@@ -1,0 +1,32 @@
+{
+  "pid": 277176,
+  "rank": 0,
+  "local_rank": 0,
+  "slot_id": "2",
+  "epoch": 0,
+  "world_size": 2,
+  "model": "gpt2",
+  "device": "cuda",
+  "source": "MEASURED",
+  "run_id": "e231af912f714e18958147e4d70885f6",
+  "process_identity": {
+    "pid": 277176,
+    "pgid": 277176,
+    "start_token": "1028218699",
+    "method": "linux_proc_start_ticks"
+  },
+  "status": "completed",
+  "step": 20,
+  "heartbeat": 1793682657.6173015,
+  "checkpoint_loaded": null,
+  "gate_wait_seconds": 0.0,
+  "device_uuid": "00000000-0000-0000-0000-000000000003",
+  "device_name": "NVIDIA GeForce RTX 3090",
+  "mapping_verification_level": "uuid_observed",
+  "parameter_count": 124439808,
+  "loss": 10.930152893066406,
+  "train_step_ms": 107.50830918550491,
+  "committed_checkpoint_step": 20,
+  "committed_checkpoint_sha256": "f90a2603571694dca38572dec4420f9622471f827b53c2cd49deedec16bfac4f",
+  "completed_at": 1793682657.6172993
+}

@@ -1,0 +1,2 @@
+{"wall_time": 1793682846.0198462, "kind": "group_started", "epoch": 0, "pid": 278345, "slots": ["2", "3"], "version": 0, "resume_manifest": null}
+{"wall_time": 1793682883.5449727, "kind": "old_group_stopped", "epoch": 0, "launcher_pid": 278345, "exit_code": 1}

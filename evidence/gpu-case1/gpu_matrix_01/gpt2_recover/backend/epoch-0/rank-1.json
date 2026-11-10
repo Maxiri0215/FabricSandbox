@@ -1,0 +1,33 @@
+{
+  "pid": 277812,
+  "rank": 1,
+  "local_rank": 1,
+  "slot_id": "3",
+  "epoch": 0,
+  "world_size": 2,
+  "model": "gpt2",
+  "device": "cuda",
+  "source": "MEASURED",
+  "run_id": "b8169b2eba6c45578365d4e91879779b",
+  "process_identity": {
+    "pid": 277812,
+    "pgid": 277812,
+    "start_token": "1028235343",
+    "method": "linux_proc_start_ticks"
+  },
+  "status": "failed",
+  "step": 7,
+  "heartbeat": 1793682745.641842,
+  "checkpoint_loaded": null,
+  "gate_wait_seconds": 1.1434621904045343,
+  "device_uuid": "00000000-0000-0000-0000-000000000004",
+  "device_name": "NVIDIA GeForce RTX 3090",
+  "mapping_verification_level": "uuid_observed",
+  "parameter_count": 124439808,
+  "loss": 10.90999698638916,
+  "train_step_ms": 105.0217691808939,
+  "committed_checkpoint_step": 5,
+  "committed_checkpoint_sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+  "gate_note": "Driver synchronization; excluded from train_step_ms",
+  "error": "termination signal 15"
+}

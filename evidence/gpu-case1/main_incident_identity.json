@@ -1,0 +1,17 @@
+{
+  "incident_id": "incident-20361f4c7c3942d3bd13e11d7da1dfbb",
+  "worker_run_id": "b8169b2eba6c45578365d4e91879779b",
+  "experiment_path": "gpu_matrix_01/gpt2_recover",
+  "epochs": [
+    0,
+    1
+  ],
+  "plan_versions": {
+    "0": 0,
+    "1": 1
+  },
+  "attempts": 1,
+  "timeline_rows": 135,
+  "candidate_rows": 3,
+  "scope": "All narrative/timeline/candidate rows originate from this one GPT-2 incident."
+}

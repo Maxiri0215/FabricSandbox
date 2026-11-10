@@ -1,0 +1,329 @@
+{
+  "verified_at_utc": "2026-11-03T08:11:43.662498+00:00",
+  "activity": "read-only existing evidence audit/export; no training, recovery or unit tests rerun",
+  "passed": true,
+  "check_count": 60,
+  "checks": [
+    {
+      "name": "all_original_copies_match_recorded_and_present_source_hash",
+      "passed": true,
+      "detail": {
+        "copied_file_count": 219
+      }
+    },
+    {
+      "name": "all_raw_matrix_files_preserve_relative_tree",
+      "passed": true,
+      "detail": {
+        "count": 118,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "name": "all_required_generated_artifacts_exist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_required_original_artifacts_exist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_matches_execution_manifest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "production_source_unchanged_since_GPU_run",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_executed_required_source_files_in_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old_A1_A2_A5_original_hashes_preserved",
+      "passed": true,
+      "detail": {
+        "file_count": 15
+      }
+    },
+    {
+      "name": "old_A1_A2_A5_core_files_present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_formal_GPT2_and_one_separate_tiny",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_baseline_recorded_state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_baseline_GPT2_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_baseline_epoch-0_rank_0_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_baseline_epoch-0_rank_0_all_expected_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_baseline_epoch-0_rank_1_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_baseline_epoch-0_rank_1_all_expected_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_no_repair_recorded_state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_no_repair_no_false_completion_or_zero_recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_no_repair_no_fabricated_controller_timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_no_repair_GPT2_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_no_repair_epoch-0_rank_0_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_no_repair_epoch-0_rank_1_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_recorded_state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_GPT2_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_epoch-1_rank_0_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_epoch-1_rank_0_all_expected_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_epoch-1_rank_1_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_epoch-1_rank_1_all_expected_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_epoch-0_rank_0_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_recover_epoch-0_rank_1_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_blocked_recorded_state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_blocked_no_false_completion_or_zero_recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_blocked_GPT2_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_blocked_epoch-0_rank_0_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpt2_blocked_epoch-0_rank_1_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tiny_smoke_recorded_state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tiny_smoke_epoch-1_rank_0_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tiny_smoke_epoch-1_rank_0_all_expected_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tiny_smoke_epoch-1_rank_1_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tiny_smoke_epoch-1_rank_1_all_expected_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tiny_smoke_epoch-0_rank_0_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tiny_smoke_epoch-0_rank_1_finite_real_training",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "overview_populated_fields_source_references_resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "one_incident_all_timeline_and_candidate_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "trace_exactly_matches_incident_events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timeline_original_time_fields_units_epochs_resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "timeline_chronologically_ordered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_controller_and_rank_JSONL_events_in_timeline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_candidates_and_source_fields_match",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "all_rounds_all_attempts_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_restore_source_distinguished_from_latest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_group_started_only_after_old_group_stopped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "restored_checkpoint_committed_before_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "three_metric_endpoints_recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_11_verification_checks_and_UUID_mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_JSON_JSONL_parse",
+      "passed": true,
+      "detail": {
+        "files": 140,
+        "errors": []
+      }
+    },
+    {
+      "name": "relative_HTML_links_remain_openable",
+      "passed": true,
+      "detail": {
+        "relative_link_count": 5,
+        "broken": []
+      }
+    },
+    {
+      "name": "no_weights_environment_cache_or_symlinks",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_configured_secret_or_private_key_payload_detected",
+      "passed": true,
+      "detail": {
+        "scanned_configured_secret_count": 0,
+        "matched_file_paths": [],
+        "method": "compare configured secret bytes and common key formats; no values emitted"
+      }
+    },
+    {
+      "name": "no_required_evidence_or_committed_weight_missing",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "raw_copy_count": 219,
+  "timeline_rows": 135,
+  "candidate_rows": 3
+}

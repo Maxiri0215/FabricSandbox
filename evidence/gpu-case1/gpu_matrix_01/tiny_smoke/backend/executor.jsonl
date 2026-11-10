@@ -1,0 +1,4 @@
+{"wall_time": 1793682518.1653616, "kind": "group_started", "epoch": 0, "pid": 276988, "slots": ["2", "3"], "version": 0, "resume_manifest": null}
+{"wall_time": 1793682528.1815643, "kind": "old_group_stopped", "epoch": 0, "launcher_pid": 276988, "exit_code": 1}
+{"wall_time": 1793682528.183566, "kind": "group_started", "epoch": 1, "pid": 277072, "slots": ["2", "4"], "version": 1, "resume_manifest": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/resume-for-epoch-1.json"}
+{"wall_time": 1793682536.6155791, "kind": "old_group_stopped", "epoch": 1, "launcher_pid": 277072, "exit_code": 0}

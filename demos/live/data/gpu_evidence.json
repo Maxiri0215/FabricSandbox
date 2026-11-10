@@ -1,0 +1,2248 @@
+{
+  "schema_version": 1,
+  "mode": "recorded_gpu_evidence",
+  "is_live": false,
+  "label": "真实 GPU 历史证据回放",
+  "disclosure": "2026-11-03 单机 CUDA/NCCL DDP 实测证据。当前页面仅回放，不执行GPU任务。 这是脱敏公开副本：个人路径、主机标识、GPU UUID 和 PCI 地址均为代称。11 项执行检查记录原始实验的历史结论，不代表对这些代称重新验证了硬件。来源文件 SHA256 对应脱敏后的公开副本；检查点摘要保留历史记录值，本导出没有重新计算检查点权重的摘要。",
+  "captured_at": "2026-11-03T13:11:48.857+08:00",
+  "captured_until": "2026-11-03T13:14:00.576+08:00",
+  "timezone": "Asia/Shanghai",
+  "exported_at": "2026-11-10T21:35:49+08:00",
+  "incident_id": "incident-20361f4c7c3942d3bd13e11d7da1dfbb",
+  "run_id": "b8169b2eba6c45578365d4e91879779b",
+  "source_bundle": "gpu-case1",
+  "source_run": "gpu_matrix_01/gpt2_recover",
+  "agent_mode": "rules",
+  "summary": "同一次真实GPT-2 Small DDP恢复事件：GPU[2,3]运行，rank1退出，规则Agent选[2,4]，由step5检查点恢复并完成step20。",
+  "stages": [
+    {
+      "id": "gpu-stage-1",
+      "step": 1,
+      "title": "输入与初始方案",
+      "summary": "真实 GPT-2 Small 两卡训练，授权池包含一张备用 GPU。",
+      "facts": [
+        {
+          "label": "模型",
+          "value": "GPT-2 Small · 124,439,808 参数",
+          "detail": "随机初始化、合成 token；运行真实前向、反向与 AdamW"
+        },
+        {
+          "label": "训练设置",
+          "value": "FP32 / 每 rank batch=1 / seq128"
+        },
+        {
+          "label": "通信组",
+          "value": "CUDA / NCCL DDP · world_size=2"
+        },
+        {
+          "label": "初始方案",
+          "value": "GPU [2,3]；备用 GPU4"
+        },
+        {
+          "label": "目标与提交间隔",
+          "value": "20 步 / 每 5 步提交检查点"
+        },
+        {
+          "label": "初始版本",
+          "value": "version=0 / execution epoch=0"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+          "sha256": "4f9d85b0ae624516712c8d0a609af13a2df6679fde4a15ddd5c3a95e2999eb61",
+          "bytes": 451
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/preflight.json",
+          "sha256": "af79195b7cf3c3047d7839f5538b6d1e96a27cb61138ae31d1cd6a5e4598d004",
+          "bytes": 890
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+          "sha256": "14b08d99b2d572bec5c70bb524801fc9af2b355a6c5df106f7d9dbd7e7c23b53",
+          "bytes": 682
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+          "sha256": "cdf3f98e07082610c68b9c733ca04ccef2b85b6733e766395f645dcee61332d2",
+          "bytes": 986
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+          "sha256": "7d9fa30f1e6ba0cf3f209a738edb93767e63aa078ab934183fda576e5382964b",
+          "bytes": 984
+        }
+      ],
+      "raw": {
+        "experiment_config": {
+          "backend": "live_gpu",
+          "allowed_slots": [
+            "2",
+            "3",
+            "4"
+          ],
+          "world_size": 2,
+          "model": "gpt2",
+          "steps": 20,
+          "checkpoint_every": 5,
+          "sequence_length": 128,
+          "initial_slots": [
+            "2",
+            "3"
+          ],
+          "fault_gate_step": 7,
+          "boundary": "Explicitly allocated slots only. Worker termination is not GPU hardware failure.",
+          "performance_note": "Gate/checkpoint/restart overhead is separate from per-step training duration."
+        },
+        "initial_launch": {
+          "wall_time": 1793682708.8565433,
+          "kind": "group_started",
+          "epoch": 0,
+          "pid": 277806,
+          "slots": [
+            "2",
+            "3"
+          ],
+          "version": 0,
+          "resume_manifest": null
+        },
+        "rank_identity": [
+          {
+            "run_id": "b8169b2eba6c45578365d4e91879779b",
+            "epoch": 0,
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277811,
+            "device_uuid": "00000000-0000-0000-0000-000000000003",
+            "device_name": "NVIDIA GeForce RTX 3090",
+            "process_identity": {
+              "pid": 277811,
+              "pgid": 277811,
+              "start_token": "1028235343",
+              "method": "linux_proc_start_ticks"
+            }
+          },
+          {
+            "run_id": "b8169b2eba6c45578365d4e91879779b",
+            "epoch": 0,
+            "rank": 1,
+            "slot_id": "3",
+            "pid": 277812,
+            "device_uuid": "00000000-0000-0000-0000-000000000004",
+            "device_name": "NVIDIA GeForce RTX 3090",
+            "process_identity": {
+              "pid": 277812,
+              "pgid": 277812,
+              "start_token": "1028235343",
+              "method": "linux_proc_start_ticks"
+            }
+          }
+        ],
+        "preflight_devices": [
+          {
+            "logical_id": 0,
+            "slot_id": "2",
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_bytes": 25017384960,
+            "total_bytes": 25307578368,
+            "uuid": "00000000-0000-0000-0000-000000000003"
+          },
+          {
+            "logical_id": 1,
+            "slot_id": "3",
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_bytes": 25017384960,
+            "total_bytes": 25307578368,
+            "uuid": "00000000-0000-0000-0000-000000000004"
+          },
+          {
+            "logical_id": 2,
+            "slot_id": "4",
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_bytes": 25017384960,
+            "total_bytes": 25307578368,
+            "uuid": "00000000-0000-0000-0000-000000000005"
+          }
+        ]
+      },
+      "presenter_note": "先说明输入、初始资源和版本；当前页面只回放当时记录，未连接 GPU 服务器。"
+    },
+    {
+      "id": "gpu-stage-2",
+      "step": 2,
+      "title": "真实异常",
+      "summary": "GPU3 上的 rank1 在 step7 被受控终止，worker 独立记录退出。",
+      "facts": [
+        {
+          "label": "异常",
+          "value": "SIGTERM (15) / worker 真实退出"
+        },
+        {
+          "label": "异常位置",
+          "value": "rank1 / GPU3 / PID277812"
+        },
+        {
+          "label": "最后报告进度",
+          "value": "step7"
+        },
+        {
+          "label": "记录时间",
+          "value": "2026-11-03T13:12:25.639+08:00"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-1.json",
+          "sha256": "35276f359296033a4c717dff803feeb082ca273c03d68c85ab8f1643939fde2a",
+          "bytes": 451
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+          "sha256": "8fe4293256dce4aa15aa3023a7ea2f7992bf209cef199b167bf521af8e929912",
+          "bytes": 78134
+        }
+      ],
+      "raw": {
+        "worker_exit": {
+          "pid": 277812,
+          "rank": 1,
+          "local_rank": 1,
+          "slot_id": "3",
+          "epoch": 0,
+          "world_size": 2,
+          "model": "gpt2",
+          "device": "cuda",
+          "source": "MEASURED",
+          "run_id": "b8169b2eba6c45578365d4e91879779b",
+          "process_identity": {
+            "pid": 277812,
+            "pgid": 277812,
+            "start_token": "1028235343",
+            "method": "linux_proc_start_ticks"
+          },
+          "kind": "termination_signal",
+          "signal": 15,
+          "observed_at": 1793682745.6396751,
+          "step": 7
+        },
+        "anomaly_observation": {
+          "index": 4,
+          "kind": "anomaly_detected",
+          "elapsed_ms": 36850.032940506935,
+          "wall_time": 1793682745.7075734,
+          "observation": {
+            "status": "failed",
+            "evidence": [
+              {
+                "id": "e0-launcher-1793682745700473363",
+                "kind": "launcher_status",
+                "target": "group-0",
+                "value": {
+                  "pid": 277806,
+                  "exit_code": null,
+                  "observed_at": 1793682745.6999917
+                }
+              },
+              {
+                "id": "e0-exit-1",
+                "kind": "worker_exit_observation",
+                "target": "3",
+                "value": {
+                  "pid": 277812,
+                  "rank": 1,
+                  "local_rank": 1,
+                  "slot_id": "3",
+                  "epoch": 0,
+                  "world_size": 2,
+                  "model": "gpt2",
+                  "device": "cuda",
+                  "source": "MEASURED",
+                  "run_id": "b8169b2eba6c45578365d4e91879779b",
+                  "process_identity": {
+                    "pid": 277812,
+                    "pgid": 277812,
+                    "start_token": "1028235343",
+                    "method": "linux_proc_start_ticks"
+                  },
+                  "kind": "termination_signal",
+                  "signal": 15,
+                  "observed_at": 1793682745.6396751,
+                  "step": 7
+                }
+              },
+              {
+                "id": "e0-rank-0-1793682745700798173",
+                "kind": "worker_progress",
+                "target": "2",
+                "value": {
+                  "pid": 277811,
+                  "rank": 0,
+                  "local_rank": 0,
+                  "slot_id": "2",
+                  "epoch": 0,
+                  "world_size": 2,
+                  "model": "gpt2",
+                  "device": "cuda",
+                  "source": "MEASURED",
+                  "run_id": "b8169b2eba6c45578365d4e91879779b",
+                  "process_identity": {
+                    "pid": 277811,
+                    "pgid": 277811,
+                    "start_token": "1028235343",
+                    "method": "linux_proc_start_ticks"
+                  },
+                  "status": "experiment_gate",
+                  "step": 7,
+                  "heartbeat": 1793682745.612428,
+                  "checkpoint_loaded": null,
+                  "gate_wait_seconds": 1.1434696391224861,
+                  "device_uuid": "00000000-0000-0000-0000-000000000003",
+                  "device_name": "NVIDIA GeForce RTX 3090",
+                  "mapping_verification_level": "uuid_observed",
+                  "parameter_count": 124439808,
+                  "loss": 10.991631507873535,
+                  "train_step_ms": 105.24646937847137,
+                  "committed_checkpoint_step": 5,
+                  "committed_checkpoint_sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "gate_note": "Driver synchronization; excluded from train_step_ms",
+                  "pid_alive": true,
+                  "observed_at": 1793682745.6999917
+                }
+              },
+              {
+                "id": "e0-rank-1-1793682745700884024",
+                "kind": "worker_progress",
+                "target": "3",
+                "value": {
+                  "pid": 277812,
+                  "rank": 1,
+                  "local_rank": 1,
+                  "slot_id": "3",
+                  "epoch": 0,
+                  "world_size": 2,
+                  "model": "gpt2",
+                  "device": "cuda",
+                  "source": "MEASURED",
+                  "run_id": "b8169b2eba6c45578365d4e91879779b",
+                  "process_identity": {
+                    "pid": 277812,
+                    "pgid": 277812,
+                    "start_token": "1028235343",
+                    "method": "linux_proc_start_ticks"
+                  },
+                  "status": "failed",
+                  "step": 7,
+                  "heartbeat": 1793682745.641842,
+                  "checkpoint_loaded": null,
+                  "gate_wait_seconds": 1.1434621904045343,
+                  "device_uuid": "00000000-0000-0000-0000-000000000004",
+                  "device_name": "NVIDIA GeForce RTX 3090",
+                  "mapping_verification_level": "uuid_observed",
+                  "parameter_count": 124439808,
+                  "loss": 10.90999698638916,
+                  "train_step_ms": 105.0217691808939,
+                  "committed_checkpoint_step": 5,
+                  "committed_checkpoint_sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "gate_note": "Driver synchronization; excluded from train_step_ms",
+                  "error": "termination signal 15",
+                  "pid_alive": true,
+                  "observed_at": 1793682745.6999917
+                }
+              }
+            ],
+            "facts": {
+              "epoch": 0,
+              "version": 0,
+              "ranks": [
+                {
+                  "pid": 277811,
+                  "rank": 0,
+                  "local_rank": 0,
+                  "slot_id": "2",
+                  "epoch": 0,
+                  "world_size": 2,
+                  "model": "gpt2",
+                  "device": "cuda",
+                  "source": "MEASURED",
+                  "run_id": "b8169b2eba6c45578365d4e91879779b",
+                  "process_identity": {
+                    "pid": 277811,
+                    "pgid": 277811,
+                    "start_token": "1028235343",
+                    "method": "linux_proc_start_ticks"
+                  },
+                  "status": "experiment_gate",
+                  "step": 7,
+                  "heartbeat": 1793682745.612428,
+                  "checkpoint_loaded": null,
+                  "gate_wait_seconds": 1.1434696391224861,
+                  "device_uuid": "00000000-0000-0000-0000-000000000003",
+                  "device_name": "NVIDIA GeForce RTX 3090",
+                  "mapping_verification_level": "uuid_observed",
+                  "parameter_count": 124439808,
+                  "loss": 10.991631507873535,
+                  "train_step_ms": 105.24646937847137,
+                  "committed_checkpoint_step": 5,
+                  "committed_checkpoint_sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "gate_note": "Driver synchronization; excluded from train_step_ms"
+                },
+                {
+                  "pid": 277812,
+                  "rank": 1,
+                  "local_rank": 1,
+                  "slot_id": "3",
+                  "epoch": 0,
+                  "world_size": 2,
+                  "model": "gpt2",
+                  "device": "cuda",
+                  "source": "MEASURED",
+                  "run_id": "b8169b2eba6c45578365d4e91879779b",
+                  "process_identity": {
+                    "pid": 277812,
+                    "pgid": 277812,
+                    "start_token": "1028235343",
+                    "method": "linux_proc_start_ticks"
+                  },
+                  "status": "failed",
+                  "step": 7,
+                  "heartbeat": 1793682745.641842,
+                  "checkpoint_loaded": null,
+                  "gate_wait_seconds": 1.1434621904045343,
+                  "device_uuid": "00000000-0000-0000-0000-000000000004",
+                  "device_name": "NVIDIA GeForce RTX 3090",
+                  "mapping_verification_level": "uuid_observed",
+                  "parameter_count": 124439808,
+                  "loss": 10.90999698638916,
+                  "train_step_ms": 105.0217691808939,
+                  "committed_checkpoint_step": 5,
+                  "committed_checkpoint_sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "gate_note": "Driver synchronization; excluded from train_step_ms",
+                  "error": "termination signal 15"
+                }
+              ],
+              "worker_exits": [
+                {
+                  "pid": 277812,
+                  "rank": 1,
+                  "local_rank": 1,
+                  "slot_id": "3",
+                  "epoch": 0,
+                  "world_size": 2,
+                  "model": "gpt2",
+                  "device": "cuda",
+                  "source": "MEASURED",
+                  "run_id": "b8169b2eba6c45578365d4e91879779b",
+                  "process_identity": {
+                    "pid": 277812,
+                    "pgid": 277812,
+                    "start_token": "1028235343",
+                    "method": "linux_proc_start_ticks"
+                  },
+                  "kind": "termination_signal",
+                  "signal": 15,
+                  "observed_at": 1793682745.6396751,
+                  "step": 7
+                }
+              ],
+              "launcher_exit_code": null,
+              "current_slots": [
+                "2",
+                "3"
+              ],
+              "allowed_slots": [
+                "2",
+                "3",
+                "4"
+              ]
+            }
+          }
+        }
+      },
+      "presenter_note": "展示 worker 的独立退出记录；这里尚未得出硬件或链路故障结论。"
+    },
+    {
+      "id": "gpu-stage-3",
+      "step": 3,
+      "title": "诊断证据",
+      "summary": "当前观测确认训练组失败；恢复策略临时隔离执行槽3。",
+      "facts": [
+        {
+          "label": "诊断代码",
+          "value": "worker_group_failed"
+        },
+        {
+          "label": "受影响执行槽",
+          "value": "GPU3"
+        },
+        {
+          "label": "证据引用",
+          "value": "e0-launcher-1793682745719445183, e0-exit-1, e0-rank-0-1793682745719775803, e0-rank-1-1793682745719866654"
+        },
+        {
+          "label": "结论边界",
+          "value": "已证实进程退出；硬件根因未证实"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+          "sha256": "8fe4293256dce4aa15aa3023a7ea2f7992bf209cef199b167bf521af8e929912",
+          "bytes": 78134
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-1.json",
+          "sha256": "35276f359296033a4c717dff803feeb082ca273c03d68c85ab8f1643939fde2a",
+          "bytes": 451
+        }
+      ],
+      "raw": {
+        "diagnosis": {
+          "code": "worker_group_failed",
+          "evidence_ids": [
+            "e0-launcher-1793682745719445183",
+            "e0-exit-1",
+            "e0-rank-0-1793682745719775803",
+            "e0-rank-1-1793682745719866654"
+          ],
+          "affected": [
+            "3"
+          ],
+          "explanation": "First worker exit observation on execution slot 3; temporarily isolate that slot by policy; restart the complete fixed-size group from a committed checkpoint",
+          "certainty": "process failure observed; hardware cause unproven",
+          "recovery_policy": "quarantine execution slots for this experiment only"
+        },
+        "cited_evidence": [
+          {
+            "id": "e0-launcher-1793682745719445183",
+            "kind": "launcher_status",
+            "target": "group-0",
+            "value": {
+              "pid": 277806,
+              "exit_code": null,
+              "observed_at": 1793682745.718873
+            }
+          },
+          {
+            "id": "e0-exit-1",
+            "kind": "worker_exit_observation",
+            "target": "3",
+            "value": {
+              "pid": 277812,
+              "rank": 1,
+              "local_rank": 1,
+              "slot_id": "3",
+              "epoch": 0,
+              "world_size": 2,
+              "model": "gpt2",
+              "device": "cuda",
+              "source": "MEASURED",
+              "run_id": "b8169b2eba6c45578365d4e91879779b",
+              "process_identity": {
+                "pid": 277812,
+                "pgid": 277812,
+                "start_token": "1028235343",
+                "method": "linux_proc_start_ticks"
+              },
+              "kind": "termination_signal",
+              "signal": 15,
+              "observed_at": 1793682745.6396751,
+              "step": 7
+            }
+          },
+          {
+            "id": "e0-rank-0-1793682745719775803",
+            "kind": "worker_progress",
+            "target": "2",
+            "value": {
+              "pid": 277811,
+              "rank": 0,
+              "local_rank": 0,
+              "slot_id": "2",
+              "epoch": 0,
+              "world_size": 2,
+              "model": "gpt2",
+              "device": "cuda",
+              "source": "MEASURED",
+              "run_id": "b8169b2eba6c45578365d4e91879779b",
+              "process_identity": {
+                "pid": 277811,
+                "pgid": 277811,
+                "start_token": "1028235343",
+                "method": "linux_proc_start_ticks"
+              },
+              "status": "experiment_gate",
+              "step": 7,
+              "heartbeat": 1793682745.612428,
+              "checkpoint_loaded": null,
+              "gate_wait_seconds": 1.1434696391224861,
+              "device_uuid": "00000000-0000-0000-0000-000000000003",
+              "device_name": "NVIDIA GeForce RTX 3090",
+              "mapping_verification_level": "uuid_observed",
+              "parameter_count": 124439808,
+              "loss": 10.991631507873535,
+              "train_step_ms": 105.24646937847137,
+              "committed_checkpoint_step": 5,
+              "committed_checkpoint_sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+              "gate_note": "Driver synchronization; excluded from train_step_ms",
+              "pid_alive": true,
+              "observed_at": 1793682745.718873
+            }
+          },
+          {
+            "id": "e0-rank-1-1793682745719866654",
+            "kind": "worker_progress",
+            "target": "3",
+            "value": {
+              "pid": 277812,
+              "rank": 1,
+              "local_rank": 1,
+              "slot_id": "3",
+              "epoch": 0,
+              "world_size": 2,
+              "model": "gpt2",
+              "device": "cuda",
+              "source": "MEASURED",
+              "run_id": "b8169b2eba6c45578365d4e91879779b",
+              "process_identity": {
+                "pid": 277812,
+                "pgid": 277812,
+                "start_token": "1028235343",
+                "method": "linux_proc_start_ticks"
+              },
+              "status": "failed",
+              "step": 7,
+              "heartbeat": 1793682745.641842,
+              "checkpoint_loaded": null,
+              "gate_wait_seconds": 1.1434621904045343,
+              "device_uuid": "00000000-0000-0000-0000-000000000004",
+              "device_name": "NVIDIA GeForce RTX 3090",
+              "mapping_verification_level": "uuid_observed",
+              "parameter_count": 124439808,
+              "loss": 10.90999698638916,
+              "train_step_ms": 105.0217691808939,
+              "committed_checkpoint_step": 5,
+              "committed_checkpoint_sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+              "gate_note": "Driver synchronization; excluded from train_step_ms",
+              "error": "termination signal 15",
+              "pid_alive": true,
+              "observed_at": 1793682745.718873
+            }
+          }
+        ]
+      },
+      "presenter_note": "诊断只引用当前观测的 evidence_id。隔离槽3是一项恢复策略，不等于判定GPU3损坏。"
+    },
+    {
+      "id": "gpu-stage-4",
+      "step": 4,
+      "title": "候选及拒绝理由",
+      "summary": "枚举授权池中的完整两卡组，先检查可行性。",
+      "facts": [
+        {
+          "label": "[2,3] · cost=0",
+          "value": "拒绝：包含隔离槽3"
+        },
+        {
+          "label": "[2,4] · cost=1",
+          "value": "可行：通过当前全部约束"
+        },
+        {
+          "label": "[3,4] · cost=1",
+          "value": "拒绝：包含隔离槽3"
+        },
+        {
+          "label": "共同约束",
+          "value": "授权池、两卡完整组、版本、隔离与兼容检查点"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+          "sha256": "8fe4293256dce4aa15aa3023a7ea2f7992bf209cef199b167bf521af8e929912",
+          "bytes": 78134
+        }
+      ],
+      "raw": {
+        "candidate_round": [
+          {
+            "candidate": {
+              "id": "ddp-v0-0",
+              "version": 0,
+              "action": "restart_group",
+              "target": [
+                "2",
+                "3"
+              ],
+              "cost": 0,
+              "changes": {
+                "from_slots": [
+                  "2",
+                  "3"
+                ],
+                "to_slots": [
+                  "2",
+                  "3"
+                ],
+                "moved_slots": 0,
+                "world_size": 2,
+                "all_rank_processes_restart": true
+              },
+              "policy": "minimize changed slots after feasibility filtering"
+            },
+            "feasible": false,
+            "rejection_reasons": [
+              "target includes an execution slot quarantined by recovery policy"
+            ]
+          },
+          {
+            "candidate": {
+              "id": "ddp-v0-1",
+              "version": 0,
+              "action": "restart_group",
+              "target": [
+                "2",
+                "4"
+              ],
+              "cost": 1,
+              "changes": {
+                "from_slots": [
+                  "2",
+                  "3"
+                ],
+                "to_slots": [
+                  "2",
+                  "4"
+                ],
+                "moved_slots": 1,
+                "world_size": 2,
+                "all_rank_processes_restart": true
+              },
+              "policy": "minimize changed slots after feasibility filtering"
+            },
+            "feasible": true,
+            "rejection_reasons": []
+          },
+          {
+            "candidate": {
+              "id": "ddp-v0-2",
+              "version": 0,
+              "action": "restart_group",
+              "target": [
+                "3",
+                "4"
+              ],
+              "cost": 1,
+              "changes": {
+                "from_slots": [
+                  "2",
+                  "3"
+                ],
+                "to_slots": [
+                  "3",
+                  "4"
+                ],
+                "moved_slots": 1,
+                "world_size": 2,
+                "all_rank_processes_restart": true
+              },
+              "policy": "minimize changed slots after feasibility filtering"
+            },
+            "feasible": false,
+            "rejection_reasons": [
+              "target includes an execution slot quarantined by recovery policy"
+            ]
+          }
+        ],
+        "candidates": [
+          {
+            "id": "ddp-v0-0",
+            "version": 0,
+            "target": [
+              "2",
+              "3"
+            ],
+            "cost": 0,
+            "feasible": false,
+            "rejection_reasons": [
+              "target includes an execution slot quarantined by recovery policy"
+            ],
+            "rejection_summary": "包含按恢复策略隔离的 GPU3"
+          },
+          {
+            "id": "ddp-v0-1",
+            "version": 0,
+            "target": [
+              "2",
+              "4"
+            ],
+            "cost": 1,
+            "feasible": true,
+            "rejection_reasons": [],
+            "rejection_summary": "通过约束校验"
+          },
+          {
+            "id": "ddp-v0-2",
+            "version": 0,
+            "target": [
+              "3",
+              "4"
+            ],
+            "cost": 1,
+            "feasible": false,
+            "rejection_reasons": [
+              "target includes an execution slot quarantined by recovery policy"
+            ],
+            "rejection_summary": "包含按恢复策略隔离的 GPU3"
+          }
+        ]
+      },
+      "presenter_note": "先展示所有候选与原始拒绝理由。此处不展示最终选择，也不暗示实时显存或网络性能已参与评分。"
+    },
+    {
+      "id": "gpu-stage-5",
+      "step": 5,
+      "title": "所选方案",
+      "summary": "规则按 (cost,id) 排序，选中唯一可行候选 [2,4]。",
+      "facts": [
+        {
+          "label": "候选 ID",
+          "value": "ddp-v0-1"
+        },
+        {
+          "label": "目标组",
+          "value": "[2,4]"
+        },
+        {
+          "label": "代价",
+          "value": "1 个新引入的 GPU 槽"
+        },
+        {
+          "label": "选择规则",
+          "value": "minimum_declared_cost_then_id"
+        },
+        {
+          "label": "显式校验",
+          "value": "passed=true / rejection_reasons=[]"
+        },
+        {
+          "label": "进程处理",
+          "value": "GPU2 的位置保留，两个 rank 进程均重启"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+          "sha256": "8fe4293256dce4aa15aa3023a7ea2f7992bf209cef199b167bf521af8e929912",
+          "bytes": 78134
+        }
+      ],
+      "raw": {
+        "selection_event": {
+          "index": 11,
+          "kind": "selection",
+          "elapsed_ms": 36903.40912528336,
+          "wall_time": 1793682745.7609499,
+          "candidate_id": "ddp-v0-1",
+          "rule": "minimum_declared_cost_then_id",
+          "note": "Bounded heuristic over generated candidates, not a global optimum"
+        },
+        "selected_plan": {
+          "id": "ddp-v0-1",
+          "version": 0,
+          "action": "restart_group",
+          "target": [
+            "2",
+            "4"
+          ],
+          "cost": 1,
+          "changes": {
+            "from_slots": [
+              "2",
+              "3"
+            ],
+            "to_slots": [
+              "2",
+              "4"
+            ],
+            "moved_slots": 1,
+            "world_size": 2,
+            "all_rank_processes_restart": true
+          },
+          "policy": "minimize changed slots after feasibility filtering"
+        },
+        "validation_result": {
+          "index": 13,
+          "kind": "tool_result",
+          "elapsed_ms": 36920.942820608616,
+          "wall_time": 1793682745.7784834,
+          "tool": "validate",
+          "result": {
+            "candidate_id": "ddp-v0-1",
+            "passed": true,
+            "rejection_reasons": []
+          }
+        }
+      },
+      "presenter_note": "本轮只有一个可行方案。最少换卡不是网络性能最优，选中和校验通过也还不等于恢复成功。"
+    },
+    {
+      "id": "gpu-stage-6",
+      "step": 6,
+      "title": "执行过程",
+      "summary": "冻结 step5 恢复源，确认旧组退出，再在 GPU2、4 建立新组。",
+      "facts": [
+        {
+          "label": "冻结恢复源",
+          "value": "epoch0 / step5"
+        },
+        {
+          "label": "检查点 SHA256",
+          "value": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95"
+        },
+        {
+          "label": "回滚",
+          "value": "step7 → step5，回滚 2 步"
+        },
+        {
+          "label": "旧进程",
+          "value": "GPU2 PID277811 / GPU3 PID277812"
+        },
+        {
+          "label": "新进程",
+          "value": "GPU2 PID277983 / GPU4 PID277984"
+        },
+        {
+          "label": "版本变化",
+          "value": "version 0→1 / execution epoch 0→1"
+        },
+        {
+          "label": "执行回执",
+          "value": "started",
+          "detail": "启动成功还需要等待 verify"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/execution-epoch-1.json",
+          "sha256": "547dbb4d0ba395f9f6444ecb64a0a2b53a94785269a60cd316bb9538ded2435b",
+          "bytes": 908
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json",
+          "sha256": "649e878b08525a9423313ebc8eaf1d424faa277940b77486262bf60f185430a4",
+          "bytes": 284
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+          "sha256": "14b08d99b2d572bec5c70bb524801fc9af2b355a6c5df106f7d9dbd7e7c23b53",
+          "bytes": 682
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+          "sha256": "cdf3f98e07082610c68b9c733ca04ccef2b85b6733e766395f645dcee61332d2",
+          "bytes": 986
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+          "sha256": "7d9fa30f1e6ba0cf3f209a738edb93767e63aa078ab934183fda576e5382964b",
+          "bytes": 984
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+          "sha256": "342a7df9be50227ecf171f724ac384706383274808df6eba6d66ecbb05e846e4",
+          "bytes": 1051
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+          "sha256": "122979faa78e885152b803011d0b2ac0db3d51927a968e77eec69cc53b495c57",
+          "bytes": 1052
+        }
+      ],
+      "raw": {
+        "execution_receipt": {
+          "backend": "live_gpu",
+          "candidate_id": "ddp-v0-1",
+          "idempotency_key": "incident-20361f4c7c3942d3bd13e11d7da1dfbb:1:cbf774d60dd15d2d8935239d6f336d3f5da50687ceb0555240452267953e7eed",
+          "version": 1,
+          "old_epoch": 0,
+          "new_epoch": 1,
+          "from_slots": [
+            "2",
+            "3"
+          ],
+          "to_slots": [
+            "2",
+            "4"
+          ],
+          "old_worker_pids": [
+            277811,
+            277812
+          ],
+          "launcher_pid": 277964,
+          "checkpoint": {
+            "file": "checkpoints/checkpoint-e0-s5.pt",
+            "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+            "step": 5,
+            "epoch": 0,
+            "world_size": 2,
+            "model": "gpt2",
+            "sequence_length": 128,
+            "committed_at": 1793682744.1388533,
+            "size_bytes": 1493476631
+          },
+          "started_at": 1793682746.9533815,
+          "status": "started",
+          "world_size": 2,
+          "last_common_reported_step": 7,
+          "rollback_reported_steps": 2,
+          "observed_failure_at": 1793682745.6396751
+        },
+        "frozen_resume_manifest": {
+          "file": "checkpoints/checkpoint-e0-s5.pt",
+          "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+          "step": 5,
+          "epoch": 0,
+          "world_size": 2,
+          "model": "gpt2",
+          "sequence_length": 128,
+          "committed_at": 1793682744.1388533,
+          "size_bytes": 1493476631
+        },
+        "stop_and_start": [
+          {
+            "wall_time": 1793682746.9516473,
+            "kind": "old_group_stopped",
+            "epoch": 0,
+            "launcher_pid": 277806,
+            "exit_code": 1
+          },
+          {
+            "wall_time": 1793682746.9533405,
+            "kind": "group_started",
+            "epoch": 1,
+            "pid": 277964,
+            "slots": [
+              "2",
+              "4"
+            ],
+            "version": 1,
+            "resume_manifest": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json"
+          }
+        ],
+        "before": [
+          {
+            "run_id": "b8169b2eba6c45578365d4e91879779b",
+            "epoch": 0,
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277811,
+            "device_uuid": "00000000-0000-0000-0000-000000000003",
+            "device_name": "NVIDIA GeForce RTX 3090",
+            "process_identity": {
+              "pid": 277811,
+              "pgid": 277811,
+              "start_token": "1028235343",
+              "method": "linux_proc_start_ticks"
+            }
+          },
+          {
+            "run_id": "b8169b2eba6c45578365d4e91879779b",
+            "epoch": 0,
+            "rank": 1,
+            "slot_id": "3",
+            "pid": 277812,
+            "device_uuid": "00000000-0000-0000-0000-000000000004",
+            "device_name": "NVIDIA GeForce RTX 3090",
+            "process_identity": {
+              "pid": 277812,
+              "pgid": 277812,
+              "start_token": "1028235343",
+              "method": "linux_proc_start_ticks"
+            }
+          }
+        ],
+        "after": [
+          {
+            "run_id": "b8169b2eba6c45578365d4e91879779b",
+            "epoch": 1,
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "device_uuid": "00000000-0000-0000-0000-000000000003",
+            "device_name": "NVIDIA GeForce RTX 3090",
+            "process_identity": {
+              "pid": 277983,
+              "pgid": 277983,
+              "start_token": "1028239156",
+              "method": "linux_proc_start_ticks"
+            },
+            "checkpoint_loaded": {
+              "step": 5,
+              "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+              "file": "checkpoints/checkpoint-e0-s5.pt"
+            }
+          },
+          {
+            "run_id": "b8169b2eba6c45578365d4e91879779b",
+            "epoch": 1,
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "device_uuid": "00000000-0000-0000-0000-000000000005",
+            "device_name": "NVIDIA GeForce RTX 3090",
+            "process_identity": {
+              "pid": 277984,
+              "pgid": 277984,
+              "start_token": "1028239156",
+              "method": "linux_proc_start_ticks"
+            },
+            "checkpoint_loaded": {
+              "step": 5,
+              "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+              "file": "checkpoints/checkpoint-e0-s5.pt"
+            }
+          }
+        ]
+      },
+      "presenter_note": "执行回执仅为started。用独立的先停后启时间和新PID说明执行发生，再转入结果验证。"
+    },
+    {
+      "id": "gpu-stage-7",
+      "step": 7,
+      "title": "新进度与验证结果",
+      "summary": "两 rank 产生 step6–20 的新训练记录，11 项检查通过。",
+      "facts": [
+        {
+          "label": "最终状态",
+          "value": "recovered"
+        },
+        {
+          "label": "检查结果",
+          "value": "11 / 11 通过"
+        },
+        {
+          "label": "新训练进度",
+          "value": "step6：从检查点继续；step8：超过故障前；step20：完成目标"
+        },
+        {
+          "label": "物理 GPU 身份",
+          "value": "uuid_verified"
+        },
+        {
+          "label": "训练状态",
+          "value": "同一 step5 / SHA256 恢复，world_size=2"
+        },
+        {
+          "label": "成功依据",
+          "value": "新 PID、实际 UUID、训练进度、有限 loss、正常退出"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/verification-epoch-1.json",
+          "sha256": "5f9accd0f5efee165a678dd5b8bb7acc98286c278ac8524d0316b27468eb1cb9",
+          "bytes": 8050
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.jsonl",
+          "sha256": "e3fd0b007a521ce3a44edcce751aca3e5499fd7c096ce63248d31473ae437c2e",
+          "bytes": 10605
+        },
+        {
+          "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.jsonl",
+          "sha256": "d61099a5f2ca1492263b97854855a67e85707da25fb8e5a3932681d6c77adf88",
+          "bytes": 10605
+        }
+      ],
+      "raw": {
+        "verification": {
+          "recovered": true,
+          "evidence": [
+            {
+              "id": "e1-launcher-1793682840545152761",
+              "kind": "launcher_status",
+              "target": "group-1",
+              "value": {
+                "pid": 277964,
+                "exit_code": 0,
+                "observed_at": 1793682840.5447528
+              }
+            },
+            {
+              "id": "e1-rank-0-1793682840545263561",
+              "kind": "worker_progress",
+              "target": "2",
+              "value": {
+                "pid": 277983,
+                "rank": 0,
+                "local_rank": 0,
+                "slot_id": "2",
+                "epoch": 1,
+                "world_size": 2,
+                "model": "gpt2",
+                "device": "cuda",
+                "source": "MEASURED",
+                "run_id": "b8169b2eba6c45578365d4e91879779b",
+                "process_identity": {
+                  "pid": 277983,
+                  "pgid": 277983,
+                  "start_token": "1028239156",
+                  "method": "linux_proc_start_ticks"
+                },
+                "status": "completed",
+                "step": 20,
+                "heartbeat": 1793682838.309337,
+                "checkpoint_loaded": {
+                  "step": 5,
+                  "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "file": "checkpoints/checkpoint-e0-s5.pt"
+                },
+                "gate_wait_seconds": 0.0,
+                "device_uuid": "00000000-0000-0000-0000-000000000003",
+                "device_name": "NVIDIA GeForce RTX 3090",
+                "mapping_verification_level": "uuid_observed",
+                "parameter_count": 124439808,
+                "loss": 10.930152893066406,
+                "train_step_ms": 264.02536779642105,
+                "committed_checkpoint_step": 20,
+                "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+                "completed_at": 1793682838.309333,
+                "pid_alive": false,
+                "observed_at": 1793682840.5447528
+              }
+            },
+            {
+              "id": "e1-rank-1-1793682840545271351",
+              "kind": "worker_progress",
+              "target": "4",
+              "value": {
+                "pid": 277984,
+                "rank": 1,
+                "local_rank": 1,
+                "slot_id": "4",
+                "epoch": 1,
+                "world_size": 2,
+                "model": "gpt2",
+                "device": "cuda",
+                "source": "MEASURED",
+                "run_id": "b8169b2eba6c45578365d4e91879779b",
+                "process_identity": {
+                  "pid": 277984,
+                  "pgid": 277984,
+                  "start_token": "1028239156",
+                  "method": "linux_proc_start_ticks"
+                },
+                "status": "completed",
+                "step": 20,
+                "heartbeat": 1793682838.3101811,
+                "checkpoint_loaded": {
+                  "step": 5,
+                  "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "file": "checkpoints/checkpoint-e0-s5.pt"
+                },
+                "gate_wait_seconds": 0.0,
+                "device_uuid": "00000000-0000-0000-0000-000000000005",
+                "device_name": "NVIDIA GeForce RTX 3090",
+                "mapping_verification_level": "uuid_observed",
+                "parameter_count": 124439808,
+                "loss": 10.94231128692627,
+                "train_step_ms": 264.06173035502434,
+                "committed_checkpoint_step": 20,
+                "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+                "completed_at": 1793682838.3101785,
+                "pid_alive": false,
+                "observed_at": 1793682840.5447528
+              }
+            }
+          ],
+          "details": {
+            "checks": {
+              "two_rank_records": true,
+              "all_ranks_completed": true,
+              "target_steps_reached": true,
+              "fixed_world_size": true,
+              "finite_final_loss": true,
+              "launcher_exit_zero": true,
+              "restored_exact_checkpoint": true,
+              "configured_slot_mapping": true,
+              "available_uuid_check_passed": true,
+              "new_worker_pids": true,
+              "new_effective_progress": true
+            },
+            "ranks": [
+              {
+                "pid": 277983,
+                "rank": 0,
+                "local_rank": 0,
+                "slot_id": "2",
+                "epoch": 1,
+                "world_size": 2,
+                "model": "gpt2",
+                "device": "cuda",
+                "source": "MEASURED",
+                "run_id": "b8169b2eba6c45578365d4e91879779b",
+                "process_identity": {
+                  "pid": 277983,
+                  "pgid": 277983,
+                  "start_token": "1028239156",
+                  "method": "linux_proc_start_ticks"
+                },
+                "status": "completed",
+                "step": 20,
+                "heartbeat": 1793682838.309337,
+                "checkpoint_loaded": {
+                  "step": 5,
+                  "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "file": "checkpoints/checkpoint-e0-s5.pt"
+                },
+                "gate_wait_seconds": 0.0,
+                "device_uuid": "00000000-0000-0000-0000-000000000003",
+                "device_name": "NVIDIA GeForce RTX 3090",
+                "mapping_verification_level": "uuid_observed",
+                "parameter_count": 124439808,
+                "loss": 10.930152893066406,
+                "train_step_ms": 264.02536779642105,
+                "committed_checkpoint_step": 20,
+                "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+                "completed_at": 1793682838.309333
+              },
+              {
+                "pid": 277984,
+                "rank": 1,
+                "local_rank": 1,
+                "slot_id": "4",
+                "epoch": 1,
+                "world_size": 2,
+                "model": "gpt2",
+                "device": "cuda",
+                "source": "MEASURED",
+                "run_id": "b8169b2eba6c45578365d4e91879779b",
+                "process_identity": {
+                  "pid": 277984,
+                  "pgid": 277984,
+                  "start_token": "1028239156",
+                  "method": "linux_proc_start_ticks"
+                },
+                "status": "completed",
+                "step": 20,
+                "heartbeat": 1793682838.3101811,
+                "checkpoint_loaded": {
+                  "step": 5,
+                  "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+                  "file": "checkpoints/checkpoint-e0-s5.pt"
+                },
+                "gate_wait_seconds": 0.0,
+                "device_uuid": "00000000-0000-0000-0000-000000000005",
+                "device_name": "NVIDIA GeForce RTX 3090",
+                "mapping_verification_level": "uuid_observed",
+                "parameter_count": 124439808,
+                "loss": 10.94231128692627,
+                "train_step_ms": 264.06173035502434,
+                "committed_checkpoint_step": 20,
+                "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+                "completed_at": 1793682838.3101785
+              }
+            ],
+            "backend": "live_gpu",
+            "verification_scope": "complete training after checkpoint restore",
+            "checkpoint_step": 5,
+            "target_step": 20,
+            "rollback_reported_steps": 2,
+            "first_new_step_per_rank": [
+              {
+                "wall_time": 1793682758.191499,
+                "pid": 277983,
+                "rank": 0,
+                "local_rank": 0,
+                "slot_id": "2",
+                "epoch": 1,
+                "world_size": 2,
+                "model": "gpt2",
+                "device": "cuda",
+                "source": "MEASURED",
+                "run_id": "b8169b2eba6c45578365d4e91879779b",
+                "process_identity": {
+                  "pid": 277983,
+                  "pgid": 277983,
+                  "start_token": "1028239156",
+                  "method": "linux_proc_start_ticks"
+                },
+                "status": "running",
+                "step": 6,
+                "loss": 10.941666603088379,
+                "train_step_ms": 546.1961291730404
+              },
+              {
+                "wall_time": 1793682758.1915653,
+                "pid": 277984,
+                "rank": 1,
+                "local_rank": 1,
+                "slot_id": "4",
+                "epoch": 1,
+                "world_size": 2,
+                "model": "gpt2",
+                "device": "cuda",
+                "source": "MEASURED",
+                "run_id": "b8169b2eba6c45578365d4e91879779b",
+                "process_identity": {
+                  "pid": 277984,
+                  "pgid": 277984,
+                  "start_token": "1028239156",
+                  "method": "linux_proc_start_ticks"
+                },
+                "status": "running",
+                "step": 6,
+                "loss": 10.917540550231934,
+                "train_step_ms": 545.6445813179016
+              }
+            ],
+            "observed_failure_to_resumed_progress_ms": 12551.890134811401,
+            "mapping_verification": {
+              "configured_slot_mapping": true,
+              "mapping_verification_level": "uuid_verified",
+              "actual_device_identity_verified": true,
+              "available_uuid_check_passed": true,
+              "note": "Logical-only mapping cannot independently prove physical GPU identity."
+            }
+          }
+        },
+        "progress_keyframes": [
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 6,
+            "wall_time": 1793682758.191499,
+            "loss": 10.941666603088379,
+            "train_step_ms": 546.1961291730404,
+            "recorded_at": "2026-11-03T13:12:38.191+08:00"
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 8,
+            "wall_time": 1793682758.8245919,
+            "loss": 10.959171295166016,
+            "train_step_ms": 267.789451405406,
+            "recorded_at": "2026-11-03T13:12:38.824+08:00"
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 20,
+            "wall_time": 1793682813.0154765,
+            "loss": 10.930152893066406,
+            "train_step_ms": 264.02536779642105,
+            "recorded_at": "2026-11-03T13:13:33.015+08:00"
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 6,
+            "wall_time": 1793682758.1915653,
+            "loss": 10.917540550231934,
+            "train_step_ms": 545.6445813179016,
+            "recorded_at": "2026-11-03T13:12:38.191+08:00"
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 8,
+            "wall_time": 1793682758.8252347,
+            "loss": 10.981339454650879,
+            "train_step_ms": 267.6883637905121,
+            "recorded_at": "2026-11-03T13:12:38.825+08:00"
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 20,
+            "wall_time": 1793682813.0166633,
+            "loss": 10.94231128692627,
+            "train_step_ms": 264.06173035502434,
+            "recorded_at": "2026-11-03T13:13:33.016+08:00"
+          }
+        ],
+        "progress": [
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 6,
+            "wall_time": 1793682758.191499,
+            "loss": 10.941666603088379,
+            "train_step_ms": 546.1961291730404
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 7,
+            "wall_time": 1793682758.4992566,
+            "loss": 10.991631507873535,
+            "train_step_ms": 254.64669056236744
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 8,
+            "wall_time": 1793682758.8245919,
+            "loss": 10.959171295166016,
+            "train_step_ms": 267.789451405406
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 9,
+            "wall_time": 1793682759.1327884,
+            "loss": 10.870071411132812,
+            "train_step_ms": 254.45090793073177
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 10,
+            "wall_time": 1793682759.454146,
+            "loss": 10.871216773986816,
+            "train_step_ms": 268.0118326097727
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 11,
+            "wall_time": 1793682785.00829,
+            "loss": 11.027782440185547,
+            "train_step_ms": 258.874936029315
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 12,
+            "wall_time": 1793682785.3220515,
+            "loss": 11.013394355773926,
+            "train_step_ms": 259.03407484292984
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 13,
+            "wall_time": 1793682785.6237714,
+            "loss": 11.039558410644531,
+            "train_step_ms": 248.6373893916607
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 14,
+            "wall_time": 1793682785.9380696,
+            "loss": 11.052446365356445,
+            "train_step_ms": 261.42616756260395
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 15,
+            "wall_time": 1793682786.2454307,
+            "loss": 11.09986686706543,
+            "train_step_ms": 254.16996702551842
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 16,
+            "wall_time": 1793682811.7645164,
+            "loss": 10.947061538696289,
+            "train_step_ms": 267.59172417223454
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 17,
+            "wall_time": 1793682812.0747797,
+            "loss": 11.086480140686035,
+            "train_step_ms": 257.0732403546572
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 18,
+            "wall_time": 1793682812.3947175,
+            "loss": 10.9601411819458,
+            "train_step_ms": 265.6661421060562
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 19,
+            "wall_time": 1793682812.6976457,
+            "loss": 10.899276733398438,
+            "train_step_ms": 249.6615294367075
+          },
+          {
+            "rank": 0,
+            "slot_id": "2",
+            "pid": 277983,
+            "epoch": 1,
+            "step": 20,
+            "wall_time": 1793682813.0154765,
+            "loss": 10.930152893066406,
+            "train_step_ms": 264.02536779642105
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 6,
+            "wall_time": 1793682758.1915653,
+            "loss": 10.917540550231934,
+            "train_step_ms": 545.6445813179016
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 7,
+            "wall_time": 1793682758.499314,
+            "loss": 10.90999698638916,
+            "train_step_ms": 254.50889021158218
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 8,
+            "wall_time": 1793682758.8252347,
+            "loss": 10.981339454650879,
+            "train_step_ms": 267.6883637905121
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 9,
+            "wall_time": 1793682759.1327312,
+            "loss": 11.022220611572266,
+            "train_step_ms": 253.7686489522457
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 10,
+            "wall_time": 1793682759.454203,
+            "loss": 10.958361625671387,
+            "train_step_ms": 268.00958067178726
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 11,
+            "wall_time": 1793682785.0083234,
+            "loss": 10.905069351196289,
+            "train_step_ms": 258.6950156837702
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 12,
+            "wall_time": 1793682785.321972,
+            "loss": 11.069172859191895,
+            "train_step_ms": 258.95213708281517
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 13,
+            "wall_time": 1793682785.623704,
+            "loss": 11.021139144897461,
+            "train_step_ms": 248.68339113891125
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 14,
+            "wall_time": 1793682785.9379978,
+            "loss": 11.022210121154785,
+            "train_step_ms": 261.47415675222874
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 15,
+            "wall_time": 1793682786.245484,
+            "loss": 10.930456161499023,
+            "train_step_ms": 254.01613861322403
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 16,
+            "wall_time": 1793682811.7644532,
+            "loss": 10.956003189086914,
+            "train_step_ms": 267.1631630510092
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 17,
+            "wall_time": 1793682812.0747075,
+            "loss": 10.876154899597168,
+            "train_step_ms": 256.9389995187521
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 18,
+            "wall_time": 1793682812.3946528,
+            "loss": 11.0078763961792,
+            "train_step_ms": 265.69281332194805
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 19,
+            "wall_time": 1793682812.6975746,
+            "loss": 10.924612998962402,
+            "train_step_ms": 249.643849208951
+          },
+          {
+            "rank": 1,
+            "slot_id": "4",
+            "pid": 277984,
+            "epoch": 1,
+            "step": 20,
+            "wall_time": 1793682813.0166633,
+            "loss": 10.94231128692627,
+            "train_step_ms": 264.06173035502434
+          }
+        ]
+      },
+      "presenter_note": "step6只是回滚后的重算，step8才越过故障前进度。verify有非空证据且recovered=true，控制器才能确认恢复。"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "ddp-v0-0",
+      "version": 0,
+      "target": [
+        "2",
+        "3"
+      ],
+      "cost": 0,
+      "feasible": false,
+      "rejection_reasons": [
+        "target includes an execution slot quarantined by recovery policy"
+      ],
+      "rejection_summary": "包含按恢复策略隔离的 GPU3"
+    },
+    {
+      "id": "ddp-v0-1",
+      "version": 0,
+      "target": [
+        "2",
+        "4"
+      ],
+      "cost": 1,
+      "feasible": true,
+      "rejection_reasons": [],
+      "rejection_summary": "通过约束校验"
+    },
+    {
+      "id": "ddp-v0-2",
+      "version": 0,
+      "target": [
+        "3",
+        "4"
+      ],
+      "cost": 1,
+      "feasible": false,
+      "rejection_reasons": [
+        "target includes an execution slot quarantined by recovery policy"
+      ],
+      "rejection_summary": "包含按恢复策略隔离的 GPU3"
+    }
+  ],
+  "verification": {
+    "status": "recovered",
+    "recovered": true,
+    "checks_passed": 11,
+    "checks_total": 11,
+    "checks": [
+      {
+        "id": "two_rank_records",
+        "label": "两条 rank 记录",
+        "passed": true
+      },
+      {
+        "id": "all_ranks_completed",
+        "label": "两 rank 均完成",
+        "passed": true
+      },
+      {
+        "id": "target_steps_reached",
+        "label": "达到目标 20 步",
+        "passed": true
+      },
+      {
+        "id": "fixed_world_size",
+        "label": "通信组保持两张 GPU",
+        "passed": true
+      },
+      {
+        "id": "finite_final_loss",
+        "label": "最终 loss 有限",
+        "passed": true
+      },
+      {
+        "id": "launcher_exit_zero",
+        "label": "launcher 正常退出",
+        "passed": true
+      },
+      {
+        "id": "restored_exact_checkpoint",
+        "label": "恢复源 step 与 SHA256 一致",
+        "passed": true
+      },
+      {
+        "id": "configured_slot_mapping",
+        "label": "GPU 槽配置一致",
+        "passed": true
+      },
+      {
+        "id": "available_uuid_check_passed",
+        "label": "实际 GPU UUID 校验通过",
+        "passed": true
+      },
+      {
+        "id": "new_worker_pids",
+        "label": "两个 worker 均使用新 PID",
+        "passed": true
+      },
+      {
+        "id": "new_effective_progress",
+        "label": "出现检查点之后的新训练进度",
+        "passed": true
+      }
+    ],
+    "mapping": {
+      "configured_slot_mapping": true,
+      "mapping_verification_level": "uuid_verified",
+      "actual_device_identity_verified": true,
+      "available_uuid_check_passed": true,
+      "note": "Logical-only mapping cannot independently prove physical GPU identity."
+    },
+    "effective_progress_boundary": "new_effective_progress本身只比较检查点step；超过故障前step7另由原始step8记录确认。",
+    "checks_scope": "historical_original_execution_checks"
+  },
+  "progress": [
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 6,
+      "wall_time": 1793682758.191499,
+      "loss": 10.941666603088379,
+      "train_step_ms": 546.1961291730404
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 7,
+      "wall_time": 1793682758.4992566,
+      "loss": 10.991631507873535,
+      "train_step_ms": 254.64669056236744
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 8,
+      "wall_time": 1793682758.8245919,
+      "loss": 10.959171295166016,
+      "train_step_ms": 267.789451405406
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 9,
+      "wall_time": 1793682759.1327884,
+      "loss": 10.870071411132812,
+      "train_step_ms": 254.45090793073177
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 10,
+      "wall_time": 1793682759.454146,
+      "loss": 10.871216773986816,
+      "train_step_ms": 268.0118326097727
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 11,
+      "wall_time": 1793682785.00829,
+      "loss": 11.027782440185547,
+      "train_step_ms": 258.874936029315
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 12,
+      "wall_time": 1793682785.3220515,
+      "loss": 11.013394355773926,
+      "train_step_ms": 259.03407484292984
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 13,
+      "wall_time": 1793682785.6237714,
+      "loss": 11.039558410644531,
+      "train_step_ms": 248.6373893916607
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 14,
+      "wall_time": 1793682785.9380696,
+      "loss": 11.052446365356445,
+      "train_step_ms": 261.42616756260395
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 15,
+      "wall_time": 1793682786.2454307,
+      "loss": 11.09986686706543,
+      "train_step_ms": 254.16996702551842
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 16,
+      "wall_time": 1793682811.7645164,
+      "loss": 10.947061538696289,
+      "train_step_ms": 267.59172417223454
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 17,
+      "wall_time": 1793682812.0747797,
+      "loss": 11.086480140686035,
+      "train_step_ms": 257.0732403546572
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 18,
+      "wall_time": 1793682812.3947175,
+      "loss": 10.9601411819458,
+      "train_step_ms": 265.6661421060562
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 19,
+      "wall_time": 1793682812.6976457,
+      "loss": 10.899276733398438,
+      "train_step_ms": 249.6615294367075
+    },
+    {
+      "rank": 0,
+      "slot_id": "2",
+      "pid": 277983,
+      "epoch": 1,
+      "step": 20,
+      "wall_time": 1793682813.0154765,
+      "loss": 10.930152893066406,
+      "train_step_ms": 264.02536779642105
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 6,
+      "wall_time": 1793682758.1915653,
+      "loss": 10.917540550231934,
+      "train_step_ms": 545.6445813179016
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 7,
+      "wall_time": 1793682758.499314,
+      "loss": 10.90999698638916,
+      "train_step_ms": 254.50889021158218
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 8,
+      "wall_time": 1793682758.8252347,
+      "loss": 10.981339454650879,
+      "train_step_ms": 267.6883637905121
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 9,
+      "wall_time": 1793682759.1327312,
+      "loss": 11.022220611572266,
+      "train_step_ms": 253.7686489522457
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 10,
+      "wall_time": 1793682759.454203,
+      "loss": 10.958361625671387,
+      "train_step_ms": 268.00958067178726
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 11,
+      "wall_time": 1793682785.0083234,
+      "loss": 10.905069351196289,
+      "train_step_ms": 258.6950156837702
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 12,
+      "wall_time": 1793682785.321972,
+      "loss": 11.069172859191895,
+      "train_step_ms": 258.95213708281517
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 13,
+      "wall_time": 1793682785.623704,
+      "loss": 11.021139144897461,
+      "train_step_ms": 248.68339113891125
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 14,
+      "wall_time": 1793682785.9379978,
+      "loss": 11.022210121154785,
+      "train_step_ms": 261.47415675222874
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 15,
+      "wall_time": 1793682786.245484,
+      "loss": 10.930456161499023,
+      "train_step_ms": 254.01613861322403
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 16,
+      "wall_time": 1793682811.7644532,
+      "loss": 10.956003189086914,
+      "train_step_ms": 267.1631630510092
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 17,
+      "wall_time": 1793682812.0747075,
+      "loss": 10.876154899597168,
+      "train_step_ms": 256.9389995187521
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 18,
+      "wall_time": 1793682812.3946528,
+      "loss": 11.0078763961792,
+      "train_step_ms": 265.69281332194805
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 19,
+      "wall_time": 1793682812.6975746,
+      "loss": 10.924612998962402,
+      "train_step_ms": 249.643849208951
+    },
+    {
+      "rank": 1,
+      "slot_id": "4",
+      "pid": 277984,
+      "epoch": 1,
+      "step": 20,
+      "wall_time": 1793682813.0166633,
+      "loss": 10.94231128692627,
+      "train_step_ms": 264.06173035502434
+    }
+  ],
+  "metrics": {
+    "detection_ms": 70.76454162597656,
+    "first_shared_new_progress_ms": 12551.890134811401,
+    "beyond_pre_failure_progress_ms": 13188.430309295654,
+    "incident_terminal_ms": 94940.06419181824,
+    "rollback_steps": 2,
+    "definitions": {
+      "detection_ms": "注入时间 → Controller首次检测",
+      "first_shared_new_progress_ms": "worker独立退出时间 → 两rank均出现首个恢复训练步step6",
+      "beyond_pre_failure_progress_ms": "注入时间 → 两rank均到达step8",
+      "incident_terminal_ms": "注入时间 → Controller终态，包含后续训练与验证，不是纯恢复延迟"
+    },
+    "ground_truth_use": "仅用于实验结束后的时间端点核对，不作为Agent诊断输入"
+  },
+  "boundaries": [
+    "历史证据回放，不是当前实时GPU运行。",
+    "真实工作负载为随机初始化GPT-2 Small与合成token；不评价预训练质量。",
+    "受控SIGTERM造成真实worker退出；未验证物理链路、RDMA或GPU硬件故障。",
+    "本次effective_mode=rules，没有调用外部LLM。",
+    "候选代价只计算新引入GPU槽；未按真实拓扑、链路带宽或恢复后训练性能排序。",
+    "本导出不包含.pt权重文件；检查点哈希是源回执与加载记录中的已报告值。",
+    "这是脱敏公开副本：个人路径、主机标识、GPU UUID 和 PCI 地址均为代称。11 项执行检查记录原始实验的历史结论，不代表对这些代称重新验证了硬件。来源文件 SHA256 对应脱敏后的公开副本；检查点摘要保留历史记录值，本导出没有重新计算检查点权重的摘要。"
+  ],
+  "presentation_script": {
+    "suggested_seconds": 90,
+    "opening": "下面回放同一次服务器真实DDP实验。我会依次展示输入、异常、诊断、候选、选择、执行和验证，不把不同运行拼在一起。",
+    "closing": "证据说明训练确实从同一检查点在新GPU组上恢复。它不证明网络性能改善，网络规划效果由前面的可交互仿真单独验证。",
+    "pause_at_steps": [
+      3,
+      4,
+      6,
+      7
+    ]
+  },
+  "privacy": {
+    "status": "sanitized_public_copy",
+    "release_marker": "evidence/public_release.json",
+    "pseudonymized_fields": [
+      "personal_paths",
+      "host_identifiers",
+      "gpu_uuids",
+      "pci_addresses"
+    ],
+    "execution_checks_scope": "historical_original_execution_checks",
+    "source_hash_scope": "sanitized_public_copies",
+    "checkpoint_digest_scope": "retained_historical_digests_not_rehashed",
+    "disclosure": "这是脱敏公开副本：个人路径、主机标识、GPU UUID 和 PCI 地址均为代称。11 项执行检查记录原始实验的历史结论，不代表对这些代称重新验证了硬件。来源文件 SHA256 对应脱敏后的公开副本；检查点摘要保留历史记录值，本导出没有重新计算检查点权重的摘要。"
+  }
+}

@@ -1,0 +1,4 @@
+{"wall_time": 1793682708.8565433, "kind": "group_started", "epoch": 0, "pid": 277806, "slots": ["2", "3"], "version": 0, "resume_manifest": null}
+{"wall_time": 1793682746.9516473, "kind": "old_group_stopped", "epoch": 0, "launcher_pid": 277806, "exit_code": 1}
+{"wall_time": 1793682746.9533405, "kind": "group_started", "epoch": 1, "pid": 277964, "slots": ["2", "4"], "version": 1, "resume_manifest": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json"}
+{"wall_time": 1793682840.6087916, "kind": "old_group_stopped", "epoch": 1, "launcher_pid": 277964, "exit_code": 0}

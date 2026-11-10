@@ -1,0 +1,193 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+      "pid": 277176,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+      "pid": 277177,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+      "pid": 278360,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+      "pid": 278361,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+      "pid": 277618,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+      "pid": 277619,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+      "pid": 277811,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+      "pid": 277812,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+      "pid": 277983,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+      "pid": 277984,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.json",
+      "pid": 276998,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.json",
+      "pid": 276999,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+      "pid": 277081,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "worker",
+      "path": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+      "pid": 277082,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "launcher",
+      "path": "gpu_matrix_01/gpt2_baseline/backend/executor.jsonl",
+      "pid": 277167,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "launcher",
+      "path": "gpu_matrix_01/gpt2_blocked/backend/executor.jsonl",
+      "pid": 278345,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "launcher",
+      "path": "gpu_matrix_01/gpt2_no_repair/backend/executor.jsonl",
+      "pid": 277612,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "launcher",
+      "path": "gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+      "pid": 277806,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "launcher",
+      "path": "gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+      "pid": 277964,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "launcher",
+      "path": "gpu_matrix_01/tiny_smoke/backend/executor.jsonl",
+      "pid": 276988,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "launcher",
+      "path": "gpu_matrix_01/tiny_smoke/backend/executor.jsonl",
+      "pid": 277072,
+      "passed": true,
+      "current_identity": null
+    },
+    {
+      "kind": "gpu_released",
+      "gpu": "2",
+      "passed": true,
+      "observation": {
+        "index": "2",
+        " uuid": " GPU-00000000-0000-0000-0000-000000000003",
+        " memory.used [MiB]": " 15 MiB",
+        " utilization.gpu [%]": " 0 %"
+      }
+    },
+    {
+      "kind": "gpu_released",
+      "gpu": "3",
+      "passed": true,
+      "observation": {
+        "index": "3",
+        " uuid": " GPU-00000000-0000-0000-0000-000000000004",
+        " memory.used [MiB]": " 15 MiB",
+        " utilization.gpu [%]": " 0 %"
+      }
+    },
+    {
+      "kind": "gpu_released",
+      "gpu": "4",
+      "passed": true,
+      "observation": {
+        "index": "4",
+        " uuid": " GPU-00000000-0000-0000-0000-000000000005",
+        " memory.used [MiB]": " 15 MiB",
+        " utilization.gpu [%]": " 0 %"
+      }
+    },
+    {
+      "kind": "only_intended_source_changes",
+      "passed": true,
+      "changed": [
+        "agent_demo/ddp_worker.py",
+        "tests/agent/test_ddp.py"
+      ]
+    }
+  ]
+}

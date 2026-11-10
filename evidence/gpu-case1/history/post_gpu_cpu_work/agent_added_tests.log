@@ -1,0 +1,7 @@
+test_persistent_failure_exhausts_two_attempts_without_third_apply (test_budget_and_evidence.BudgetAndEvidenceTests.test_persistent_failure_exhausts_two_attempts_without_third_apply) ... ok
+test_success_claim_without_post_execution_evidence_is_not_recovery (test_budget_and_evidence.BudgetAndEvidenceTests.test_success_claim_without_post_execution_evidence_is_not_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.189s
+
+OK

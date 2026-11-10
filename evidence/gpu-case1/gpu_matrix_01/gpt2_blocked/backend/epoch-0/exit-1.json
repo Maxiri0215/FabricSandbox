@@ -1,0 +1,22 @@
+{
+  "pid": 278361,
+  "rank": 1,
+  "local_rank": 1,
+  "slot_id": "3",
+  "epoch": 0,
+  "world_size": 2,
+  "model": "gpt2",
+  "device": "cuda",
+  "source": "MEASURED",
+  "run_id": "ce6286802215447693dd33e4d123d6a8",
+  "process_identity": {
+    "pid": 278361,
+    "pgid": 278361,
+    "start_token": "1028249049",
+    "method": "linux_proc_start_ticks"
+  },
+  "kind": "termination_signal",
+  "signal": 15,
+  "observed_at": 1793682882.6539369,
+  "step": 7
+}

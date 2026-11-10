@@ -1,0 +1,284 @@
+[
+  {
+    "test": "test_cli.CLITest.test_gpu_matrix_stops_after_failed_acceptance",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_cli.CLITest.test_monitored_tcp_driver_with_in_memory_protocol",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_apply_requires_issued_validated_candidate",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_failed_verification_cannot_be_overridden_by_healthy_observation",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_forged_evidence_is_not_a_diagnosis",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_html_cannot_close_script_from_untrusted_evidence",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_live_revalidation_rejects_version_change",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_llm_calls_real_whitelisted_adapter_tools",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_malformed_tool_arguments_are_bounded",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_monitor_observes_health_before_independent_anomaly",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_monitor_timeout_does_not_invent_a_failure_or_repair",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_no_fault_no_mutation",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_pending_execution_only_allows_verification",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_provider_failure_falls_back_but_backend_failure_does_not",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_resource_shortage_never_executes",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_controller.ControllerTest.test_rule_recovery_retains_rejected_candidate_and_new_evidence",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_ambiguous_group_failure_is_conservative",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_checkpoint_outside_output_is_rejected",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_cleanup_handles_worker_in_a_separate_session",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_completion_without_checkpoint_restore_is_not_recovery",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_duplicate_execution_returns_receipt_without_second_launch",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_fixed_group_uses_healthy_slot_and_spare",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_ground_truth_is_not_used_as_diagnostic_evidence",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_hash_mismatch_prevents_restart",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_no_spare_is_blocked_instead_of_reducing_world_size",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_old_torch_without_uuid_is_explicitly_logical_only",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_recycled_pid_is_not_owned",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_stale_or_unauthorized_plan_cannot_execute",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.DDPControlTests.test_uuid_mismatch_is_not_accepted_as_physical_mapping",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_ddp.LiveCPUDDPTests.test_worker_fault_recovers_from_committed_checkpoint",
+    "status": "PASS",
+    "scope": "reused_post_retention_DDP",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log"
+  },
+  {
+    "test": "test_legacy_bridge.LegacyBridgeTests.test_import_rejects_corrupt_summary_and_impossible_memory",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_legacy_bridge.LegacyBridgeTests.test_import_rejects_nonfinite_samples_and_wrong_model",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_legacy_bridge.LegacyBridgeTests.test_import_rejects_standalone_collective",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_legacy_bridge.LegacyBridgeTests.test_import_runs_two_simulations_with_honest_provenance",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_legacy_bridge.LegacyBridgeTests.test_planning_candidates_share_fixed_baseline",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPLiveTests.test_actual_failure_replan_retry_and_new_payload",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPLiveTests.test_no_available_channel",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPLiveTests.test_real_receiver_rejects_corrupt_payload",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPLiveTests.test_receiver_failure_is_not_misdiagnosed_as_channel_only",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPPureTests.test_diagnosis_requires_independent_receiver_evidence",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPPureTests.test_idempotency_and_stale_version",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPPureTests.test_new_payload_and_pending_retry_with_in_memory_transport",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPPureTests.test_payload_dedup_and_checksum",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPPureTests.test_plan_write_failure_does_not_change_running_channel",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_tcp.TCPPureTests.test_unavailable_and_tampered_candidates_are_rejected",
+    "status": "PASS",
+    "scope": "reused_initial",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log"
+  },
+  {
+    "test": "test_budget_and_evidence.BudgetAndEvidenceTests.test_persistent_failure_exhausts_two_attempts_without_third_apply",
+    "status": "PASS",
+    "scope": "new_negative_tests",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/team_20261103_053106/agent_added_tests.log"
+  },
+  {
+    "test": "test_budget_and_evidence.BudgetAndEvidenceTests.test_success_claim_without_post_execution_evidence_is_not_recovery",
+    "status": "PASS",
+    "scope": "new_negative_tests",
+    "log": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/team_20261103_053106/agent_added_tests.log"
+  }
+]

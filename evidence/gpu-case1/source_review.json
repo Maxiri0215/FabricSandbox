@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "file": "source_executed/agent_demo/ddp_backend.py",
+      "method": "observe",
+      "line": 195,
+      "sha256": "6288e857b85a14ac4c79c3c1b49231d1739a8e3bfef7d9b6a8bdb04999c02a7d",
+      "no_ground_truth_path_in_method": true
+    },
+    {
+      "file": "source_executed/agent_demo/ddp_backend.py",
+      "method": "diagnose",
+      "line": 233,
+      "sha256": "6288e857b85a14ac4c79c3c1b49231d1739a8e3bfef7d9b6a8bdb04999c02a7d",
+      "no_ground_truth_path_in_method": true
+    },
+    {
+      "file": "source_executed/agent_demo/ddp_backend.py",
+      "method": "_ranks",
+      "line": 166,
+      "sha256": "6288e857b85a14ac4c79c3c1b49231d1739a8e3bfef7d9b6a8bdb04999c02a7d",
+      "no_ground_truth_path_in_method": true
+    },
+    {
+      "file": "source_executed/agent_demo/controller.py",
+      "method": "_monitor",
+      "line": 291,
+      "sha256": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19",
+      "no_ground_truth_path_in_method": true
+    },
+    {
+      "file": "source_executed/agent_demo/controller.py",
+      "method": "_dispatch",
+      "line": 140,
+      "sha256": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19",
+      "no_ground_truth_path_in_method": true
+    },
+    {
+      "file": "source_executed/agent_demo/controller.py",
+      "method": "_rules",
+      "line": 231,
+      "sha256": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19",
+      "no_ground_truth_path_in_method": true
+    },
+    {
+      "file": "source_executed/agent_demo/controller.py",
+      "method": "run",
+      "line": 316,
+      "sha256": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19",
+      "no_ground_truth_path_in_method": true
+    }
+  ],
+  "boundary": "Static code review plus recorded observation evidence; injector and controller share an adapter, not a security isolation boundary."
+}

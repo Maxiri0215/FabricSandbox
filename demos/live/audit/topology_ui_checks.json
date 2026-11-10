@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "method": "app.js event handlers in lightweight DOM with actual model outputs and mocked fetch",
+  "generated_at_utc": "2026-11-07T08:41:39.107Z",
+  "fixture_metadata": {
+    "generated_at_utc": "2026-11-07T08:41:38.375173+00:00",
+    "source": "actual demo_model calls; no mocked simulation metrics",
+    "model_sha256": "53cb409ecc36e6d9d7c2dd97333eb626ffc001c8b2d7067c5fab9443ea53ac89"
+  },
+  "checks": [
+    "existing default analyze/apply",
+    "mode preserves default controls",
+    "3 rack validate/analyze/apply",
+    "custom payload excludes legacy overrides",
+    "invalid JSON rejected before network",
+    "1 rack graph and simulation",
+    "file import 16 nodes 64 GPUs and 4 racks",
+    "late analyze response discarded after default switch",
+    "return to original entry",
+    "incomplete jobs have no false makespan or bars"
+  ],
+  "mocked_fetch_calls": 14,
+  "javascript_errors": [],
+  "http_transport": "not exercised",
+  "browser_visual_check": "not performed; DOM harness does not render CSS",
+  "source_sha256": {
+    "app_js": "b681fdfdaf00b8b793dbc4a015a0575f978bd9e652d15b8b89de09041b77fb3a",
+    "index_html": "290b46604fa43d1b481f269895823d33d18ac6fcda519736f9d84f060151fa16"
+  }
+}

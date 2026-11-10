@@ -1,0 +1,29 @@
+{
+  "source_path": "packages/fabric-sim/src/fabric_sim",
+  "copied_without_changes": true,
+  "files": [
+    {
+      "name": "ddp.py",
+      "sha256": "1b2ad0e2e971f0cc56e53b54317414b623e7985d26a9a5845c1ff9b1fa1fd53b"
+    },
+    {
+      "name": "__init__.py",
+      "sha256": "c9c0271b62b0dacf146a912c9b89ef435e451fac8cd92963254ce8b35145d7ff"
+    },
+    {
+      "name": "core.py",
+      "sha256": "12715a165f272169d9a871935ff48fb3e69841c4a41e11b6eec4a80d590de86e"
+    },
+    {
+      "name": "tp.py",
+      "sha256": "c05234f0b5d910f93e1e3bd1fc5b4e1f21440f84d7ecd2e7d27db288828b2085"
+    },
+    {
+      "name": "validation.py",
+      "sha256": "84f5219263858aa1ed157428d79ee21eef50dd0075b60d2312349d3d670710f5"
+    }
+  ],
+  "historical_source_path": "/Users/project-user/Codex/Homework/output/fabric_refactor_20261102/FabricSandbox_v2/packages/fabric-sim/src/fabric_sim",
+  "path_base": "repository_root",
+  "privacy_note": "Historical source path is anonymized. Copied production source bytes and recorded hashes remain unchanged."
+}

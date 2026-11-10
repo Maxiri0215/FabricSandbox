@@ -1,0 +1,1754 @@
+[
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/command_gpt2_baseline.json",
+    "export_relative": "gpu_matrix_01/command_gpt2_baseline.json",
+    "sha256": "a8dc7d4fca88d4fc60fda28adbd2af2a18627763806442f11083d545a79f3cab",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/command_gpt2_blocked.json",
+    "export_relative": "gpu_matrix_01/command_gpt2_blocked.json",
+    "sha256": "5fa508ed5c5c135e83deb1de20a0d1f3dc8cc3ece894768a8eba5e2575c77fc0",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/command_gpt2_no_repair.json",
+    "export_relative": "gpu_matrix_01/command_gpt2_no_repair.json",
+    "sha256": "30246c270c93e5b38334f670e8f4116529117e48bb61e249e72e4e5d674ed0d1",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/command_gpt2_recover.json",
+    "export_relative": "gpu_matrix_01/command_gpt2_recover.json",
+    "sha256": "7e42145642ae3ebd31b029f54ecaf0ee9cd1e5aeaca5a000a62990bea12c3d72",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/command_tiny_smoke.json",
+    "export_relative": "gpu_matrix_01/command_tiny_smoke.json",
+    "sha256": "6a5547cd1a8c9da898f06b309aae8fed6c1c6d35e51152ab6129f85b1bc66151",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/checkpoint_manifest.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/checkpoint_manifest.json",
+    "sha256": "92e0e51a6a9ae25a1d85bf93086a37ce8f7878cbb0c6e5c74b2ed5f595901aae",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s10.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s10.json",
+    "sha256": "a2af972a4d34e1b1382f241391a3225fc7232498f5b4ece552afb519b8a245db",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s15.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s15.json",
+    "sha256": "cacc456c649b0f4b072125192487cdeebda86b6a0c363fd8846928fd4c01e24d",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s20.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s20.json",
+    "sha256": "92e0e51a6a9ae25a1d85bf93086a37ce8f7878cbb0c6e5c74b2ed5f595901aae",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s5.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s5.json",
+    "sha256": "e4fd779276b7b45ce3ac6f0144532451819c58e83dfa682034f8cc51a00d80c3",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/completion-epoch-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/completion-epoch-0.json",
+    "sha256": "6a37baf352044bfd10ac890fb5c776917f625dfc8983c4bacc775460361adddd",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+    "sha256": "703807b959bd85fd40d574e3a713cd589cb83fa01b5de65a87a0fd784335f136",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.jsonl",
+    "sha256": "a0eda3dedbde8a0b74d23d2bcc0bea156d71db80a844ef443bddaf4d9a939e89",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+    "sha256": "6d267c1562d6c0a5c2661256b56130d451d26132ed3dcb0102adfc6e0ac766cc",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.jsonl",
+    "sha256": "1b3132ddab884b469fb1241896ff67c0d4bdb79373f9f99e3a5a16941c8a7161",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/executor.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/executor.jsonl",
+    "sha256": "72428d0b791a95d736f1cd34677a650374995fc2f370d38ceac0a8bca266e9f8",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+    "sha256": "624d790290d987055cd97a719d8794db4283a9a2782f09ce5fea9230888999f5",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/preflight.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/preflight.json",
+    "sha256": "3fc73ee801239f89c94a58cfab899416134d04c214c0ced4885aeb65e14bcb6a",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/preflight.log",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/preflight.log",
+    "sha256": "995348ad23ad6a7dcab64fd98bc1824e61e0f8c1146eb3721a3571976a69eff8",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/torchrun-epoch-0.log",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/backend/torchrun-epoch-0.log",
+    "sha256": "f8a2b3b26b0b350ec259b76994a368350c8c3527fbeafb66e6934b3e068ff09b",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/report.html",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/report.html",
+    "sha256": "5454d3942958266c71ffd62f49b1ba4f2d7e67a7a13af5ff9d99d1d5326bd0f8",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/result.json",
+    "export_relative": "gpu_matrix_01/gpt2_baseline/result.json",
+    "sha256": "4169fe7dbd1a4074ae4a8a2c5d06721d53dfb5dc1f2c9da72acf8e12d159fc63",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/agent/incident.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/agent/incident.json",
+    "sha256": "a4efd2c6a484e5638ea357fa35886ae38c2398945e9d589bb6023468ec1b4ffe",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/agent/trace.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/agent/trace.jsonl",
+    "sha256": "343eb7b522e625fb156bebb28d67639c25e863f1ef7d122b208168094e4d96ca",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/checkpoint_manifest.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/checkpoint_manifest.json",
+    "sha256": "4205530e0772204ffb8905858de5eeee16d961af8c15352db62ef9029a33fb42",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/checkpoints/manifest-e0-s5.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/checkpoints/manifest-e0-s5.json",
+    "sha256": "4205530e0772204ffb8905858de5eeee16d961af8c15352db62ef9029a33fb42",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/epoch-0/exit-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/exit-0.json",
+    "sha256": "e6fb994288027df25349ff2ba9865b44e767eceac8a9d40c6bb6dc9397aa1e3a",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/epoch-0/exit-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/exit-1.json",
+    "sha256": "dcdf88be62a7f5ef424a6238d411118cc4b7c07c4d2184c65fed6f9a569bc0e3",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+    "sha256": "560cb5025c3dd8d84e6ea9785532a5e5e5616bf0fa14ad1416125d9596a11852",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.jsonl",
+    "sha256": "c167910e89fb886e095eb5105460008c28e2032312d245778bbb2ded37535aa0",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+    "sha256": "6cde1b4dcefaa1bd34b379fadb9f7870ce43bcddd2ac0b04f7b3123bc2b047a8",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.jsonl",
+    "sha256": "ef8874cce2a9d4167dca14dbeac9d6b35577c6b02ed94c72bdebc53a738abbb1",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/executor.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/executor.jsonl",
+    "sha256": "1389dc85da5c1634b23bec4eac629555f4031f32f3d0206f321f3eda71d07209",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+    "sha256": "671cc1e2fb778a7a837c2b4bc7c2e3c8fcfa1acc2904113ab9bb51b82bf602b7",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/ground_truth.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/ground_truth.json",
+    "sha256": "e3b6a112b69a2c604779c4fb045751fe488384a85c357ada8b205257a37e2dd8",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/preflight.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/preflight.json",
+    "sha256": "ff3d0caf7e62a9c591342b1adffbafacac5513478e9d45a312f9b554da218fb2",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/preflight.log",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/preflight.log",
+    "sha256": "9f5775e0a271b6e3b39615eb4a387591716ace0f7425e752b01a7574ba652da9",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/torchrun-epoch-0.log",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/backend/torchrun-epoch-0.log",
+    "sha256": "b3a6d5e1365eb93849726a66ef295e44adff5859cf0c0c5148da85ada81795a2",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/report.html",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/report.html",
+    "sha256": "df57588a9e3da0c61ac1d150de47ac42932b9afe32fce3248cdd574247d3bfa3",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/result.json",
+    "export_relative": "gpu_matrix_01/gpt2_blocked/result.json",
+    "sha256": "d4b17e4700bf253601b5448669ae2ebc29ea5f5dec7b6aa51636d416dd7ea488",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/checkpoint_manifest.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/checkpoint_manifest.json",
+    "sha256": "c454a893025858236ae866e14ffd0dda78c2165e90b8001e21daa47fea5d68d4",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/checkpoints/manifest-e0-s5.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/checkpoints/manifest-e0-s5.json",
+    "sha256": "c454a893025858236ae866e14ffd0dda78c2165e90b8001e21daa47fea5d68d4",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/exit-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/exit-0.json",
+    "sha256": "6b57aef1a966baef15eaedcc1bf845f793014adab1d5a9279b004d0ad77f5d64",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/exit-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/exit-1.json",
+    "sha256": "2ecbaf5a2f75d7b012728e9cbd0c73d682db5a7cbf24fc63b7ae66f688b6b919",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+    "sha256": "8d30e9d2567f5db037561f1a23dd8d48fa2d1033ccbf362b4c7cc9a8288718e7",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.jsonl",
+    "sha256": "e763fc1174d39f7e0534a41d1bee2c4ca7aa791e42974dec331da4288e726f51",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+    "sha256": "bbf161f0f93ef53f2a3fd25079d7d221c3de7dd9fdbc7da164f3bbb36e0c44e8",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.jsonl",
+    "sha256": "b6c4c1774f2d8562f892ed9677f66e99a1b2c340c809566b7052a379004153db",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/executor.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/executor.jsonl",
+    "sha256": "504af9595bbccaf255ef8208bfc21b96d8dd636eb639a0138e869a76ee363b1a",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+    "sha256": "4f9d85b0ae624516712c8d0a609af13a2df6679fde4a15ddd5c3a95e2999eb61",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/ground_truth.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/ground_truth.json",
+    "sha256": "083493216edfec36a5beeef27b733964bba2afe84c59e67599d7c50b524dfc23",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/preflight.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/preflight.json",
+    "sha256": "fc96e4b761ad012e8d14b813636d7ba4bb8d9cf1c05730e36915a481835f25ef",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/preflight.log",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/preflight.log",
+    "sha256": "05aed5062ef08ccd0a598fb3dc7b9902c79853ef59230195742d5f68194275f2",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/torchrun-epoch-0.log",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/backend/torchrun-epoch-0.log",
+    "sha256": "3c8aa14ffb7ba52323c0f4e0d13809a50dd9d6172035f89278b98badc5710595",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/report.html",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/report.html",
+    "sha256": "e7fae99fdcef152338e99099ac5a8a78a96361b3f13d0ca332f912809f458814",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/result.json",
+    "export_relative": "gpu_matrix_01/gpt2_no_repair/result.json",
+    "sha256": "835493d9c2dc4d187a4edc7129336334847f2234c1cbe210b95d0861fb07c167",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/agent/incident.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+    "sha256": "dc44ae73898e4a610f1420448a745b255ccb815e9d41243a09c13362697af586",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/agent/trace.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_recover/agent/trace.jsonl",
+    "sha256": "7467eefb6063880e4f69a5fbbf45d92b9e92d73552cd393635da797e8538ed1a",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/checkpoint_manifest.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/checkpoint_manifest.json",
+    "sha256": "4cbcfdfb70a01c23bb6e3568fbc99cee9df7c340dc73fcd5b6baba2c3699671e",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e0-s5.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e0-s5.json",
+    "sha256": "649e878b08525a9423313ebc8eaf1d424faa277940b77486262bf60f185430a4",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s10.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s10.json",
+    "sha256": "6b9d2a1c5316c5db7abbbce0dba69f33415739e4953090701c8ed08153ee49a0",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s15.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s15.json",
+    "sha256": "68d8468f89aedd8c702843a34eec48654cb022d5a19f299d5486e568dfd0730f",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s20.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s20.json",
+    "sha256": "4cbcfdfb70a01c23bb6e3568fbc99cee9df7c340dc73fcd5b6baba2c3699671e",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/completion-epoch-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/completion-epoch-1.json",
+    "sha256": "38085cba425b26962735d6b184586c74f3add78c6b2e21ade910913cdb8399a3",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-0.json",
+    "sha256": "bb9d0dfc6f9faa89903230f00c9bd4dec5772571ad0ecd99e6c7bd7d607f9138",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-1.json",
+    "sha256": "35276f359296033a4c717dff803feeb082ca273c03d68c85ab8f1643939fde2a",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+    "sha256": "0e64cd84a6aa82b32fb602cd96c98fe949d8bdfdc2fe88936f9bdc68a0434246",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.jsonl",
+    "sha256": "01ff261b89a442274d4d223d08c18399fc6240ece881912862138ff464a8fe8e",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+    "sha256": "86285ae90fe41e4c3fdb11bbdbdf0cbb3c2c68710c9e92367719a485d4189354",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.jsonl",
+    "sha256": "485b4e16d4b352f2ab799815c5f763508feb3da1581a2014c1bfcc544ec55549",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+    "sha256": "41b0d9ec3e8a3a4535c063b5a6b1698a4247ae32dbf50acc398016f6b1d1a080",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.jsonl",
+    "sha256": "e3fd0b007a521ce3a44edcce751aca3e5499fd7c096ce63248d31473ae437c2e",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+    "sha256": "1d7b537671730bee42e2385826768d036afaa7fc6204c64eb2ef9575e5af43a4",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.jsonl",
+    "sha256": "d61099a5f2ca1492263b97854855a67e85707da25fb8e5a3932681d6c77adf88",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/execution-epoch-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/execution-epoch-1.json",
+    "sha256": "547dbb4d0ba395f9f6444ecb64a0a2b53a94785269a60cd316bb9538ded2435b",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+    "sha256": "096be34c31a9b278eed8475c28108940bb3a06761ff5957bae40e74e92ef8e6d",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+    "sha256": "4f9d85b0ae624516712c8d0a609af13a2df6679fde4a15ddd5c3a95e2999eb61",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/ground_truth.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/ground_truth.json",
+    "sha256": "bc7a642822fa0a5b5e2e0ad547195971ecefdb338f1a8c82b876d86c3fbbf571",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/preflight.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/preflight.json",
+    "sha256": "f451011f0894006b77f14f11448949900fca39257d439ee9653b6b95e8d9aef1",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/preflight.log",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/preflight.log",
+    "sha256": "346f25880829548e9613efcaaafef0d42d1f71cd31a0027d7a324fcaa84434f1",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json",
+    "sha256": "649e878b08525a9423313ebc8eaf1d424faa277940b77486262bf60f185430a4",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-0.log",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-0.log",
+    "sha256": "0a55929ea136de95a68f27f5ee71fc7d5dc5bff3d61ee7a4bd56e25265980863",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-1.log",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-1.log",
+    "sha256": "f8a2b3b26b0b350ec259b76994a368350c8c3527fbeafb66e6934b3e068ff09b",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/verification-epoch-1.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/backend/verification-epoch-1.json",
+    "sha256": "96bad3ebe8553cab4e1e41af7770d66bf6ef867fd2dee03633292cc7f77d557b",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/report.html",
+    "export_relative": "gpu_matrix_01/gpt2_recover/report.html",
+    "sha256": "acc3786eb7f78ef9a6756f6ebd5b6ba1e7ac464b9dacbe86780fab1c373cad4d",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/result.json",
+    "export_relative": "gpu_matrix_01/gpt2_recover/result.json",
+    "sha256": "a7eb55a1ea4f00ef85a97147501166c6baf7f63338f2d42d8ec9afe9cfec1115",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/index.html",
+    "export_relative": "gpu_matrix_01/index.html",
+    "sha256": "8b99e8f428242419ed040e0dd89e66fe4ad5b27951400df5ad8ae468df2913a1",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/matrix.json",
+    "export_relative": "gpu_matrix_01/matrix.json",
+    "sha256": "f76c6a1c06cc599559f48e332a538cb080617c597dfe8e8a5f3c3c820d8a4e25",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/agent/incident.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+    "sha256": "a7adaace0c4d7d537c98da60ea3bf53583a0c28810e31483e92ca07ee31f6794",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/agent/trace.jsonl",
+    "export_relative": "gpu_matrix_01/tiny_smoke/agent/trace.jsonl",
+    "sha256": "7bef39d52822ee3225035ea25a81fe7ad7713955b05fffdf828b21339a2192ff",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/checkpoint_manifest.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/checkpoint_manifest.json",
+    "sha256": "5c423876a792ace4947a9a5255aeee98211f305c324f37360c2e66f74ab7efd5",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e0-s5.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e0-s5.json",
+    "sha256": "b1128a192f0fad1467765808fc646f913e0fac94ef977f6c3f174da5a0f361d0",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s10.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s10.json",
+    "sha256": "49c87cb81332b6374d0cc09ba9cd0efdf83233a4838d85754942d813a11e6344",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s15.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s15.json",
+    "sha256": "481bfd8c11314029c88f0f319ddb09e36fad6aad063173d1c8c79fc825440d8f",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s20.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s20.json",
+    "sha256": "5c423876a792ace4947a9a5255aeee98211f305c324f37360c2e66f74ab7efd5",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/completion-epoch-1.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/completion-epoch-1.json",
+    "sha256": "a538cfdafd621668c7b7b062552b085143b474623c22c6746e566eb5dfe79ba3",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-0/exit-0.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-0/exit-0.json",
+    "sha256": "5e2b8f473cb13963f2cbac4fbac1ac24bdab5684226372366b0bb2477d71d248",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-0/exit-1.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-0/exit-1.json",
+    "sha256": "5e5d27b7ae76fee7227fdbb68afacff814e8493b39b86ae18f43e7dc1f7ced65",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.json",
+    "sha256": "c650c8078f1bc5e90be2175d356c1e2f1969284733d97e2710151ed1b2e389c8",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.jsonl",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.jsonl",
+    "sha256": "4497b98d24de09ac9a3bd1df7ba2cb845d1be75dd9f603380d07d4d6de41e1a4",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.json",
+    "sha256": "144f096891a717a563b9e35c07ebd0abfa4c13d6dc5f724d81dc8274640af2c6",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.jsonl",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.jsonl",
+    "sha256": "28bab71b5fa5fc3b91d577d0f24f3c7953ec0b93174b40655ee880f05cf30b21",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+    "sha256": "881e1ee2397768a86c2d91a1a0b1895374e1a6b25afb4754508f83088c9a9bd5",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.jsonl",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.jsonl",
+    "sha256": "ee9a273d25ce085fe21163219fd373909b2e174e3e79d1c0963794d2330f13ed",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+    "sha256": "c7f2482012822cf2ed6cdbbdde98b2efe68bfd5be30493077a62fb153a7d964e",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.jsonl",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.jsonl",
+    "sha256": "2f4308321db15dac8d389a75229ae981bbf3274baf27c7aa0c9078b84032275e",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/execution-epoch-1.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/execution-epoch-1.json",
+    "sha256": "23e29d23023a2426fe5af88bf05851940e9570d15261208dd9d6accf2df9612a",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/executor.jsonl",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/executor.jsonl",
+    "sha256": "7274bad788854bd07b4aea7293c432d007be8242f0df040f608fdc47daa1ef14",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+    "sha256": "e7d3072c4de25cf528ae37d18446ad20d600dee55aa93c480e69a43a7a42f6ef",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/ground_truth.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/ground_truth.json",
+    "sha256": "1971945d200e711feeda2d3b8ba5a6f77c218ff83e9e8ad8272b03914c071ef3",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/preflight.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/preflight.json",
+    "sha256": "e7aa478ff6edce75d467f76e0de79453a51ccab88741bcdd81ce8c20069d456c",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/preflight.log",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/preflight.log",
+    "sha256": "34ef656127c923f91bd8ae652f1151ec5cfdfcfa37a78c892763168396aa89cc",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/resume-for-epoch-1.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/resume-for-epoch-1.json",
+    "sha256": "b1128a192f0fad1467765808fc646f913e0fac94ef977f6c3f174da5a0f361d0",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-0.log",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-0.log",
+    "sha256": "e82a746b46662e371d5bce48a460af66f653f7573836f154d2204b4db3db8e12",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-1.log",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-1.log",
+    "sha256": "183e8f2b8838bdea1d25e21ac134c8213a41713bc26842cbb839db3bbc967530",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/verification-epoch-1.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/backend/verification-epoch-1.json",
+    "sha256": "0ddd0ff1554f720fbf82dae185a1ae79bcf8d79cf5278b652d6643c6f575ec4e",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/report.html",
+    "export_relative": "gpu_matrix_01/tiny_smoke/report.html",
+    "sha256": "9343e046fc9c05d1cba935eae7219582de51cd0307b99414043110fe65ac3276",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/result.json",
+    "export_relative": "gpu_matrix_01/tiny_smoke/result.json",
+    "sha256": "c1647d37a14b17b656d08a941223017c2ecdbd3de93e07db8984405b2d7e2b43",
+    "role": "historical_original_gpu_evidence_copy",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/environment.json",
+    "export_relative": "server_run/environment.json",
+    "sha256": "3480e7fa8cfa23be2c3992055df2340fc938bce2313c66af89667f934e0954db",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/commands.jsonl",
+    "export_relative": "server_run/commands.jsonl",
+    "sha256": "c7ed78e3efff4e3aa32fb2ea58ef4bad208bd1574a3ff646680d700b23a8da4b",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/registered_commands.jsonl",
+    "export_relative": "server_run/registered_commands.jsonl",
+    "sha256": "456b852a469707404d9468575975070eada9940332a591406b0305f0ff10fcfe",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01.log",
+    "export_relative": "server_run/gpu_matrix_01.log",
+    "sha256": "70e4587049a70605d7fffbbaea466cd735fc7cb3059eaa192dc207c687cc06b1",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/doctor.log",
+    "export_relative": "server_run/doctor.log",
+    "sha256": "24e6d0eecf108b96cfd29c5894464e571de2472ecf002278bc9df03585cbeb1f",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_initial.log",
+    "export_relative": "server_run/agent_tests_initial.log",
+    "sha256": "8f038a2ea4e626fd647295698b97530c0b6123c7a6fbd94bdfcbdf3d9caaad67",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/agent_tests_retention.log",
+    "export_relative": "server_run/agent_tests_retention.log",
+    "sha256": "31cc40f57915444ddde6c5b0cbb5e58c336e99cb12a08579fb8490d2dab7d529",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reuse_A1.log",
+    "export_relative": "server_run/reuse_A1.log",
+    "sha256": "9ad933ac8a6d9b61455821db33632cdc9bc84d44fc7110afdf803f484bfb03dc",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/acceptance_audit.json",
+    "export_relative": "server_run/acceptance_audit.json",
+    "sha256": "3bd6c2944d2dbecb8945ecbc7d9e6c5e24b1d37d7d2219ef40b9bd2019da8eb5",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/acceptance_audit.log",
+    "export_relative": "server_run/acceptance_audit.log",
+    "sha256": "3604376c727efc137ee16f59405a7c47e19cba34d38abb17985a635db0ec0487",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/baseline_vs_restored_loss.json",
+    "export_relative": "server_run/baseline_vs_restored_loss.json",
+    "sha256": "a135125f4b0156c4efdeee7aa69ef340800fb4e53b5ec46da0a8816fcf02d26f",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/checkpoint_inventory.json",
+    "export_relative": "server_run/checkpoint_inventory.json",
+    "sha256": "d69e35c9a0c2e92312636d694285c55edc5249ec9597f886c2c157e074cd2e13",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/server_execution_summary.md",
+    "export_relative": "server_run/server_execution_summary.md",
+    "sha256": "70e04f68d1618dfd8c529d02d6b464f072e9e1b32bc08b93b8761ddfd289e0bd",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_before_manifest.json",
+    "export_relative": "server_run/source_before_manifest.json",
+    "sha256": "5676e23418dc07eff7bc5dac0cf3d5bfe07a8221b0d90584763446c52b35446b",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final_manifest.json",
+    "export_relative": "server_run/source_final_manifest.json",
+    "sha256": "cd943b0de37d701e8b07d8d16cea98f9e37956d0b7862039e22330b2fe7198fd",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/code_changes.diff",
+    "export_relative": "server_run/code_changes.diff",
+    "sha256": "dad4a6823e3923ba008dad499fb031359a031293e9f1f0395c08e730b6067f19",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_inventory.csv",
+    "export_relative": "server_run/gpu_inventory.csv",
+    "sha256": "a33c917aad9eecd012e7598c0f3b56bf8666fbc6de6eb95b8a73b83548e9dcc9",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_before.txt",
+    "export_relative": "server_run/gpu_before.txt",
+    "sha256": "886cce5c3ff5f7380369d4e3e1773365bca2eda5defcc22b28c70fc62b0a53f8",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_during_baseline.csv",
+    "export_relative": "server_run/gpu_during_baseline.csv",
+    "sha256": "09cd3ebd4940f92a7a431eeaa1b41e5e623f0d7111a83f28c76d7d556ce8b9ef",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_after.csv",
+    "export_relative": "server_run/gpu_after.csv",
+    "sha256": "b389afcde516299ed62acfe7148a2e3544b4eed03aafc6f0487d024fb48b7bc7",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_after.txt",
+    "export_relative": "server_run/gpu_after.txt",
+    "sha256": "c085514a3bccb489ed2237a6e438ba34b78f03e0184113bb404783e6afc7eeab",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_processes_before.csv",
+    "export_relative": "server_run/gpu_processes_before.csv",
+    "sha256": "185facacd43b2b47152f1040bb6d81a57e8f284965fbf5ff6e6fbf0276871185",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_processes_after.csv",
+    "export_relative": "server_run/gpu_processes_after.csv",
+    "sha256": "185facacd43b2b47152f1040bb6d81a57e8f284965fbf5ff6e6fbf0276871185",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/disk_before.txt",
+    "export_relative": "server_run/disk_before.txt",
+    "sha256": "11a71603d7aef89f2e3f7f42a467d79fbdfc9d05b1a8be5326841fc1e41c1371",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/disk_after.txt",
+    "export_relative": "server_run/disk_after.txt",
+    "sha256": "571a572d9e5b7a91703eae3beed4d057509fff1150823cef7abcb1a6c2dfe2b2",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/final_execution_checks.json",
+    "export_relative": "server_run/final_execution_checks.json",
+    "sha256": "24a68e9551cd7eda1f6c784ccc794b13353ca47fe5c2f38368a339053240e804",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/run_env.sh",
+    "export_relative": "server_run/run_env.sh",
+    "sha256": "e45f8aba1447c4c57e5a7cea893a9a99066a10fde093d16ef0f28fcb40108b2e",
+    "role": "original_server_history",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/allreduce_gradient.json",
+    "export_relative": "previous_A0_A5/allreduce_gradient.json",
+    "sha256": "657298f22c14e3fd0a20ffab278d182c35324aada17ec1fa7c6f73148af80526",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/allreduce_gradient.log",
+    "export_relative": "previous_A0_A5/allreduce_gradient.log",
+    "sha256": "5ba62054d3d3d4f9da3d78f5c6c81639245885830fdc8eeb3cd8fedf48bb7d42",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/environment.json",
+    "export_relative": "previous_A0_A5/environment.json",
+    "sha256": "c7a88de7ab7adc1316932c50e71b2a96bbe93339f8094ad5c28484faf80db2e2",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/fault_audit.json",
+    "export_relative": "previous_A0_A5/fault_audit.json",
+    "sha256": "7e68b9cb6d6b65905483c835f34dcab42351ede3c3099efe02037961f835a6bd",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/gpt2_profile.json",
+    "export_relative": "previous_A0_A5/gpt2_profile.json",
+    "sha256": "16c1c10024953a2f76f923aede859085756c975c158cc71db98382c48c5eaae2",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/gpt2_profile.log",
+    "export_relative": "previous_A0_A5/gpt2_profile.log",
+    "sha256": "0efdeb3b714b1d31bebd3680f8b1fea4a2a09521dd2cb4d2aadee82f2adf07c5",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/handoff.txt",
+    "export_relative": "previous_A0_A5/handoff.txt",
+    "sha256": "2b3572e9e28decc155de64f9eed1e6cf614b8c3bc94329c6bc619f697fdfd22b",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/measurement_validation.json",
+    "export_relative": "previous_A0_A5/measurement_validation.json",
+    "sha256": "f85cb20cb2d96abb4d80f02917361de9f36a98784634dc4c4f733d4fd3446a61",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/model_semantics.json",
+    "export_relative": "previous_A0_A5/model_semantics.json",
+    "sha256": "268a14f697b81ce00cefe5363d6eb2d013f2c9bf2c415aaf6cda36bd1f36f053",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/reuse_manifest.json",
+    "export_relative": "previous_A0_A5/reuse_manifest.json",
+    "sha256": "9313e37d4730ae6fb7dcdaaca97454d082be666295921fa54e58f5fe75f50b3b",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/state_tests.log",
+    "export_relative": "previous_A0_A5/state_tests.log",
+    "sha256": "a399a61f8a3555f614635a2a71b52549d8cee9c030f122987e111bc4f62ac0a0",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/topology.txt",
+    "export_relative": "previous_A0_A5/topology.txt",
+    "sha256": "44059359a9174ff1f77638a8a806a5f9dd2634198983d8ac5f2da0a12be80751",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/tp_message_7168.json",
+    "export_relative": "previous_A0_A5/tp_message_7168.json",
+    "sha256": "03412069b3896c9d471c3db01df60acb79c9b7275a4afd2629119e3c5b8242a0",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/tp_message_7168.log",
+    "export_relative": "previous_A0_A5/tp_message_7168.log",
+    "sha256": "8a52781ff7a6aa2007e2250c270389b9c11223247640923440ede9cf4adbf863",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/tp_message_917504.json",
+    "export_relative": "previous_A0_A5/tp_message_917504.json",
+    "sha256": "e40d94f88a1ef7c899a101d2129cd64e6dd983ae6af6f5986fbfa71c8ee9ba1c",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/previous_A0_A5/tp_message_917504.log",
+    "export_relative": "previous_A0_A5/tp_message_917504.log",
+    "sha256": "9370ad035bd08cdbace4d555e402beab9b06549b5dbaa5c7c87defda0d94f0d1",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_compact_input.json",
+    "export_relative": "reused_A1_01/ddp_compact_input.json",
+    "sha256": "b2ee9620099ab45457da1592dea35f3988ad75e185b40375144b91f74aec3467",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_compact_result.json",
+    "export_relative": "reused_A1_01/ddp_compact_result.json",
+    "sha256": "6aa5e09ea81ac650111bdc2f288c8543c9d29d5b65fc99097454f6f84819f94e",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_competition_input.json",
+    "export_relative": "reused_A1_01/ddp_competition_input.json",
+    "sha256": "44aef817d07c643bb9ca6be2cdf30042d696fdfd1cfb8d7cf1d2a3454e72f89b",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_competition_result.json",
+    "export_relative": "reused_A1_01/ddp_competition_result.json",
+    "sha256": "55fe364fb61857f54509510d992b012767ff79efb4638203660fea3d3f8099bb",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/report.html",
+    "export_relative": "reused_A1_01/report.html",
+    "sha256": "e262884cecd2b6ec2fd9f012958cea839b12c6357cb29848233fde57492929cd",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/report.json",
+    "export_relative": "reused_A1_01/report.json",
+    "sha256": "16aa5202034ab0a7360a9f7c59045254cbacb7d7f76f65b5ebdb7ca73f3ab1ad",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/source_profile.json",
+    "export_relative": "reused_A1_01/source_profile.json",
+    "sha256": "16c1c10024953a2f76f923aede859085756c975c158cc71db98382c48c5eaae2",
+    "role": "prior_measurement_or_separate_simulation",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/__init__.py",
+    "export_relative": "source_executed/agent_demo/__init__.py",
+    "sha256": "7506f9a4b44772c2cabab60cedced6aa920c218f130fe58b9d531f92a31ed77b",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/__main__.py",
+    "export_relative": "source_executed/agent_demo/__main__.py",
+    "sha256": "9be0d3a2bb0279fccc5d7bd3e7a8d19084afb1c326ffe02620b32a0834d94211",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/common.py",
+    "export_relative": "source_executed/agent_demo/common.py",
+    "sha256": "750bc11db60d386ebae01babeea2baf55f0b4ce4b62fca2ed034754d7a02faf0",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/contracts.py",
+    "export_relative": "source_executed/agent_demo/contracts.py",
+    "sha256": "9741b23614e40ddd4cbb2a5ec0b2199fae2d6ee3fd2effebb06762958921bc65",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/controller.py",
+    "export_relative": "source_executed/agent_demo/controller.py",
+    "sha256": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/ddp_backend.py",
+    "export_relative": "source_executed/agent_demo/ddp_backend.py",
+    "sha256": "6288e857b85a14ac4c79c3c1b49231d1739a8e3bfef7d9b6a8bdb04999c02a7d",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/ddp_worker.py",
+    "export_relative": "source_executed/agent_demo/ddp_worker.py",
+    "sha256": "a7728a747a5fa0a1eb6e9ce5cb0fe45c3bd78eb610503547ef701a46558a8685",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/legacy_bridge.py",
+    "export_relative": "source_executed/agent_demo/legacy_bridge.py",
+    "sha256": "899be04b9b0d0448b3a38f3da4bb9a7be13525b61cc031b6f5e3106faf67c71b",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/reporting.py",
+    "export_relative": "source_executed/agent_demo/reporting.py",
+    "sha256": "3404a42f21d5e44b5eb2a3dfb0f19b30717b93412c29a628b0c9a6a74d3fe93b",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/tcp_backend.py",
+    "export_relative": "source_executed/agent_demo/tcp_backend.py",
+    "sha256": "5881a669dc19966d3609105faf152e02e20f659ccec20e4ef57901f0bb3ccd9e",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/agent_demo/tcp_worker.py",
+    "export_relative": "source_executed/agent_demo/tcp_worker.py",
+    "sha256": "64a4928c8bf2359868c704f5b0c87be282fc0b0de3df6f8d62047f02a5e257e5",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/scripts/run_agent_gpu_matrix.py",
+    "export_relative": "source_executed/scripts/run_agent_gpu_matrix.py",
+    "sha256": "003230f8417f3e4425788095b40b25aa164130c8a3442e414f8b98cdfd97d838",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/tests/agent/__init__.py",
+    "export_relative": "source_executed/tests/agent/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/tests/agent/test_cli.py",
+    "export_relative": "source_executed/tests/agent/test_cli.py",
+    "sha256": "05bdf7293a6add73d85ef238b186c4b408f32d23f6ff53558064ba88fdf6420d",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/tests/agent/test_controller.py",
+    "export_relative": "source_executed/tests/agent/test_controller.py",
+    "sha256": "8b0f356ca6ef3d483742d3f74c81cf6f9f1563ace4e8015194dd56384e303114",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/tests/agent/test_ddp.py",
+    "export_relative": "source_executed/tests/agent/test_ddp.py",
+    "sha256": "0ffc0e9a032de72ca9352a0999252654d2eff58397a78e934441642d0544c5fe",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/tests/agent/test_legacy_bridge.py",
+    "export_relative": "source_executed/tests/agent/test_legacy_bridge.py",
+    "sha256": "ffa2c189efca722e0bfc8e4dc0eab0dfc13bb1373e3f971ee13197ae55bf629c",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_final/tests/agent/test_tcp.py",
+    "export_relative": "source_executed/tests/agent/test_tcp.py",
+    "sha256": "d8c283dc37e4ea6bc52783e6c9e18ae8b63f88e08468a8a60cd078f15b43ec16",
+    "role": "code_snapshot_used_for_gpu_matrix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_before/agent_demo/ddp_worker.py",
+    "export_relative": "history/source_before_gpu_fix/agent_demo/ddp_worker.py",
+    "sha256": "f44ded4d8a0674e3d8908a7a9017776d498b3a9ff3b1d60cdea118a8dd3c9b33",
+    "role": "before_checkpoint_retention_fix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/source_before/tests/agent/test_ddp.py",
+    "export_relative": "history/source_before_gpu_fix/tests/agent/test_ddp.py",
+    "sha256": "3dee79d4276c35b5a02f2feb44c81c18a72355f50f7876877d4d3e8bf84bec27",
+    "role": "before_checkpoint_retention_fix",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/__init__.py",
+    "export_relative": "source_current/agent_demo/__init__.py",
+    "sha256": "7506f9a4b44772c2cabab60cedced6aa920c218f130fe58b9d531f92a31ed77b",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/__main__.py",
+    "export_relative": "source_current/agent_demo/__main__.py",
+    "sha256": "9be0d3a2bb0279fccc5d7bd3e7a8d19084afb1c326ffe02620b32a0834d94211",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/common.py",
+    "export_relative": "source_current/agent_demo/common.py",
+    "sha256": "750bc11db60d386ebae01babeea2baf55f0b4ce4b62fca2ed034754d7a02faf0",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/contracts.py",
+    "export_relative": "source_current/agent_demo/contracts.py",
+    "sha256": "9741b23614e40ddd4cbb2a5ec0b2199fae2d6ee3fd2effebb06762958921bc65",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/controller.py",
+    "export_relative": "source_current/agent_demo/controller.py",
+    "sha256": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/ddp_backend.py",
+    "export_relative": "source_current/agent_demo/ddp_backend.py",
+    "sha256": "6288e857b85a14ac4c79c3c1b49231d1739a8e3bfef7d9b6a8bdb04999c02a7d",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/ddp_worker.py",
+    "export_relative": "source_current/agent_demo/ddp_worker.py",
+    "sha256": "a7728a747a5fa0a1eb6e9ce5cb0fe45c3bd78eb610503547ef701a46558a8685",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/legacy_bridge.py",
+    "export_relative": "source_current/agent_demo/legacy_bridge.py",
+    "sha256": "899be04b9b0d0448b3a38f3da4bb9a7be13525b61cc031b6f5e3106faf67c71b",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/reporting.py",
+    "export_relative": "source_current/agent_demo/reporting.py",
+    "sha256": "3404a42f21d5e44b5eb2a3dfb0f19b30717b93412c29a628b0c9a6a74d3fe93b",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/tcp_backend.py",
+    "export_relative": "source_current/agent_demo/tcp_backend.py",
+    "sha256": "5881a669dc19966d3609105faf152e02e20f659ccec20e4ef57901f0bb3ccd9e",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/tcp_worker.py",
+    "export_relative": "source_current/agent_demo/tcp_worker.py",
+    "sha256": "64a4928c8bf2359868c704f5b0c87be282fc0b0de3df6f8d62047f02a5e257e5",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/tests/agent/__init__.py",
+    "export_relative": "source_current/tests/agent/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/tests/agent/test_budget_and_evidence.py",
+    "export_relative": "source_current/tests/agent/test_budget_and_evidence.py",
+    "sha256": "f70907cbf968620122b4a7a819741ed72665f2fe86ffc76a3d6eccd238adef69",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/tests/agent/test_cli.py",
+    "export_relative": "source_current/tests/agent/test_cli.py",
+    "sha256": "05bdf7293a6add73d85ef238b186c4b408f32d23f6ff53558064ba88fdf6420d",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/tests/agent/test_controller.py",
+    "export_relative": "source_current/tests/agent/test_controller.py",
+    "sha256": "8b0f356ca6ef3d483742d3f74c81cf6f9f1563ace4e8015194dd56384e303114",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/tests/agent/test_ddp.py",
+    "export_relative": "source_current/tests/agent/test_ddp.py",
+    "sha256": "0ffc0e9a032de72ca9352a0999252654d2eff58397a78e934441642d0544c5fe",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/tests/agent/test_legacy_bridge.py",
+    "export_relative": "source_current/tests/agent/test_legacy_bridge.py",
+    "sha256": "ffa2c189efca722e0bfc8e4dc0eab0dfc13bb1373e3f971ee13197ae55bf629c",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/tests/agent/test_tcp.py",
+    "export_relative": "source_current/tests/agent/test_tcp.py",
+    "sha256": "d8c283dc37e4ea6bc52783e6c9e18ae8b63f88e08468a8a60cd078f15b43ec16",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/scripts/run_agent_gpu_matrix.py",
+    "export_relative": "source_current/scripts/run_agent_gpu_matrix.py",
+    "sha256": "003230f8417f3e4425788095b40b25aa164130c8a3442e414f8b98cdfd97d838",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/README.md",
+    "export_relative": "source_current/README.md",
+    "sha256": "627ef59d72751fcb43267075952c19f1c1cea471c41ef763ef7ad567e7404a7a",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/docs/refactor/AGENT_EXECUTION.md",
+    "export_relative": "source_current/docs/refactor/AGENT_EXECUTION.md",
+    "sha256": "08e960c260cbdb109401e3fc35404fe3c8a8fac9b3ecc55fa8c49bbe92c313c3",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/docs/refactor/architecture_report.md",
+    "export_relative": "source_current/docs/refactor/architecture_report.md",
+    "sha256": "5bc09cc73a403d779e4616636cfd11d77dcc62b79f171957d3b52846f74f5c93",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/docs/refactor/rubric_mapping.md",
+    "export_relative": "source_current/docs/refactor/rubric_mapping.md",
+    "sha256": "6d5a82529c1a9b911e04f0f2a2b2aeadbee1e66899ad4745244d4d0c7eb5f039",
+    "role": "workspace_at_export_not_necessarily_executed_during_gpu_run",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/team_20261103_053106/team_changes.diff",
+    "export_relative": "history/post_gpu_cpu_work/team_changes.diff",
+    "sha256": "4a28df82155001c962fb7788f60c00b75113287704c9212f105e9605dc6790b4",
+    "role": "later_cpu_tests_and_documentation_not_gpu_execution",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/team_20261103_053106/agent_added_tests.log",
+    "export_relative": "history/post_gpu_cpu_work/agent_added_tests.log",
+    "sha256": "b83892f90fc212e8010ffb462569612bd3f52407fd8973f6a940b43b0f60d40f",
+    "role": "later_cpu_tests_and_documentation_not_gpu_execution",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/team_20261103_053106/test_inventory.json",
+    "export_relative": "history/post_gpu_cpu_work/test_inventory.json",
+    "sha256": "a565ca97f6c59d342314f8aebd84961dc9675b90dc08f33fceacae04f86b2419",
+    "role": "later_cpu_tests_and_documentation_not_gpu_execution",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/team_20261103_053106/final_status.json",
+    "export_relative": "history/post_gpu_cpu_work/final_status.json",
+    "sha256": "3d5bc04f5f60cba0119d71655ff7b1fd1f8b2d3228cf0f20d2ff4fb1f0c8f7f4",
+    "role": "later_cpu_tests_and_documentation_not_gpu_execution",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/team_20261103_053106/progress_handoff.json",
+    "export_relative": "history/post_gpu_cpu_work/progress_handoff.json",
+    "sha256": "d2ad9568ca83da36462ade3473e70add491c9e00d861cde26419c7ea2c72766b",
+    "role": "later_cpu_tests_and_documentation_not_gpu_execution",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/audit_evidence.py",
+    "export_relative": "server_run/audit_evidence.py",
+    "sha256": "6461d8e1c48b113a28d7123d90019e00c8427920b54c24140b9286be14744d61",
+    "role": "original_audit_or_delivery_helper_not_training_logic",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/build_delivery.py",
+    "export_relative": "server_run/build_delivery.py",
+    "sha256": "6bc315cc4de85478fffbb36f33fca266ea45af54623c318f2c137701612cb126",
+    "role": "original_audit_or_delivery_helper_not_training_logic",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source_absolute": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/build_delivery.log",
+    "export_relative": "server_run/build_delivery.log",
+    "sha256": "fc21f9fe831cd15518ee8a6190c338f6f8b2c48e770df5d186ec3f59a6c33d7e",
+    "role": "original_audit_or_delivery_helper_not_training_logic",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  }
+]

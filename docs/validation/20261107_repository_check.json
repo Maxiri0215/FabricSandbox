@@ -1,0 +1,1716 @@
+{
+  "status": "passed",
+  "scope": "File/syntax/hash checks only; no HTTP listener, training, or fault injection.",
+  "files_inspected": 533,
+  "evidence_files_verified": 313,
+  "checks_passed": 341,
+  "checks_total": 341,
+  "errors": [],
+  "checks": [
+    {
+      "name": "required_entrypoints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "python_syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "json_documents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulator_snapshot:ddp.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulator_snapshot:__init__.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulator_snapshot:core.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulator_snapshot:tp.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulator_snapshot:validation.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tcp_snapshot:__init__.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tcp_snapshot:common.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tcp_snapshot:contracts.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tcp_snapshot:controller.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tcp_snapshot:tcp_backend.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tcp_snapshot:tcp_worker.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "executed_gpu_source_present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:__init__.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:__main__.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:common.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:contracts.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:controller.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:ddp_backend.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:ddp_worker.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:legacy_bridge.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:reporting.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:tcp_backend.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gpu_execution_source:tcp_worker.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:archive_selection.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/SHA256SUMS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/archive_metadata/original_README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/candidates.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/checkpoint_retention_at_export.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/copy_provenance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/evidence_inventory.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/experiment_overview.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/export_acceptance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/export_notes.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/export_validation.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/extraction_provenance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/command_gpt2_baseline.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/command_gpt2_blocked.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/command_gpt2_no_repair.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/command_gpt2_recover.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/command_tiny_smoke.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/checkpoint_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s10.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s15.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s20.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/checkpoints/manifest-e0-s5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/completion-epoch-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/executor.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/preflight.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/preflight.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/backend/torchrun-epoch-0.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/report.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_baseline/result.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/agent/incident.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/agent/trace.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/checkpoint_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/checkpoints/manifest-e0-s5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/epoch-0/exit-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/epoch-0/exit-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/executor.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/ground_truth.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/preflight.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/preflight.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/backend/torchrun-epoch-0.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/report.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_blocked/result.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/checkpoint_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/checkpoints/manifest-e0-s5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/exit-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/exit-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/executor.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/ground_truth.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/preflight.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/preflight.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/backend/torchrun-epoch-0.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/report.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_no_repair/result.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/agent/incident.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/agent/trace.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/checkpoint_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e0-s5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s10.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s15.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e1-s20.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/completion-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/execution-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/ground_truth.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/preflight.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/preflight.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-0.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-1.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/backend/verification-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/report.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/gpt2_recover/result.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/matrix.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/agent/incident.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/agent/trace.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/checkpoint_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e0-s5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s10.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s15.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e1-s20.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/completion-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-0/exit-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-0/exit-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/execution-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/executor.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/ground_truth.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/preflight.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/preflight.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/resume-for-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-0.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-1.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/backend/verification-epoch-1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/report.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/gpu_matrix_01/tiny_smoke/result.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/history/post_gpu_cpu_work/agent_added_tests.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/history/post_gpu_cpu_work/final_status.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/history/post_gpu_cpu_work/progress_handoff.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/history/post_gpu_cpu_work/team_changes.diff",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/history/post_gpu_cpu_work/test_inventory.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/main_incident_identity.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/main_incident_story.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/missing_evidence.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/allreduce_gradient.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/allreduce_gradient.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/environment.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/fault_audit.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/gpt2_profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/gpt2_profile.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/handoff.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/measurement_validation.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/model_semantics.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/reuse_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/state_tests.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/topology.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/tp_message_7168.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/tp_message_7168.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/tp_message_917504.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/previous_A0_A5/tp_message_917504.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/reused_A1_01/ddp_compact_input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/reused_A1_01/ddp_competition_input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/reused_A1_01/report.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/reused_A1_01/report.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/reused_A1_01/source_profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/run_discovery.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/acceptance_audit.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/acceptance_audit.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/agent_tests_initial.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/agent_tests_retention.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/baseline_vs_restored_loss.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/checkpoint_inventory.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/code_changes.diff",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/commands.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/doctor.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/environment.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/final_execution_checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/gpu_after.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/gpu_after.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/gpu_before.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/gpu_inventory.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/gpu_matrix_01.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/registered_commands.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/server_execution_summary.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/source_before_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/server_run/source_final_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/sha256_all.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/sha256_evidence.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/sha256_sources.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/__init__.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/__main__.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/common.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/contracts.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/controller.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/ddp_backend.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/ddp_worker.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/legacy_bridge.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/reporting.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/tcp_backend.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/agent_demo/tcp_worker.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/scripts/run_agent_gpu_matrix.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/tests/agent/__init__.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/tests/agent/test_cli.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/tests/agent/test_controller.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/tests/agent/test_ddp.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/tests/agent/test_legacy_bridge.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_executed/tests/agent/test_tcp.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_provenance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/source_review.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:gpu-case1/timeline.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/06_benchmark.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/input_three_nodes.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/input_two_nodes.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/ppt19_topology.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/ppt20_workload.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/source/run_model_evidence.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:legacy/source_verification.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D1_compact/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D1_compact/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D1_compact/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D1_compact/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D1_compact/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_A_alone/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_A_alone/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_A_alone/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_A_alone/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_A_alone/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_B_alone/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_B_alone/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_B_alone/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_B_alone/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_B_alone/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_competition/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_competition/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_competition/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_competition/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D2_competition/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_admission/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_admission/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_admission/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_admission/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_admission/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_memory_reject/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_memory_reject/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_memory_reject/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_memory_reject/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D3_memory_reject/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_checkpoint_fault/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_checkpoint_fault/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_checkpoint_fault/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_checkpoint_fault/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_checkpoint_fault/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_no_spare/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_no_spare/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_no_spare/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_no_spare/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_no_spare/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_spare/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_spare/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_spare/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_spare/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/D4_fault_spare/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/E0_analytic/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/E0_analytic/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/E0_analytic/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/E0_analytic/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/E0_analytic/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp1/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp1/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp1/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp1/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp1/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp2/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp2/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp2/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp2/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp2/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp4/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp4/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp4/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp4/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T1_tp4/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_A_alone/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_A_alone/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_A_alone/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_A_alone/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_A_alone/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_B_alone/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_B_alone/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_B_alone/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_B_alone/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_B_alone/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_competition/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_competition/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_competition/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_competition/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_competition/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_kv_reject/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_kv_reject/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_kv_reject/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_kv_reject/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_kv_reject/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_pair_control/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_pair_control/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_pair_control/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_pair_control/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T2_pair_control/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T3_fault/checks.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T3_fault/input.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T3_fault/metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T3_fault/profile.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/T3_fault/result_summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/contention_comparison.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "evidence:simulation/summary.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no_local_credentials_or_weights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "source_files_under_10MiB",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "D4_checkpoint_fault:engine_invariants",
+      "passed": true,
+      "detail": {
+        "input_hash": "50ee864debe65600ee7e0552009b27f94fa19c50f1339a4e925e7da77a228f84",
+        "implementation_hash": "d844734439ed524fe81d843d0065a17510ebf161c5efc036f31cf4bb061cd4e3"
+      }
+    },
+    {
+      "name": "D4_checkpoint_fault:whole_group_and_progress",
+      "passed": true,
+      "detail": {
+        "world_size": 4,
+        "lost_steps": 10,
+        "physical_completed_steps": 40,
+        "allocation_history": [
+          {
+            "time_ms": 0.0,
+            "epoch": 0,
+            "gpu_ids": [
+              "n0:gpu0",
+              "n0:gpu1",
+              "n1:gpu0",
+              "n1:gpu1"
+            ]
+          },
+          {
+            "time_ms": 1747.9110783999986,
+            "epoch": 1,
+            "gpu_ids": [
+              "n1:gpu0",
+              "n1:gpu1",
+              "n3:gpu0",
+              "n3:gpu1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "D4_checkpoint_fault:old_epoch_cannot_commit",
+      "passed": true,
+      "detail": {
+        "ignored": [
+          {
+            "time_ms": 1847.9110783999986,
+            "kind": "ignored_old_event",
+            "subject_id": "A",
+            "event_epoch": 0,
+            "epoch": 1,
+            "message": "故障前的事件不得推进新一轮执行"
+          }
+        ],
+        "stale_commits": []
+      }
+    },
+    {
+      "name": "D4_checkpoint_fault:incomplete_checkpoint_discarded",
+      "passed": true,
+      "detail": {
+        "failure_ms": 1747.9110783999986,
+        "from_step": 10,
+        "checkpoint_step": 0,
+        "lost_steps": 10,
+        "old_epoch": 0,
+        "new_epoch": 1,
+        "resume_ms": 2147.9110783999986,
+        "recovery_ms": 400.0,
+        "recovery_episode_start_ms": 1747.9110783999986,
+        "recovery_episode_ms": 400.0
+      }
+    },
+    {
+      "name": "D4_fault_no_spare:engine_invariants",
+      "passed": true,
+      "detail": {
+        "input_hash": "f48a9fef496981f5ace44cb79efba360a71f75dafe20d9d3bb32f6ea455e28e4",
+        "implementation_hash": "d844734439ed524fe81d843d0065a17510ebf161c5efc036f31cf4bb061cd4e3"
+      }
+    },
+    {
+      "name": "D4_fault_no_spare:whole_group_and_progress",
+      "passed": true,
+      "detail": {
+        "world_size": 4,
+        "lost_steps": 6,
+        "physical_completed_steps": 36,
+        "allocation_history": [
+          {
+            "time_ms": 0.0,
+            "epoch": 0,
+            "gpu_ids": [
+              "n0:gpu0",
+              "n0:gpu1",
+              "n1:gpu0",
+              "n1:gpu1"
+            ]
+          },
+          {
+            "time_ms": 5343.733235200019,
+            "epoch": 1,
+            "gpu_ids": [
+              "n1:gpu0",
+              "n1:gpu1",
+              "n2:gpu0",
+              "n2:gpu1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "D4_fault_no_spare:old_epoch_cannot_commit",
+      "passed": true,
+      "detail": {
+        "ignored": [
+          {
+            "time_ms": 3001.448833280005,
+            "kind": "ignored_old_event",
+            "subject_id": "A",
+            "event_epoch": 0,
+            "epoch": 1,
+            "message": "故障前的事件不得推进新一轮执行"
+          }
+        ],
+        "stale_commits": []
+      }
+    },
+    {
+      "name": "D4_fault_no_spare:wait_until_group_available",
+      "passed": true,
+      "detail": {
+        "waiting_ms": 2343.7332352000194,
+        "b_completed_at_ms": 5343.733235200019,
+        "recovery_ms": 2743.7332352000194
+      }
+    },
+    {
+      "name": "D4_fault_spare:engine_invariants",
+      "passed": true,
+      "detail": {
+        "input_hash": "4adc27a4893c98780c740da30d47f5e2997d74d13e0467a99ea3ec2a0e93a3c0",
+        "implementation_hash": "d844734439ed524fe81d843d0065a17510ebf161c5efc036f31cf4bb061cd4e3"
+      }
+    },
+    {
+      "name": "D4_fault_spare:whole_group_and_progress",
+      "passed": true,
+      "detail": {
+        "world_size": 4,
+        "lost_steps": 6,
+        "physical_completed_steps": 36,
+        "allocation_history": [
+          {
+            "time_ms": 0.0,
+            "epoch": 0,
+            "gpu_ids": [
+              "n0:gpu0",
+              "n0:gpu1",
+              "n1:gpu0",
+              "n1:gpu1"
+            ]
+          },
+          {
+            "time_ms": 3000.0,
+            "epoch": 1,
+            "gpu_ids": [
+              "n1:gpu0",
+              "n1:gpu1",
+              "n3:gpu0",
+              "n3:gpu1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "D4_fault_spare:old_epoch_cannot_commit",
+      "passed": true,
+      "detail": {
+        "ignored": [
+          {
+            "time_ms": 3001.448833280005,
+            "kind": "ignored_old_event",
+            "subject_id": "A",
+            "event_epoch": 0,
+            "epoch": 1,
+            "message": "故障前的事件不得推进新一轮执行"
+          }
+        ],
+        "stale_commits": []
+      }
+    },
+    {
+      "name": "D4_fault_spare:resume_after_restore",
+      "passed": true,
+      "detail": [
+        {
+          "failure_ms": 3000.0,
+          "from_step": 16,
+          "checkpoint_step": 10,
+          "lost_steps": 6,
+          "old_epoch": 0,
+          "new_epoch": 1,
+          "resume_ms": 3400.0,
+          "recovery_ms": 400.0,
+          "recovery_episode_start_ms": 3000.0,
+          "recovery_episode_ms": 400.0
+        }
+      ]
+    },
+    {
+      "name": "T3_fault:engine_invariants",
+      "passed": true,
+      "detail": {
+        "input_hash": "e0be7d61d6b006356b28e088baab6fedb1319af8430f11856589506bc557ab4b",
+        "implementation_hash": "d844734439ed524fe81d843d0065a17510ebf161c5efc036f31cf4bb061cd4e3"
+      }
+    },
+    {
+      "name": "T3_fault:failure_and_late_tokens",
+      "passed": true,
+      "detail": {
+        "failed_requests": [
+          {
+            "id": "request-1",
+            "arrival_ms": 0.0,
+            "prompt_tokens": 128,
+            "max_new_tokens": 4,
+            "state": "failed",
+            "reason": "node_down:n0",
+            "replica_id": "replica-0",
+            "started_ms": 0.0,
+            "completed_ms": null,
+            "first_token_ms": null,
+            "generated_tokens": 0,
+            "token_times_ms": [],
+            "wait_ms": 0.0,
+            "ttft_ms": null,
+            "latency_ms": null,
+            "inter_token_ms": [],
+            "kv_peak_bytes_per_gpu": 0,
+            "reserved_kv_bytes_per_gpu": 3784704,
+            "admission_memory_bytes_per_gpu": 9761268352.0,
+            "communication_calls": 6,
+            "failed_ms": 5.0
+          }
+        ],
+        "late_tokens": [],
+        "summary": {
+          "requests": 4,
+          "completed": 3,
+          "failed": 1,
+          "rejected": 0,
+          "incomplete": 0,
+          "simulated_end_ms": 186.98670080000645,
+          "successful_output_tokens": 12,
+          "successful_output_throughput_window_ms": 186.98670080000645,
+          "successful_output_tokens_per_second": 64.17568708715132,
+          "mean_ttft_ms": 98.97693866666664,
+          "kv_bytes_per_token_whole_model": 57344,
+          "allreduce_calls": 678,
+          "stale_callbacks_ignored": 1,
+          "profile_source": "SYNTHETIC"
+        }
+      }
+    },
+    {
+      "name": "repeated_failure:continuous_downtime",
+      "passed": true,
+      "detail": {
+        "recoveries": [
+          {
+            "failure_ms": 3000.0,
+            "from_step": 16,
+            "checkpoint_step": 10,
+            "lost_steps": 6,
+            "old_epoch": 0,
+            "new_epoch": 1,
+            "resume_ms": null,
+            "recovery_ms": null,
+            "superseded_at_ms": 3200.0
+          },
+          {
+            "failure_ms": 3200.0,
+            "from_step": 10,
+            "checkpoint_step": 10,
+            "lost_steps": 0,
+            "old_epoch": 1,
+            "new_epoch": 2,
+            "resume_ms": 5144.7421568,
+            "recovery_ms": 1944.7421568,
+            "recovery_episode_start_ms": 3000.0,
+            "recovery_episode_ms": 2144.7421568
+          }
+        ],
+        "recovery_ms": 2144.7421568,
+        "input_hash": "6d8087d4de5597278ec364d641133a043689b18267c8a1bf5cafe7979d45e3b3",
+        "implementation_hash": "d844734439ed524fe81d843d0065a17510ebf161c5efc036f31cf4bb061cd4e3"
+      }
+    }
+  ],
+  "note": "All fault times are virtual simulation time, not injected physical GPU failures."
+}

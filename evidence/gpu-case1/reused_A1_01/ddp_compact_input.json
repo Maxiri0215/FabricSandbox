@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "scenario": "ddp",
+  "topology": {
+    "nodes": [
+      {
+        "id": "n0",
+        "rack_id": "r0",
+        "gpu_count": 2,
+        "memory_gib": 24
+      },
+      {
+        "id": "n1",
+        "rack_id": "r0",
+        "gpu_count": 2,
+        "memory_gib": 24
+      },
+      {
+        "id": "n2",
+        "rack_id": "r1",
+        "gpu_count": 2,
+        "memory_gib": 24
+      },
+      {
+        "id": "n3",
+        "rack_id": "r1",
+        "gpu_count": 2,
+        "memory_gib": 24
+      }
+    ],
+    "node_bandwidth_gbps": 100,
+    "uplink_bandwidth_gbps": 50,
+    "local_bandwidth_gbps": 200,
+    "link_latency_us": 5,
+    "local_latency_us": 2
+  },
+  "horizon_ms": 60000,
+  "placement_policy": "compact",
+  "profile": {
+    "source": "MEASURED",
+    "measurement_id": "sha256:16c1c10024953a2f76f923aede859085756c975c158cc71db98382c48c5eaae2",
+    "compute_ms": 34.48729705810547,
+    "optimizer_ms": 15.213056087493896,
+    "peak_memory_gib": 3.560546875,
+    "local_batch_size": 1,
+    "sequence_length": 512
+  },
+  "jobs": [
+    {
+      "id": "A",
+      "world_size": 4,
+      "steps": 30,
+      "checkpoint_interval": 10,
+      "gpu_ids": [
+        "n0:gpu0",
+        "n0:gpu1",
+        "n1:gpu0",
+        "n1:gpu1"
+      ]
+    },
+    {
+      "id": "B",
+      "world_size": 4,
+      "steps": 30,
+      "checkpoint_interval": 10,
+      "gpu_ids": [
+        "n2:gpu0",
+        "n2:gpu1",
+        "n3:gpu0",
+        "n3:gpu1"
+      ]
+    }
+  ],
+  "faults": [],
+  "demo_variant": "compact"
+}

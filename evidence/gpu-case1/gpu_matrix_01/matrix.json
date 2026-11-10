@@ -1,0 +1,32 @@
+[
+  {
+    "scenario": "tiny_smoke",
+    "status": "recovered",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "scenario": "gpt2_baseline",
+    "status": "healthy",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "scenario": "gpt2_no_repair",
+    "status": "unrecovered_control",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "scenario": "gpt2_recover",
+    "status": "recovered",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "scenario": "gpt2_blocked",
+    "status": "blocked",
+    "passed": true,
+    "exit_code": 0
+  }
+]

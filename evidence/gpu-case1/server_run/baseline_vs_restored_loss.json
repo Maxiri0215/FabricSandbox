@@ -1,0 +1,203 @@
+{
+  "scope": "Post-run comparison; supports resumed training state, does not claim universal bitwise determinism across hardware.",
+  "ranks": [
+    {
+      "rank": 0,
+      "steps": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_steps_present": true,
+      "max_absolute_loss_difference": 0.0,
+      "losses": [
+        {
+          "step": 6,
+          "baseline_loss": 10.941666603088379,
+          "resumed_loss": 10.941666603088379
+        },
+        {
+          "step": 7,
+          "baseline_loss": 10.991631507873535,
+          "resumed_loss": 10.991631507873535
+        },
+        {
+          "step": 8,
+          "baseline_loss": 10.959171295166016,
+          "resumed_loss": 10.959171295166016
+        },
+        {
+          "step": 9,
+          "baseline_loss": 10.870071411132812,
+          "resumed_loss": 10.870071411132812
+        },
+        {
+          "step": 10,
+          "baseline_loss": 10.871216773986816,
+          "resumed_loss": 10.871216773986816
+        },
+        {
+          "step": 11,
+          "baseline_loss": 11.027782440185547,
+          "resumed_loss": 11.027782440185547
+        },
+        {
+          "step": 12,
+          "baseline_loss": 11.013394355773926,
+          "resumed_loss": 11.013394355773926
+        },
+        {
+          "step": 13,
+          "baseline_loss": 11.039558410644531,
+          "resumed_loss": 11.039558410644531
+        },
+        {
+          "step": 14,
+          "baseline_loss": 11.052446365356445,
+          "resumed_loss": 11.052446365356445
+        },
+        {
+          "step": 15,
+          "baseline_loss": 11.09986686706543,
+          "resumed_loss": 11.09986686706543
+        },
+        {
+          "step": 16,
+          "baseline_loss": 10.947061538696289,
+          "resumed_loss": 10.947061538696289
+        },
+        {
+          "step": 17,
+          "baseline_loss": 11.086480140686035,
+          "resumed_loss": 11.086480140686035
+        },
+        {
+          "step": 18,
+          "baseline_loss": 10.9601411819458,
+          "resumed_loss": 10.9601411819458
+        },
+        {
+          "step": 19,
+          "baseline_loss": 10.899276733398438,
+          "resumed_loss": 10.899276733398438
+        },
+        {
+          "step": 20,
+          "baseline_loss": 10.930152893066406,
+          "resumed_loss": 10.930152893066406
+        }
+      ]
+    },
+    {
+      "rank": 1,
+      "steps": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_steps_present": true,
+      "max_absolute_loss_difference": 0.0,
+      "losses": [
+        {
+          "step": 6,
+          "baseline_loss": 10.917540550231934,
+          "resumed_loss": 10.917540550231934
+        },
+        {
+          "step": 7,
+          "baseline_loss": 10.90999698638916,
+          "resumed_loss": 10.90999698638916
+        },
+        {
+          "step": 8,
+          "baseline_loss": 10.981339454650879,
+          "resumed_loss": 10.981339454650879
+        },
+        {
+          "step": 9,
+          "baseline_loss": 11.022220611572266,
+          "resumed_loss": 11.022220611572266
+        },
+        {
+          "step": 10,
+          "baseline_loss": 10.958361625671387,
+          "resumed_loss": 10.958361625671387
+        },
+        {
+          "step": 11,
+          "baseline_loss": 10.905069351196289,
+          "resumed_loss": 10.905069351196289
+        },
+        {
+          "step": 12,
+          "baseline_loss": 11.069172859191895,
+          "resumed_loss": 11.069172859191895
+        },
+        {
+          "step": 13,
+          "baseline_loss": 11.021139144897461,
+          "resumed_loss": 11.021139144897461
+        },
+        {
+          "step": 14,
+          "baseline_loss": 11.022210121154785,
+          "resumed_loss": 11.022210121154785
+        },
+        {
+          "step": 15,
+          "baseline_loss": 10.930456161499023,
+          "resumed_loss": 10.930456161499023
+        },
+        {
+          "step": 16,
+          "baseline_loss": 10.956003189086914,
+          "resumed_loss": 10.956003189086914
+        },
+        {
+          "step": 17,
+          "baseline_loss": 10.876154899597168,
+          "resumed_loss": 10.876154899597168
+        },
+        {
+          "step": 18,
+          "baseline_loss": 11.0078763961792,
+          "resumed_loss": 11.0078763961792
+        },
+        {
+          "step": 19,
+          "baseline_loss": 10.924612998962402,
+          "resumed_loss": 10.924612998962402
+        },
+        {
+          "step": 20,
+          "baseline_loss": 10.94231128692627,
+          "resumed_loss": 10.94231128692627
+        }
+      ]
+    }
+  ]
+}

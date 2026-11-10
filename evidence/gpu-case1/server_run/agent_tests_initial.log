@@ -1,0 +1,97 @@
+test_gpu_matrix_stops_after_failed_acceptance (test_cli.CLITest.test_gpu_matrix_stops_after_failed_acceptance) ... 
+Starting tiny_smoke; interpreter=/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/bin/python; allowed_pool=['0', '1', '2']
+Stopped after failed acceptance: tiny_smoke. Inspect /remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmp256c35yo/matrix/tiny_smoke. Use a NEW directory when retrying.
+ok
+test_monitored_tcp_driver_with_in_memory_protocol (test_cli.CLITest.test_monitored_tcp_driver_with_in_memory_protocol) ... [   0.00s] started: 
+[   0.02s] monitor_observation: 
+[   0.34s] monitor_observation: 
+[   0.36s] anomaly_detected: 
+[   0.37s] tool_start: observe
+[   0.37s] tool_result: observe
+[   0.38s] tool_start: diagnose
+[   0.38s] tool_result: diagnose
+[   0.39s] tool_start: propose
+[   0.39s] tool_result: propose
+[   0.40s] selection: 
+[   0.40s] tool_start: validate
+[   0.41s] tool_result: validate
+[   0.42s] tool_start: apply
+[   0.44s] tool_result: apply
+[   0.44s] tool_start: verify
+[   0.46s] terminal: recovered
+[   0.49s] tool_result: verify
+{"status": "recovered", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/recover/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/recover/report.html"}
+[   0.00s] started: 
+[   0.01s] monitor_observation: 
+[   0.32s] monitor_observation: 
+[   0.33s] anomaly_detected: 
+[   0.33s] tool_start: observe
+[   0.34s] tool_result: observe
+[   0.34s] tool_start: diagnose
+[   0.35s] tool_result: diagnose
+[   0.36s] tool_start: propose
+[   0.37s] terminal: blocked
+[   0.38s] tool_result: propose
+{"status": "blocked", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/blocked/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/blocked/report.html"}
+[   0.00s] started: 
+[   0.01s] monitor_observation: 
+[   0.33s] monitor_observation: 
+[   0.34s] anomaly_detected: 
+[   0.34s] tool_start: observe
+[   0.35s] tool_result: observe
+[   0.36s] tool_start: diagnose
+[   0.37s] terminal: inconclusive
+[   0.37s] tool_result: diagnose
+{"status": "inconclusive", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/receiver-down/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/receiver-down/report.html"}
+{"status": "healthy", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/baseline/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/baseline/report.html"}
+{"status": "unrecovered_control", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/no-repair/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/tmp/tmpntg10uv0/no-repair/report.html"}
+ok
+test_apply_requires_issued_validated_candidate (test_controller.ControllerTest.test_apply_requires_issued_validated_candidate) ... ok
+test_failed_verification_cannot_be_overridden_by_healthy_observation (test_controller.ControllerTest.test_failed_verification_cannot_be_overridden_by_healthy_observation) ... ok
+test_forged_evidence_is_not_a_diagnosis (test_controller.ControllerTest.test_forged_evidence_is_not_a_diagnosis) ... ok
+test_html_cannot_close_script_from_untrusted_evidence (test_controller.ControllerTest.test_html_cannot_close_script_from_untrusted_evidence) ... ok
+test_live_revalidation_rejects_version_change (test_controller.ControllerTest.test_live_revalidation_rejects_version_change) ... ok
+test_llm_calls_real_whitelisted_adapter_tools (test_controller.ControllerTest.test_llm_calls_real_whitelisted_adapter_tools) ... ok
+test_malformed_tool_arguments_are_bounded (test_controller.ControllerTest.test_malformed_tool_arguments_are_bounded) ... ok
+test_monitor_observes_health_before_independent_anomaly (test_controller.ControllerTest.test_monitor_observes_health_before_independent_anomaly) ... ok
+test_monitor_timeout_does_not_invent_a_failure_or_repair (test_controller.ControllerTest.test_monitor_timeout_does_not_invent_a_failure_or_repair) ... ok
+test_no_fault_no_mutation (test_controller.ControllerTest.test_no_fault_no_mutation) ... ok
+test_pending_execution_only_allows_verification (test_controller.ControllerTest.test_pending_execution_only_allows_verification) ... ok
+test_provider_failure_falls_back_but_backend_failure_does_not (test_controller.ControllerTest.test_provider_failure_falls_back_but_backend_failure_does_not) ... ok
+test_resource_shortage_never_executes (test_controller.ControllerTest.test_resource_shortage_never_executes) ... ok
+test_rule_recovery_retains_rejected_candidate_and_new_evidence (test_controller.ControllerTest.test_rule_recovery_retains_rejected_candidate_and_new_evidence) ... ok
+test_ambiguous_group_failure_is_conservative (test_ddp.DDPControlTests.test_ambiguous_group_failure_is_conservative) ... ok
+test_checkpoint_outside_output_is_rejected (test_ddp.DDPControlTests.test_checkpoint_outside_output_is_rejected) ... ok
+test_cleanup_handles_worker_in_a_separate_session (test_ddp.DDPControlTests.test_cleanup_handles_worker_in_a_separate_session) ... ok
+test_completion_without_checkpoint_restore_is_not_recovery (test_ddp.DDPControlTests.test_completion_without_checkpoint_restore_is_not_recovery) ... ok
+test_duplicate_execution_returns_receipt_without_second_launch (test_ddp.DDPControlTests.test_duplicate_execution_returns_receipt_without_second_launch) ... ok
+test_fixed_group_uses_healthy_slot_and_spare (test_ddp.DDPControlTests.test_fixed_group_uses_healthy_slot_and_spare) ... ok
+test_ground_truth_is_not_used_as_diagnostic_evidence (test_ddp.DDPControlTests.test_ground_truth_is_not_used_as_diagnostic_evidence) ... ok
+test_hash_mismatch_prevents_restart (test_ddp.DDPControlTests.test_hash_mismatch_prevents_restart) ... ok
+test_no_spare_is_blocked_instead_of_reducing_world_size (test_ddp.DDPControlTests.test_no_spare_is_blocked_instead_of_reducing_world_size) ... ok
+test_old_torch_without_uuid_is_explicitly_logical_only (test_ddp.DDPControlTests.test_old_torch_without_uuid_is_explicitly_logical_only) ... ok
+test_recycled_pid_is_not_owned (test_ddp.DDPControlTests.test_recycled_pid_is_not_owned) ... ok
+test_stale_or_unauthorized_plan_cannot_execute (test_ddp.DDPControlTests.test_stale_or_unauthorized_plan_cannot_execute) ... ok
+test_uuid_mismatch_is_not_accepted_as_physical_mapping (test_ddp.DDPControlTests.test_uuid_mismatch_is_not_accepted_as_physical_mapping) ... ok
+test_worker_fault_recovers_from_committed_checkpoint (test_ddp.LiveCPUDDPTests.test_worker_fault_recovers_from_committed_checkpoint) ... ok
+test_import_rejects_corrupt_summary_and_impossible_memory (test_legacy_bridge.LegacyBridgeTests.test_import_rejects_corrupt_summary_and_impossible_memory) ... ok
+test_import_rejects_nonfinite_samples_and_wrong_model (test_legacy_bridge.LegacyBridgeTests.test_import_rejects_nonfinite_samples_and_wrong_model) ... ok
+test_import_rejects_standalone_collective (test_legacy_bridge.LegacyBridgeTests.test_import_rejects_standalone_collective) ... ok
+test_import_runs_two_simulations_with_honest_provenance (test_legacy_bridge.LegacyBridgeTests.test_import_runs_two_simulations_with_honest_provenance) ... ok
+test_planning_candidates_share_fixed_baseline (test_legacy_bridge.LegacyBridgeTests.test_planning_candidates_share_fixed_baseline) ... ok
+test_actual_failure_replan_retry_and_new_payload (test_tcp.TCPLiveTests.test_actual_failure_replan_retry_and_new_payload) ... ok
+test_no_available_channel (test_tcp.TCPLiveTests.test_no_available_channel) ... ok
+test_real_receiver_rejects_corrupt_payload (test_tcp.TCPLiveTests.test_real_receiver_rejects_corrupt_payload) ... ok
+test_receiver_failure_is_not_misdiagnosed_as_channel_only (test_tcp.TCPLiveTests.test_receiver_failure_is_not_misdiagnosed_as_channel_only) ... ok
+test_diagnosis_requires_independent_receiver_evidence (test_tcp.TCPPureTests.test_diagnosis_requires_independent_receiver_evidence) ... ok
+test_idempotency_and_stale_version (test_tcp.TCPPureTests.test_idempotency_and_stale_version) ... ok
+test_new_payload_and_pending_retry_with_in_memory_transport (test_tcp.TCPPureTests.test_new_payload_and_pending_retry_with_in_memory_transport)
+Exercise protocol accounting without claiming actual socket execution. ... ok
+test_payload_dedup_and_checksum (test_tcp.TCPPureTests.test_payload_dedup_and_checksum) ... ok
+test_plan_write_failure_does_not_change_running_channel (test_tcp.TCPPureTests.test_plan_write_failure_does_not_change_running_channel) ... ok
+test_unavailable_and_tampered_candidates_are_rejected (test_tcp.TCPPureTests.test_unavailable_and_tampered_candidates_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 37.512s
+
+OK

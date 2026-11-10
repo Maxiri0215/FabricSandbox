@@ -1,0 +1,38 @@
+/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+W1103 05:14:42.779000 278345 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W1103 05:14:42.781000 278345 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 278360 closing signal SIGTERM
+W1103 05:14:42.782000 278345 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 278361 closing signal SIGTERM
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/run.py", line 896, in <module>
+    main()
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in main
+    run(args)
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/run.py", line 883, in run
+    elastic_launch(
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 261, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 278345 got signal: 15

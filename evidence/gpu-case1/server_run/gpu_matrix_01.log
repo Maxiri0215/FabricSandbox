@@ -1,0 +1,66 @@
+
+Starting tiny_smoke; interpreter=/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/bin/python; allowed_pool=['2', '3', '4']
+[   0.00s] started: 
+[   0.00s] monitor_observation: 
+[   3.22s] monitor_observation: 
+[   9.18s] monitor_observation: 
+[   9.19s] anomaly_detected: 
+[   9.20s] tool_start: observe
+[   9.20s] tool_result: observe
+[   9.21s] tool_start: diagnose
+[   9.22s] tool_result: diagnose
+[   9.25s] tool_start: propose
+[   9.26s] tool_result: propose
+[   9.27s] selection: 
+[   9.27s] tool_start: validate
+[   9.28s] tool_result: validate
+[   9.29s] tool_start: apply
+[  10.03s] tool_result: apply
+[  10.04s] tool_start: verify
+[  18.41s] terminal: recovered
+[  18.42s] tool_result: verify
+{"status": "recovered", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/report.html"}
+
+Starting gpt2_baseline; interpreter=/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/bin/python; allowed_pool=['2', '3', '4']
+{"status": "healthy", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/report.html"}
+
+Starting gpt2_no_repair; interpreter=/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/bin/python; allowed_pool=['2', '3', '4']
+{"status": "unrecovered_control", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/report.html"}
+
+Starting gpt2_recover; interpreter=/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/bin/python; allowed_pool=['2', '3', '4']
+[   0.00s] started: 
+[   0.01s] monitor_observation: 
+[   3.33s] monitor_observation: 
+[  36.84s] monitor_observation: 
+[  36.85s] anomaly_detected: 
+[  36.86s] tool_start: observe
+[  36.86s] tool_result: observe
+[  36.87s] tool_start: diagnose
+[  36.88s] tool_result: diagnose
+[  36.89s] tool_start: propose
+[  36.90s] tool_result: propose
+[  36.90s] selection: 
+[  36.91s] tool_start: validate
+[  36.92s] tool_result: validate
+[  36.93s] tool_start: apply
+[  38.10s] tool_result: apply
+[  38.10s] tool_start: verify
+[ 131.70s] terminal: recovered
+[ 131.71s] tool_result: verify
+{"status": "recovered", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/report.html"}
+
+Starting gpt2_blocked; interpreter=/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/bin/python; allowed_pool=['2', '3']
+[   0.00s] started: 
+[   0.00s] monitor_observation: 
+[   3.22s] monitor_observation: 
+[  36.64s] monitor_observation: 
+[  36.65s] anomaly_detected: 
+[  36.70s] tool_start: observe
+[  36.70s] tool_result: observe
+[  36.71s] tool_start: diagnose
+[  36.72s] tool_result: diagnose
+[  36.72s] tool_start: propose
+[  36.73s] terminal: blocked
+[  36.74s] tool_result: propose
+{"status": "blocked", "checks_passed": true, "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/result.json", "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/report.html"}
+{"all_experiments_accepted": true, "index": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/index.html", "note": "Blocked is an expected negative result, not a recovered workload."}

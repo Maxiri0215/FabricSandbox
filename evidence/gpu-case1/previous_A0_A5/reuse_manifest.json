@@ -1,0 +1,107 @@
+[
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/gpt2_profile.json",
+    "copy": "previous_A0_A5/gpt2_profile.json",
+    "sha256": "16c1c10024953a2f76f923aede859085756c975c158cc71db98382c48c5eaae2",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/gpt2_profile.log",
+    "copy": "previous_A0_A5/gpt2_profile.log",
+    "sha256": "0efdeb3b714b1d31bebd3680f8b1fea4a2a09521dd2cb4d2aadee82f2adf07c5",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/allreduce_gradient.json",
+    "copy": "previous_A0_A5/allreduce_gradient.json",
+    "sha256": "657298f22c14e3fd0a20ffab278d182c35324aada17ec1fa7c6f73148af80526",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/allreduce_gradient.log",
+    "copy": "previous_A0_A5/allreduce_gradient.log",
+    "sha256": "5ba62054d3d3d4f9da3d78f5c6c81639245885830fdc8eeb3cd8fedf48bb7d42",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/tp_message_7168.json",
+    "copy": "previous_A0_A5/tp_message_7168.json",
+    "sha256": "03412069b3896c9d471c3db01df60acb79c9b7275a4afd2629119e3c5b8242a0",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/tp_message_7168.log",
+    "copy": "previous_A0_A5/tp_message_7168.log",
+    "sha256": "8a52781ff7a6aa2007e2250c270389b9c11223247640923440ede9cf4adbf863",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/tp_message_917504.json",
+    "copy": "previous_A0_A5/tp_message_917504.json",
+    "sha256": "e40d94f88a1ef7c899a101d2129cd64e6dd983ae6af6f5986fbfa71c8ee9ba1c",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/tp_message_917504.log",
+    "copy": "previous_A0_A5/tp_message_917504.log",
+    "sha256": "9370ad035bd08cdbace4d555e402beab9b06549b5dbaa5c7c87defda0d94f0d1",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/environment.json",
+    "copy": "previous_A0_A5/environment.json",
+    "sha256": "c7a88de7ab7adc1316932c50e71b2a96bbe93339f8094ad5c28484faf80db2e2",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/topology.txt",
+    "copy": "previous_A0_A5/topology.txt",
+    "sha256": "44059359a9174ff1f77638a8a806a5f9dd2634198983d8ac5f2da0a12be80751",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/measurement_validation.json",
+    "copy": "previous_A0_A5/measurement_validation.json",
+    "sha256": "f85cb20cb2d96abb4d80f02917361de9f36a98784634dc4c4f733d4fd3446a61",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/handoff.txt",
+    "copy": "previous_A0_A5/handoff.txt",
+    "sha256": "2b3572e9e28decc155de64f9eed1e6cf614b8c3bc94329c6bc619f697fdfd22b",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/model_semantics.json",
+    "copy": "previous_A0_A5/model_semantics.json",
+    "sha256": "268a14f697b81ce00cefe5363d6eb2d013f2c9bf2c415aaf6cda36bd1f36f053",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/fault_audit.json",
+    "copy": "previous_A0_A5/fault_audit.json",
+    "sha256": "7e68b9cb6d6b65905483c835f34dcab42351ede3c3099efe02037961f835a6bd",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  },
+  {
+    "source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/state_tests.log",
+    "copy": "previous_A0_A5/state_tests.log",
+    "sha256": "a399a61f8a3555f614635a2a71b52549d8cee9c030f122987e111bc4f62ac0a0",
+    "sha256_scope": "historical_original_copy_record",
+    "public_integrity": "Use evidence/evidence_manifest.json for the current sanitized public files."
+  }
+]

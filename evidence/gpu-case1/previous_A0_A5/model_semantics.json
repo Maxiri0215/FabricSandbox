@@ -1,0 +1,35 @@
+{
+  "model_config": {
+    "n_layer": 12,
+    "n_embd": 768,
+    "n_head": 12,
+    "vocab_size": 50257,
+    "n_positions": 1024
+  },
+  "parameter_components": {
+    "token_embedding_tied_lm_head": 38597376,
+    "position_embedding": 786432,
+    "transformer_blocks": 85054464,
+    "final_layernorm": 1536
+  },
+  "parameter_count": 124439808,
+  "gradient_bytes": 497759232,
+  "base_training_storage_bytes_per_rank": 1991036928,
+  "source": "DERIVED_FROM_MODEL_CONFIGURATION",
+  "dtype": "float32",
+  "optimizer": "AdamW",
+  "local_batch": 1,
+  "sequence_length": 512,
+  "ring_example_world_size": 4,
+  "ring_rounds": 6,
+  "ring_chunk_bytes": 124439808,
+  "ring_sent_bytes_per_rank": 746638848,
+  "implementation_hash": "d844734439ed524fe81d843d0065a17510ebf161c5efc036f31cf4bb061cd4e3",
+  "notes": [
+    "Tied token embedding and output head are counted once.",
+    "Each DDP rank holds full parameters, gradients and Adam first/second moments: 16 bytes per parameter; do not divide by world size.",
+    "Base storage excludes activations, temporary buffers, gradient buckets and allocator/NCCL overhead.",
+    "The simulator uses one gradient bucket and no computation/communication overlap.",
+    "The measured NCCL collective does not force Ring; simulated Ring and measured NCCL algorithm must not be conflated."
+  ]
+}

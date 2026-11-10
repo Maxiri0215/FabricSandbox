@@ -1,0 +1,11 @@
+{
+  "file": "checkpoints/checkpoint-e0-s20.pt",
+  "sha256": "f90a2603571694dca38572dec4420f9622471f827b53c2cd49deedec16bfac4f",
+  "step": 20,
+  "epoch": 0,
+  "world_size": 2,
+  "model": "gpt2",
+  "sequence_length": 128,
+  "committed_at": 1793682657.5585997,
+  "size_bytes": 1493476631
+}

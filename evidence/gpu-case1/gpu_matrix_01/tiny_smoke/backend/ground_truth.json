@@ -1,0 +1,9 @@
+{
+  "kind": "worker_termination",
+  "pid": 276999,
+  "rank": 1,
+  "slot_id": "3",
+  "step": 7,
+  "injected_at": 1793682527.292491,
+  "boundary": "Ground truth for post-run scoring; not a diagnostic input"
+}

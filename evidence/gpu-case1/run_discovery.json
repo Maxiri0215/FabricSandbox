@@ -1,0 +1,42 @@
+{
+  "authoritative_run": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617",
+  "scan_scope": "results/server_*/**/experiment_config.json; archived team/gpu_reference copies excluded",
+  "runs": [
+    {
+      "config_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+      "model": "gpt2",
+      "status": "healthy",
+      "result_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_baseline/result.json",
+      "same_authoritative_root": true
+    },
+    {
+      "config_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+      "model": "gpt2",
+      "status": "blocked",
+      "result_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_blocked/result.json",
+      "same_authoritative_root": true
+    },
+    {
+      "config_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+      "model": "gpt2",
+      "status": "unrecovered_control",
+      "result_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_no_repair/result.json",
+      "same_authoritative_root": true
+    },
+    {
+      "config_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+      "model": "gpt2",
+      "status": "recovered",
+      "result_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/gpt2_recover/result.json",
+      "same_authoritative_root": true
+    },
+    {
+      "config_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+      "model": "tiny",
+      "status": "recovered",
+      "result_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/gpu_matrix_01/tiny_smoke/result.json",
+      "same_authoritative_root": true
+    }
+  ],
+  "failed_acceptance_runs_found": []
+}

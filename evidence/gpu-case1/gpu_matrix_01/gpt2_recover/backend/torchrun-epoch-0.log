@@ -1,0 +1,41 @@
+/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+W1103 05:12:25.851000 277806 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 277811 closing signal SIGTERM
+E1103 05:12:26.118000 277806 torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 143) local_rank: 1 (pid: 277812) of binary: /remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/run.py", line 896, in <module>
+    main()
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in main
+    run(args)
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/run.py", line 883, in run
+    elastic_launch(
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/var/owner_env/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 270, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/agent_demo/ddp_worker.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-03_05:12:25
+  host      : demo-container-01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 143 (pid: 277812)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

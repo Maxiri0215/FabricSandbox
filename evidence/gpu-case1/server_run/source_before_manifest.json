@@ -1,0 +1,22 @@
+{
+  "README.md": "bd47c1bf4732ad14b5b096a7d10e44a2890f1bea6a3d602a6d354d3420cae72e",
+  "agent_demo/__init__.py": "7506f9a4b44772c2cabab60cedced6aa920c218f130fe58b9d531f92a31ed77b",
+  "agent_demo/__main__.py": "9be0d3a2bb0279fccc5d7bd3e7a8d19084afb1c326ffe02620b32a0834d94211",
+  "agent_demo/common.py": "750bc11db60d386ebae01babeea2baf55f0b4ce4b62fca2ed034754d7a02faf0",
+  "agent_demo/contracts.py": "9741b23614e40ddd4cbb2a5ec0b2199fae2d6ee3fd2effebb06762958921bc65",
+  "agent_demo/controller.py": "4481a8f4049b442ab0db57bc0ce1f505dfdc8a127461869605d5e87440ccfe19",
+  "agent_demo/ddp_backend.py": "6288e857b85a14ac4c79c3c1b49231d1739a8e3bfef7d9b6a8bdb04999c02a7d",
+  "agent_demo/ddp_worker.py": "f44ded4d8a0674e3d8908a7a9017776d498b3a9ff3b1d60cdea118a8dd3c9b33",
+  "agent_demo/legacy_bridge.py": "899be04b9b0d0448b3a38f3da4bb9a7be13525b61cc031b6f5e3106faf67c71b",
+  "agent_demo/reporting.py": "3404a42f21d5e44b5eb2a3dfb0f19b30717b93412c29a628b0c9a6a74d3fe93b",
+  "agent_demo/tcp_backend.py": "5881a669dc19966d3609105faf152e02e20f659ccec20e4ef57901f0bb3ccd9e",
+  "agent_demo/tcp_worker.py": "64a4928c8bf2359868c704f5b0c87be282fc0b0de3df6f8d62047f02a5e257e5",
+  "docs/refactor/AGENT_EXECUTION.md": "3090c29de2aed9b0b53814e842b1038ae11fc14edf34d25faec9cf2eeec92d3c",
+  "scripts/run_agent_gpu_matrix.py": "003230f8417f3e4425788095b40b25aa164130c8a3442e414f8b98cdfd97d838",
+  "tests/agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/agent/test_cli.py": "05bdf7293a6add73d85ef238b186c4b408f32d23f6ff53558064ba88fdf6420d",
+  "tests/agent/test_controller.py": "8b0f356ca6ef3d483742d3f74c81cf6f9f1563ace4e8015194dd56384e303114",
+  "tests/agent/test_ddp.py": "3dee79d4276c35b5a02f2feb44c81c18a72355f50f7876877d4d3e8bf84bec27",
+  "tests/agent/test_legacy_bridge.py": "ffa2c189efca722e0bfc8e4dc0eab0dfc13bb1373e3f971ee13197ae55bf629c",
+  "tests/agent/test_tcp.py": "d8c283dc37e4ea6bc52783e6c9e18ae8b63f88e08468a8a60cd078f15b43ec16"
+}

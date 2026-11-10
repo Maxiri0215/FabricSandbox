@@ -1,0 +1,172 @@
+{
+  "required_evidence_missing": [],
+  "historical_weights_missing": [],
+  "blank_fields": [
+    {
+      "experiment": "gpt2_baseline",
+      "field": "actual_agent_mode",
+      "reason": "Agent was not started for the baseline/no-repair control; --mode rules is only the supplied CLI option",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "recovered_gpu_ids",
+      "reason": "No recovery execution occurred",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "fault_pre_progress",
+      "reason": "No fault in the healthy baseline",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "last_committed_step_before_fault",
+      "reason": "No fault or no pre-fault committed manifest",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "recovery_checkpoint_step",
+      "reason": "No checkpoint was loaded for recovery in this control",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "rollback_steps",
+      "reason": "No actual rollback executed; do not substitute zero or uncommitted progress",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "detection_delay_ms",
+      "reason": "No controller detection timestamp is stored for baseline/no-repair; no zero or upper-bound substitution",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "observed_failure_to_resumed_progress_ms",
+      "reason": "No resumed training progress: metric absent/not applicable",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "fault_to_terminal_ms",
+      "reason": "No controller terminal interval is recorded for baseline/no-repair",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_baseline",
+      "field": "incident_id",
+      "reason": "No Agent incident for this control",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "actual_agent_mode",
+      "reason": "Agent was not started for the baseline/no-repair control; --mode rules is only the supplied CLI option",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "recovered_gpu_ids",
+      "reason": "No recovery execution occurred",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "recovery_checkpoint_step",
+      "reason": "No checkpoint was loaded for recovery in this control",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "rollback_steps",
+      "reason": "No actual rollback executed; do not substitute zero or uncommitted progress",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "final_completed_step",
+      "reason": "Target training did not complete; final step 7 is observed progress, not completed workload",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "detection_delay_ms",
+      "reason": "No controller detection timestamp is stored for baseline/no-repair; no zero or upper-bound substitution",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "observed_failure_to_resumed_progress_ms",
+      "reason": "No resumed training progress: metric absent/not applicable",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "fault_to_terminal_ms",
+      "reason": "No controller terminal interval is recorded for baseline/no-repair",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_no_repair",
+      "field": "incident_id",
+      "reason": "No Agent incident for this control",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_blocked",
+      "field": "recovered_gpu_ids",
+      "reason": "No recovery execution occurred",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_blocked",
+      "field": "recovery_checkpoint_step",
+      "reason": "No checkpoint was loaded for recovery in this control",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_blocked",
+      "field": "rollback_steps",
+      "reason": "No actual rollback executed; do not substitute zero or uncommitted progress",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_blocked",
+      "field": "final_completed_step",
+      "reason": "Target training did not complete; final step 7 is observed progress, not completed workload",
+      "classification": "not_applicable_or_not_recorded"
+    },
+    {
+      "experiment": "gpt2_blocked",
+      "field": "observed_failure_to_resumed_progress_ms",
+      "reason": "No resumed training progress: metric absent/not applicable",
+      "classification": "not_applicable_or_not_recorded"
+    }
+  ],
+  "intentionally_excluded": [
+    "All .pt/.tmp weights",
+    "Python environments",
+    "model caches",
+    "API credentials",
+    "complete system environment"
+  ],
+  "unverified": [
+    "External LLM API",
+    "Statistical significance or P95; single trial only",
+    "Cross-server/RDMA/physical hardware faults"
+  ],
+  "unrecorded_metadata": [
+    {
+      "item": "Git commit/status/Git diff",
+      "reason": "No Git repository available; exact source snapshots and historical non-Git diffs supplied."
+    },
+    {
+      "item": "Per-launch full torchrun argv",
+      "reason": "Not separately persisted; original CLI argv, launcher source, config, PIDs, epochs and slots are preserved."
+    }
+  ]
+}

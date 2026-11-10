@@ -1,0 +1,104 @@
+{
+  "backend": "simulation",
+  "status": "completed",
+  "source_measurement_sha256": "16c1c10024953a2f76f923aede859085756c975c158cc71db98382c48c5eaae2",
+  "source_measurement_path": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_v2/evidence/owner_20261102_174156/gpt2_profile.json",
+  "retained_source": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/source_profile.json",
+  "profile": {
+    "compute_ms": 34.48729705810547,
+    "optimizer_ms": 15.213056087493896,
+    "peak_memory_gib": 3.560546875,
+    "checkpoint_save_ms": 200.0,
+    "restore_ms": 300.0,
+    "group_init_ms": 100.0,
+    "source": "MEASURED",
+    "measurement_id": "sha256:16c1c10024953a2f76f923aede859085756c975c158cc71db98382c48c5eaae2",
+    "source_scope": "Per-field provenance is authoritative; default recovery costs are synthetic.",
+    "field_sources": {
+      "compute_ms": "MEASURED",
+      "optimizer_ms": "MEASURED",
+      "peak_memory_gib": "MEASURED",
+      "checkpoint_save_ms": "SYNTHETIC",
+      "restore_ms": "SYNTHETIC",
+      "group_init_ms": "SYNTHETIC"
+    },
+    "model_id": "gpt2-small",
+    "model_config": {
+      "n_layer": 12,
+      "n_embd": 768,
+      "n_head": 12,
+      "vocab_size": 50257,
+      "n_positions": 1024
+    },
+    "parameter_count": 124439808,
+    "gradient_bytes": 497759232,
+    "gradient_source": "DERIVED",
+    "dtype": "float32",
+    "optimizer": "AdamW",
+    "sequence_length": 512,
+    "local_batch_size": 1,
+    "base_training_storage_bytes": 1991036928,
+    "memory_note": "Peak includes a stated profile allowance; base parameter storage is not peak memory."
+  },
+  "records": [
+    {
+      "variant": "compact",
+      "input_hash": "b0725c77a49ba4bc44df8b94ba35b3a16f8cf57d00d995ff81cef061bf3c6ce6",
+      "all_invariants_passed": true,
+      "all_jobs_completed": true,
+      "summary": {
+        "job_count": 2,
+        "completed_jobs": 2,
+        "unfinished_jobs": 0,
+        "unschedulable_jobs": 0,
+        "simulated_ms": 3684.743829567993,
+        "mean_completion_ms": 3684.743829567993,
+        "lost_steps": 0,
+        "restarts": 0
+      },
+      "engine_wall_ms": 51.57228745520115,
+      "input": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_compact_input.json",
+      "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_compact_result.json"
+    },
+    {
+      "variant": "competition",
+      "input_hash": "4da8e1c48f209484b840743b9b75acd5881d52901d8dcb1d25b8d0be557e9490",
+      "all_invariants_passed": true,
+      "all_jobs_completed": true,
+      "summary": {
+        "job_count": 2,
+        "completed_jobs": 2,
+        "unfinished_jobs": 0,
+        "unschedulable_jobs": 0,
+        "simulated_ms": 9062.34353516801,
+        "mean_completion_ms": 9062.34353516801,
+        "lost_steps": 0,
+        "restarts": 0
+      },
+      "engine_wall_ms": 54.69776690006256,
+      "input": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_competition_input.json",
+      "result": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/ddp_competition_result.json"
+    }
+  ],
+  "checks": {
+    "a1_contract_validated": true,
+    "recovery_inputs_still_synthetic": true,
+    "all_invariants_passed": true
+  },
+  "memory_provenance": {
+    "measured_peak_reserved_bytes": 2749366272,
+    "policy_margin_bytes": 1073741824,
+    "note": "Admission budget is measured reserved memory plus an explicit unmeasured policy margin; DDP buckets/NCCL overhead were not profiled."
+  },
+  "limitations": [
+    "A1 measured a single-GPU GPT-2 workload, not actual DDP iteration time.",
+    "A2/A5 standalone NCCL data must not be substituted for cross-server NIC/uplink bandwidth.",
+    "Simulation has no real GPU process or failure execution; live DDP is a separate backend.",
+    "Recovery timing and all network capacities remain synthetic assumptions.",
+    "Both layouts use the same model, workload, profile, topology and 60000 ms horizon; only placement differs.",
+    "Unfinished jobs at the horizon are reported; simulation completion is not job completion."
+  ],
+  "artifacts": {
+    "report": "/remote-home/share/project-user/Projects/DataNetwork/FabricSandbox_Agent/results/server_20261103_050617/reused_A1_01/report.json"
+  }
+}

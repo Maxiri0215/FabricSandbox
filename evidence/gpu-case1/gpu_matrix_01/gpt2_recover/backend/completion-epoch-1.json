@@ -1,0 +1,193 @@
+{
+  "status": "completed",
+  "completed": true,
+  "recovered": true,
+  "checks": {
+    "two_rank_records": true,
+    "all_ranks_completed": true,
+    "target_steps_reached": true,
+    "fixed_world_size": true,
+    "finite_final_loss": true,
+    "launcher_exit_zero": true
+  },
+  "ranks": [
+    {
+      "pid": 277983,
+      "rank": 0,
+      "local_rank": 0,
+      "slot_id": "2",
+      "epoch": 1,
+      "world_size": 2,
+      "model": "gpt2",
+      "device": "cuda",
+      "source": "MEASURED",
+      "run_id": "b8169b2eba6c45578365d4e91879779b",
+      "process_identity": {
+        "pid": 277983,
+        "pgid": 277983,
+        "start_token": "1028239156",
+        "method": "linux_proc_start_ticks"
+      },
+      "status": "completed",
+      "step": 20,
+      "heartbeat": 1793682838.309337,
+      "checkpoint_loaded": {
+        "step": 5,
+        "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+        "file": "checkpoints/checkpoint-e0-s5.pt"
+      },
+      "gate_wait_seconds": 0.0,
+      "device_uuid": "00000000-0000-0000-0000-000000000003",
+      "device_name": "NVIDIA GeForce RTX 3090",
+      "mapping_verification_level": "uuid_observed",
+      "parameter_count": 124439808,
+      "loss": 10.930152893066406,
+      "train_step_ms": 264.02536779642105,
+      "committed_checkpoint_step": 20,
+      "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+      "completed_at": 1793682838.309333
+    },
+    {
+      "pid": 277984,
+      "rank": 1,
+      "local_rank": 1,
+      "slot_id": "4",
+      "epoch": 1,
+      "world_size": 2,
+      "model": "gpt2",
+      "device": "cuda",
+      "source": "MEASURED",
+      "run_id": "b8169b2eba6c45578365d4e91879779b",
+      "process_identity": {
+        "pid": 277984,
+        "pgid": 277984,
+        "start_token": "1028239156",
+        "method": "linux_proc_start_ticks"
+      },
+      "status": "completed",
+      "step": 20,
+      "heartbeat": 1793682838.3101811,
+      "checkpoint_loaded": {
+        "step": 5,
+        "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+        "file": "checkpoints/checkpoint-e0-s5.pt"
+      },
+      "gate_wait_seconds": 0.0,
+      "device_uuid": "00000000-0000-0000-0000-000000000005",
+      "device_name": "NVIDIA GeForce RTX 3090",
+      "mapping_verification_level": "uuid_observed",
+      "parameter_count": 124439808,
+      "loss": 10.94231128692627,
+      "train_step_ms": 264.06173035502434,
+      "committed_checkpoint_step": 20,
+      "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+      "completed_at": 1793682838.3101785
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1-launcher-1793682840545152761",
+      "kind": "launcher_status",
+      "target": "group-1",
+      "value": {
+        "pid": 277964,
+        "exit_code": 0,
+        "observed_at": 1793682840.5447528
+      }
+    },
+    {
+      "id": "e1-rank-0-1793682840545263561",
+      "kind": "worker_progress",
+      "target": "2",
+      "value": {
+        "pid": 277983,
+        "rank": 0,
+        "local_rank": 0,
+        "slot_id": "2",
+        "epoch": 1,
+        "world_size": 2,
+        "model": "gpt2",
+        "device": "cuda",
+        "source": "MEASURED",
+        "run_id": "b8169b2eba6c45578365d4e91879779b",
+        "process_identity": {
+          "pid": 277983,
+          "pgid": 277983,
+          "start_token": "1028239156",
+          "method": "linux_proc_start_ticks"
+        },
+        "status": "completed",
+        "step": 20,
+        "heartbeat": 1793682838.309337,
+        "checkpoint_loaded": {
+          "step": 5,
+          "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+          "file": "checkpoints/checkpoint-e0-s5.pt"
+        },
+        "gate_wait_seconds": 0.0,
+        "device_uuid": "00000000-0000-0000-0000-000000000003",
+        "device_name": "NVIDIA GeForce RTX 3090",
+        "mapping_verification_level": "uuid_observed",
+        "parameter_count": 124439808,
+        "loss": 10.930152893066406,
+        "train_step_ms": 264.02536779642105,
+        "committed_checkpoint_step": 20,
+        "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+        "completed_at": 1793682838.309333,
+        "pid_alive": false,
+        "observed_at": 1793682840.5447528
+      }
+    },
+    {
+      "id": "e1-rank-1-1793682840545271351",
+      "kind": "worker_progress",
+      "target": "4",
+      "value": {
+        "pid": 277984,
+        "rank": 1,
+        "local_rank": 1,
+        "slot_id": "4",
+        "epoch": 1,
+        "world_size": 2,
+        "model": "gpt2",
+        "device": "cuda",
+        "source": "MEASURED",
+        "run_id": "b8169b2eba6c45578365d4e91879779b",
+        "process_identity": {
+          "pid": 277984,
+          "pgid": 277984,
+          "start_token": "1028239156",
+          "method": "linux_proc_start_ticks"
+        },
+        "status": "completed",
+        "step": 20,
+        "heartbeat": 1793682838.3101811,
+        "checkpoint_loaded": {
+          "step": 5,
+          "sha256": "c3240b7c3c5ce20a45df7e75aa8641bc7e8b2501608c469be61846428fdaec95",
+          "file": "checkpoints/checkpoint-e0-s5.pt"
+        },
+        "gate_wait_seconds": 0.0,
+        "device_uuid": "00000000-0000-0000-0000-000000000005",
+        "device_name": "NVIDIA GeForce RTX 3090",
+        "mapping_verification_level": "uuid_observed",
+        "parameter_count": 124439808,
+        "loss": 10.94231128692627,
+        "train_step_ms": 264.06173035502434,
+        "committed_checkpoint_step": 20,
+        "committed_checkpoint_sha256": "da22a4a3e7b55aee39f663be40ce00db2314924c0362b6ffdb842ac6a51ff38e",
+        "completed_at": 1793682838.3101785,
+        "pid_alive": false,
+        "observed_at": 1793682840.5447528
+      }
+    }
+  ],
+  "backend": "live_gpu",
+  "mapping_verification": {
+    "configured_slot_mapping": true,
+    "mapping_verification_level": "uuid_verified",
+    "actual_device_identity_verified": true,
+    "available_uuid_check_passed": true,
+    "note": "Logical-only mapping cannot independently prove physical GPU identity."
+  }
+}

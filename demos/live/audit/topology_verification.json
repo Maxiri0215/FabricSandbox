@@ -1,0 +1,29 @@
+{
+  "update": "custom JSON topology, 2026-11-04",
+  "backend_checks": {
+    "original_adapter": 8,
+    "custom_topology": 9,
+    "in_memory_HTTP_handler": 8,
+    "status": "passed"
+  },
+  "frontend_checks": {
+    "DOM_interaction": 10,
+    "javascript_errors": [],
+    "status": "passed",
+    "report": "topology_ui_checks.json"
+  },
+  "vendor_kernel": "all original SHA256 hashes verified unchanged",
+  "limitations": [
+    "Real socket HTTP suite not run: environment prohibits localhost bind.",
+    "Browser visual verification not completed: local file URL blocked by browser policy.",
+    "UI checks use real model fixtures and mocked fetch; no CSS rendering assertions.",
+    "TCP and real GPU source code and evidence unchanged; not rerun in this update."
+  ],
+  "source_sha256": {
+    "demo_model.py": "53cb409ecc36e6d9d7c2dd97333eb626ffc001c8b2d7067c5fab9443ea53ac89",
+    "server.py": "681765619928e2b933bfe60517b4c9424f62a47381a545febb85651d412f2abb",
+    "web/app.js": "b681fdfdaf00b8b793dbc4a015a0575f978bd9e652d15b8b89de09041b77fb3a",
+    "web/index.html": "290b46604fa43d1b481f269895823d33d18ac6fcda519736f9d84f060151fa16",
+    "web/styles.css": "2fc5cb72e4fff84362ff13dde46fd22df84a1633ef2a151a8d26e463b5fabaa9"
+  }
+}

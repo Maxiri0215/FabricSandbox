@@ -1,0 +1,9 @@
+job_gpus,mode,machine_pairs,evaluation_median_ms,min_ms,max_ms,repeats
+16,ring_all_reduce,1,0.3364,0.3027,0.4084,20
+16,all_to_all,1,0.3326,0.3012,0.3909,20
+32,ring_all_reduce,4,0.4628,0.4403,0.5791,20
+32,all_to_all,6,0.5584,0.5312,1.3806,20
+64,ring_all_reduce,8,0.6443,0.6156,0.7802,20
+64,all_to_all,28,1.6083,1.4297,2.6,20
+128,ring_all_reduce,16,1.1261,0.9764,5.1722,20
+128,all_to_all,120,6.3249,6.0693,7.6545,20

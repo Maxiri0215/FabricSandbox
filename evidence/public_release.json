@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "sanitized_public_copy",
+  "sanitized_on": "2026-11-10",
+  "scope": "Personal directory paths, container hostname, physical GPU UUIDs and PCI bus addresses use consistent pseudonyms. Numeric measurements and recovery events are retained.",
+  "identity_replacements": {
+    "gpu_hardware_uuid": 473,
+    "personal_directory_prefix": 587,
+    "container_hostname": 1,
+    "gpu_pci_address": 24
+  },
+  "files_with_identity_replacements": 104,
+  "gpu_mapping": "Stable aliases by physical device index; public UUIDs do not identify the original hardware.",
+  "original_execution_checks": "Historical results are retained; public identifiers only permit cross-record consistency checks.",
+  "checkpoint_sha256": "Historical reported digests; checkpoint blobs are not included or rehashed.",
+  "historical_checksums": "Original export/import SHA records are retained as historical provenance. Current public file integrity is defined by evidence_manifest.json.",
+  "details": "../docs/PRIVACY.md"
+}

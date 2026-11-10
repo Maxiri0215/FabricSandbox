@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FabricSandbox 课程项目演示：网络方案评估、真实 TCP 故障恢复与 GPU 实测证据。">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <title>FabricSandbox · 网络规划与故障诊断</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body data-mode="network">
+  <a class="skip-link" href="#mainContent">跳转到演示内容</a>
+  <aside class="sidebar" aria-label="演示导航">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <div><strong>FabricSandbox</strong><span>GPU 网络规划与故障诊断</span></div>
+    </div>
+    <div class="sidebar-rule"></div>
+    <p class="nav-label">演示工作台</p>
+    <nav class="mode-nav" aria-label="选择演示场景">
+      <button type="button" class="nav-item active" data-mode="network" aria-current="page">
+        <span class="nav-number">01</span><span><strong>网络方案评估</strong><small>共享容量与放置对照</small></span><span class="nav-arrow" aria-hidden="true">›</span>
+      </button>
+      <button type="button" class="nav-item" data-mode="tcp">
+        <span class="nav-number">02</span><span><strong>真实通信故障</strong><small>实际进程与自动恢复</small></span><span class="nav-arrow" aria-hidden="true">›</span>
+      </button>
+      <button type="button" class="nav-item" data-mode="gpu">
+        <span class="nav-number">03</span><span><strong>3090 实测证据</strong><small>一次完整 DDP 恢复</small></span><span class="nav-arrow" aria-hidden="true">›</span>
+      </button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="sidebar-principle"><span class="eyebrow">每个结论都有依据</span><p>输入与约束<br>诊断与方案<br>执行与验证</p></div>
+      <button type="button" id="helpBtn" class="help-button"><span aria-hidden="true">?</span>三分钟演示指南</button>
+      <p class="sidebar-foot">数据通信网络 · 课程项目</p>
+    </div>
+  </aside>
+
+  <main id="mainContent" class="workspace" tabindex="-1">
+    <header class="page-header">
+      <div class="page-heading">
+        <div class="page-eyebrow"><span class="status-dot" aria-hidden="true"></span><span>FABRICSANDBOX / DEMO</span></div>
+        <h1 id="pageTitle">网络方案评估</h1>
+        <p id="pageSubtitle">同一份负载，比较 GPU 放置如何改变共享链路竞争。</p>
+      </div>
+      <div class="header-actions">
+        <span id="modeBadge" class="mode-badge">模型计算 · SYNTHETIC</span>
+        <div class="header-buttons">
+          <button type="button" id="exportBtn" class="button ghost small">导出本次记录</button>
+          <button type="button" id="fullscreenBtn" class="button ghost small" title="切换全屏演示">全屏演示</button>
+        </div>
+      </div>
+    </header>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+
+    <section id="networkPanel" class="mode-panel" aria-label="网络方案评估">
+      <section class="control-strip" aria-label="设置网络实验">
+        <div class="controls">
+          <label class="control-field" for="topologyMode"><span>拓扑输入</span><select id="topologyMode"><option value="default" selected>默认两机架</option><option value="custom">自定义 JSON</option></select></label>
+          <label class="control-field" for="uplink"><span>机架上联容量</span><select id="uplink"><option value="25">25 Gbps</option><option value="50" selected>50 Gbps</option><option value="100">100 Gbps</option></select></label>
+          <label class="control-field" for="resourcePreset"><span>资源条件</span><select id="resourcePreset"><option value="healthy" selected>完整资源</option><option value="memory">显存不足</option><option value="node">节点 n0 不可用</option></select></label>
+          <div class="control-actions"><button type="button" id="analyzeBtn" class="button primary">分析当前方案</button><button type="button" id="applyBtn" class="button secondary" disabled>采用推荐方案</button></div>
+        </div>
+        <div id="topologyEditor" class="topology-editor" hidden>
+          <div class="topology-editor-heading"><label for="topologyJson">网络拓扑 JSON</label><span>节点归属机架 · 最多 16 节点 / 64 GPU</span></div>
+          <p class="editor-hint">直接粘贴拓扑对象，或包含 <code>topology</code> 字段的 JSON。双作业评估每组 4 卡，至少需要 8 张 GPU；带宽和显存以 JSON 为准。</p>
+          <textarea id="topologyJson" spellcheck="false" rows="12" aria-describedby="topologyValidation" placeholder='{"nodes": [{"id": "node0", "rack_id": "rack0", "gpu_count": 8, "memory_gib": 24}], "uplink_bandwidth_gbps": 50}'></textarea>
+          <div class="topology-editor-actions">
+            <label class="button ghost small file-button" for="topologyFile">导入 JSON 文件<input id="topologyFile" type="file" accept=".json,application/json"></label>
+            <button id="validateTopologyBtn" type="button" class="button secondary small">校验拓扑</button>
+            <button id="exampleTopologyBtn" type="button" class="button ghost small">加载三机架示例</button>
+            <button id="defaultTopologyBtn" type="button" class="button ghost small">恢复默认两机架</button>
+          </div>
+          <p id="topologyValidation" class="topology-validation" role="status" aria-live="polite">编辑后点击校验，或直接分析当前方案。</p>
+        </div>
+        <p id="networkStatus" class="control-status">准备就绪。选择容量与资源条件后，运行一次实际模型计算。</p>
+      </section>
+
+      <div id="networkKpis" class="kpi-grid" aria-label="方案指标"></div>
+
+      <div class="demo-grid">
+        <section class="paper topology-paper" aria-labelledby="networkTopologyTitle">
+          <header class="section-heading"><div><span class="eyebrow">资源视图</span><h2 id="networkTopologyTitle">GPU 放置与共享容量</h2></div><span id="placementLabel" class="tag">待分析</span></header>
+          <div id="networkTopology" class="topology-canvas"><div class="empty"><span class="empty-icon" aria-hidden="true">⌘</span><h3>从一份放置方案开始</h3><p>运行分析后，查看作业位置、通信路径与共享资源。</p></div></div>
+          <div class="legend"><span><i class="swatch blue"></i>作业 A</span><span><i class="swatch orange"></i>作业 B</span><span><i class="swatch gray"></i>不可用 / 未分配</span></div>
+        </section>
+        <section class="paper diagnosis-paper" aria-labelledby="networkDiagnosisTitle">
+          <header class="section-heading"><div><span class="eyebrow">基于当前输入</span><h2 id="networkDiagnosisTitle">诊断与建议</h2></div><span class="icon-label" aria-hidden="true">↗</span></header>
+          <div id="networkDiagnosis"><div class="empty compact"><h3>等待模型结果</h3><p>这里将解释瓶颈、约束和推荐方案的选择依据。</p></div></div>
+        </section>
+      </div>
+
+      <section class="paper" aria-labelledby="candidateTitle">
+        <header class="section-heading"><div><span class="eyebrow">先校验，再比较</span><h2 id="candidateTitle">候选及拒绝理由</h2></div><span class="section-note">有限候选集合</span></header>
+        <div id="candidateList" class="candidate-list"><div class="empty compact"><p>分析后列出可行方案，以及不满足资源约束的候选。</p></div></div>
+      </section>
+
+      <section class="paper" aria-labelledby="comparisonTitle">
+        <header class="section-heading"><div><span class="eyebrow">相同负载与计量口径</span><h2 id="comparisonTitle">方案效果对照</h2></div><span class="section-note">模型结果，不是 GPU 实测时间</span></header>
+        <div id="comparisonChart" class="comparison-chart"><div class="empty compact"><p>待生成基线、分散放置和紧凑放置的对照结果。</p></div></div>
+        <div id="networkVerification" class="verification-area"></div>
+      </section>
+      <details id="networkRaw" class="raw"><summary>查看本次输入与原始结果</summary><pre>尚未运行分析。</pre></details>
+    </section>
+
+    <section id="tcpPanel" class="mode-panel" aria-label="真实 TCP 通信故障实验" hidden>
+      <div class="boundary-note"><span class="tag ok">实时实验</span><p>本机真实 TCP 进程与数据传输。不是 GPU 或物理交换机故障。</p></div>
+      <section class="control-strip" aria-label="控制真实通信实验">
+        <div class="controls">
+          <button type="button" id="startTcp" class="button primary">启动真实通信</button>
+          <label class="control-field" for="faultKind"><span>故障场景</span><select id="faultKind"><option value="channel_a" selected>主通道故障</option><option value="all_channels">主备均故障</option></select></label>
+          <button type="button" id="injectTcp" class="button danger" disabled>注入故障并自动恢复</button>
+          <button type="button" id="stopTcp" class="button ghost" disabled>停止实验</button>
+        </div>
+        <p id="tcpStatus" class="control-status">尚未启动。启动后先观察成功传输，再注入故障。</p>
+      </section>
+      <div id="tcpKpis" class="kpi-grid" aria-label="真实传输指标"></div>
+      <section class="paper topology-paper" aria-labelledby="tcpTopologyTitle">
+        <header class="section-heading"><div><span class="eyebrow">实际子进程与端口</span><h2 id="tcpTopologyTitle">传输路径与进程状态</h2></div><span class="section-note">规则 Agent</span></header>
+        <div id="tcpTopology" class="topology-canvas tcp-canvas"><div class="empty"><span class="empty-icon" aria-hidden="true">↔</span><h3>真实传输尚未开始</h3><p>将创建接收端与主备转发进程，并检查数据校验和与 ACK。</p></div></div>
+      </section>
+      <div class="journey-heading"><h2>一次事件的完整过程</h2><p>点击阶段，查看当次运行留下的证据。</p></div>
+      <div id="tcpSteps" class="steps" aria-label="恢复事件的七个阶段"></div>
+      <div class="evidence-grid">
+        <section id="tcpStageEvidence" class="paper stage-evidence" aria-live="polite"><div class="empty"><h3>等待实验事件</h3><p>实际观察、候选、回执与验证结果将在这里出现。</p></div></section>
+        <section class="paper log-paper" aria-labelledby="tcpLogTitle"><header class="section-heading"><div><span class="eyebrow">实际发生顺序</span><h2 id="tcpLogTitle">运行事件</h2></div></header><div id="tcpEventLog" class="event-log"><div class="empty compact"><p>暂无事件。</p></div></div></section>
+      </div>
+    </section>
+
+    <section id="gpuPanel" class="mode-panel" aria-label="3090 历史实测证据回放" hidden>
+      <div class="boundary-note recorded"><span class="tag warn">历史实测回放</span><p>服务器导出的真实 GPU 实验证据，非当前执行。点击阶段不会启动新的 GPU 实验。</p></div>
+      <p id="gpuIncident" class="run-reference">正在读取实验记录。</p>
+      <div id="gpuSteps" class="steps" aria-label="GPU 恢复事件的七个阶段"></div>
+      <section class="paper topology-paper" aria-labelledby="gpuTopologyTitle"><header class="section-heading"><div><span class="eyebrow">同一个恢复事件</span><h2 id="gpuTopologyTitle">GPU 分配与执行代次</h2></div><span class="section-note">GPT-2 Small / DDP</span></header><div id="gpuTopology" class="topology-canvas gpu-canvas"><div class="empty compact"><p>等待实测记录。</p></div></div></section>
+      <section id="gpuStageEvidence" class="paper stage-evidence" aria-live="polite"><div class="empty"><h3>查看一份完整方案的处理过程</h3><p>从输入开始，逐步查看真实异常、诊断、候选、执行和验证。</p></div></section>
+      <div class="stage-navigation"><button type="button" id="gpuPrev" class="button ghost" disabled>← 上一步</button><span id="gpuCounter">1 / 7</span><button type="button" id="gpuNext" class="button primary">下一步 →</button></div>
+    </section>
+    <footer class="workspace-foot"><span>FabricSandbox</span><span>输入可追溯 · 方案有约束 · 恢复有证据</span></footer>
+  </main>
+
+  <dialog id="helpDialog" aria-labelledby="helpTitle">
+    <header class="dialog-heading"><div><span class="eyebrow">现场讲解</span><h2 id="helpTitle">三分钟演示指南</h2></div><button type="button" id="closeHelp" class="icon-button" aria-label="关闭演示指南">×</button></header>
+    <ol class="guide-list">
+      <li><strong>网络方案评估 <span>约 1 分钟</span></strong><p>分析默认的 50 Gbps 场景，指出共享上联的竞争。展开候选与拒绝理由，再采用推荐放置、比较结果。可切换显存不足，展示系统如何拒绝不可行方案。</p></li>
+      <li><strong>真实通信故障 <span>约 1 分钟</span></strong><p>启动真实传输，确认数据已收到 ACK。注入主通道故障，观察规则 Agent 自动诊断、选择备用路径，并用新数据的校验与确认验证恢复。</p></li>
+      <li><strong>3090 实测证据 <span>约 1 分钟</span></strong><p>沿七个阶段查看同一次 DDP 事件：step7 异常、候选选择、从 step5 恢复，再用 step6、step8 和最终 step20 解释新进度。</p></li>
+    </ol>
+    <div class="guide-boundaries"><h3>讲清每种证据的范围</h3><p><b>网络方案：</b>原项目模型在本机重新计算，时间与容量属于仿真。</p><p><b>TCP 实验：</b>本机实际进程、连接和数据传输；不代表真实 GPU 链路故障。</p><p><b>GPU 记录：</b>服务器历史实测，供逐项核对恢复证据。</p><p>本演示本地运行，恢复决策采用规则策略，不调用外部大模型。</p></div>
+  </dialog>
+</body>
+</html>

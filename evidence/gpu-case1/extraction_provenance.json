@@ -1,0 +1,943 @@
+{
+  "gpt2_baseline": {
+    "values": {
+      "experiment_path": "gpu_matrix_01/gpt2_baseline",
+      "experiment_class": "formal_GPT2_control",
+      "model": "gpt2",
+      "parameter_count": 124439808,
+      "execution_backend": "live_gpu",
+      "requested_mode": "rules",
+      "actual_agent_mode": null,
+      "sequence_length": 128,
+      "input_semantics": "synthetic token shape (1,128) per rank",
+      "world_size": 2,
+      "allowed_gpu_ids": [
+        "2",
+        "3",
+        "4"
+      ],
+      "initial_gpu_ids": [
+        "2",
+        "3"
+      ],
+      "attempt_count": 0,
+      "recovered_gpu_ids": null,
+      "actual_terminal_state": "healthy",
+      "acceptance_passed": true,
+      "fault_pre_progress": null,
+      "last_committed_step_before_fault": null,
+      "recovery_checkpoint_step": null,
+      "rollback_steps": null,
+      "training_completed": true,
+      "final_completed_step": 20,
+      "last_observed_step": 20,
+      "detection_delay_ms": null,
+      "observed_failure_to_resumed_progress_ms": null,
+      "fault_to_terminal_ms": null,
+      "fault_to_terminal_interpretation": "Not recorded / not applicable",
+      "incident_id": null,
+      "worker_run_id": "e231af912f714e18958147e4d70885f6"
+    },
+    "sources": {
+      "model": {
+        "file": "gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+        "json_pointer": "/model"
+      },
+      "parameter_count": [
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+          "json_pointer": "/parameter_count"
+        }
+      ],
+      "execution_backend": {
+        "file": "gpu_matrix_01/gpt2_baseline/result.json",
+        "json_pointer": "/backend"
+      },
+      "requested_mode": {
+        "file": "gpu_matrix_01/command_gpt2_baseline.json",
+        "json_pointer": "",
+        "derivation": "argument after --mode"
+      },
+      "actual_agent_mode": {
+        "file": "gpu_matrix_01/gpt2_baseline/agent/incident.json",
+        "json_pointer": "/effective_mode"
+      },
+      "sequence_length": {
+        "file": "gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+        "json_pointer": "/sequence_length"
+      },
+      "world_size": {
+        "file": "gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+        "json_pointer": "/world_size"
+      },
+      "allowed_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+        "json_pointer": "/allowed_slots"
+      },
+      "initial_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+        "json_pointer": "/initial_slots"
+      },
+      "attempt_count": {
+        "file": "gpu_matrix_01/gpt2_baseline/agent/incident.json",
+        "json_pointer": "/attempts",
+        "derivation": "array length; zero for controls with no Agent"
+      },
+      "recovered_gpu_ids": [],
+      "actual_terminal_state": {
+        "file": "gpu_matrix_01/gpt2_baseline/result.json",
+        "json_pointer": "/status"
+      },
+      "acceptance_passed": {
+        "file": "gpu_matrix_01/gpt2_baseline/result.json",
+        "json_pointer": "/checks",
+        "derivation": "nonempty and every passed=true"
+      },
+      "fault_pre_progress": [],
+      "last_committed_step_before_fault": [],
+      "recovery_checkpoint_step": [],
+      "rollback_steps": [],
+      "training_completed": [
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+          "json_pointer": "/status"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+          "json_pointer": "/status"
+        }
+      ],
+      "final_completed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step"
+        }
+      ],
+      "last_observed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        }
+      ],
+      "detection_delay_ms": {
+        "file": "gpu_matrix_01/gpt2_baseline/result.json",
+        "json_pointer": "/detection_delay_ms"
+      },
+      "observed_failure_to_resumed_progress_ms": {
+        "file": "gpu_matrix_01/gpt2_baseline/agent/incident.json",
+        "json_pointer": "/verification/details/observed_failure_to_resumed_progress_ms"
+      },
+      "fault_to_terminal_ms": {
+        "file": "gpu_matrix_01/gpt2_baseline/result.json",
+        "json_pointer": "/fault_to_terminal_ms"
+      },
+      "incident_id": {
+        "file": "gpu_matrix_01/gpt2_baseline/agent/incident.json",
+        "json_pointer": "/incident_id"
+      },
+      "worker_run_id": [
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+          "json_pointer": "/run_id"
+        }
+      ]
+    },
+    "missing_values": {
+      "actual_agent_mode": "Agent was not started for the baseline/no-repair control; --mode rules is only the supplied CLI option",
+      "recovered_gpu_ids": "No recovery execution occurred",
+      "fault_pre_progress": "No fault in the healthy baseline",
+      "last_committed_step_before_fault": "No fault or no pre-fault committed manifest",
+      "recovery_checkpoint_step": "No checkpoint was loaded for recovery in this control",
+      "rollback_steps": "No actual rollback executed; do not substitute zero or uncommitted progress",
+      "detection_delay_ms": "No controller detection timestamp is stored for baseline/no-repair; no zero or upper-bound substitution",
+      "observed_failure_to_resumed_progress_ms": "No resumed training progress: metric absent/not applicable",
+      "fault_to_terminal_ms": "No controller terminal interval is recorded for baseline/no-repair",
+      "incident_id": "No Agent incident for this control"
+    }
+  },
+  "gpt2_no_repair": {
+    "values": {
+      "experiment_path": "gpu_matrix_01/gpt2_no_repair",
+      "experiment_class": "formal_GPT2_control",
+      "model": "gpt2",
+      "parameter_count": 124439808,
+      "execution_backend": "live_gpu",
+      "requested_mode": "rules",
+      "actual_agent_mode": null,
+      "sequence_length": 128,
+      "input_semantics": "synthetic token shape (1,128) per rank",
+      "world_size": 2,
+      "allowed_gpu_ids": [
+        "2",
+        "3",
+        "4"
+      ],
+      "initial_gpu_ids": [
+        "2",
+        "3"
+      ],
+      "attempt_count": 0,
+      "recovered_gpu_ids": null,
+      "actual_terminal_state": "unrecovered_control",
+      "acceptance_passed": true,
+      "fault_pre_progress": 7,
+      "last_committed_step_before_fault": 5,
+      "recovery_checkpoint_step": null,
+      "rollback_steps": null,
+      "training_completed": false,
+      "final_completed_step": null,
+      "last_observed_step": 7,
+      "detection_delay_ms": null,
+      "observed_failure_to_resumed_progress_ms": null,
+      "fault_to_terminal_ms": null,
+      "fault_to_terminal_interpretation": "Not recorded / not applicable",
+      "incident_id": null,
+      "worker_run_id": "d2c7c30ebce248e2b0d822131babd3b7"
+    },
+    "sources": {
+      "model": {
+        "file": "gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+        "json_pointer": "/model"
+      },
+      "parameter_count": [
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+          "json_pointer": "/parameter_count"
+        }
+      ],
+      "execution_backend": {
+        "file": "gpu_matrix_01/gpt2_no_repair/result.json",
+        "json_pointer": "/backend"
+      },
+      "requested_mode": {
+        "file": "gpu_matrix_01/command_gpt2_no_repair.json",
+        "json_pointer": "",
+        "derivation": "argument after --mode"
+      },
+      "actual_agent_mode": {
+        "file": "gpu_matrix_01/gpt2_no_repair/agent/incident.json",
+        "json_pointer": "/effective_mode"
+      },
+      "sequence_length": {
+        "file": "gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+        "json_pointer": "/sequence_length"
+      },
+      "world_size": {
+        "file": "gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+        "json_pointer": "/world_size"
+      },
+      "allowed_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+        "json_pointer": "/allowed_slots"
+      },
+      "initial_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+        "json_pointer": "/initial_slots"
+      },
+      "attempt_count": {
+        "file": "gpu_matrix_01/gpt2_no_repair/agent/incident.json",
+        "json_pointer": "/attempts",
+        "derivation": "array length; zero for controls with no Agent"
+      },
+      "recovered_gpu_ids": [],
+      "actual_terminal_state": {
+        "file": "gpu_matrix_01/gpt2_no_repair/result.json",
+        "json_pointer": "/status"
+      },
+      "acceptance_passed": {
+        "file": "gpu_matrix_01/gpt2_no_repair/result.json",
+        "json_pointer": "/checks",
+        "derivation": "nonempty and every passed=true"
+      },
+      "fault_pre_progress": [
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step",
+          "derivation": "minimum across both ranks retained at fault"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step",
+          "derivation": "minimum across both ranks retained at fault"
+        }
+      ],
+      "last_committed_step_before_fault": {
+        "file": "gpu_matrix_01/gpt2_no_repair/backend/checkpoints/manifest-e0-s5.json",
+        "json_pointer": "/step",
+        "derivation": "latest committed_at before ground_truth.injected_at; post-run scoring only"
+      },
+      "recovery_checkpoint_step": [],
+      "rollback_steps": [],
+      "training_completed": [
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+          "json_pointer": "/status"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+          "json_pointer": "/status"
+        }
+      ],
+      "final_completed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step"
+        }
+      ],
+      "last_observed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        }
+      ],
+      "detection_delay_ms": {
+        "file": "gpu_matrix_01/gpt2_no_repair/result.json",
+        "json_pointer": "/detection_delay_ms"
+      },
+      "observed_failure_to_resumed_progress_ms": {
+        "file": "gpu_matrix_01/gpt2_no_repair/agent/incident.json",
+        "json_pointer": "/verification/details/observed_failure_to_resumed_progress_ms"
+      },
+      "fault_to_terminal_ms": {
+        "file": "gpu_matrix_01/gpt2_no_repair/result.json",
+        "json_pointer": "/fault_to_terminal_ms"
+      },
+      "incident_id": {
+        "file": "gpu_matrix_01/gpt2_no_repair/agent/incident.json",
+        "json_pointer": "/incident_id"
+      },
+      "worker_run_id": [
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+          "json_pointer": "/run_id"
+        }
+      ]
+    },
+    "missing_values": {
+      "actual_agent_mode": "Agent was not started for the baseline/no-repair control; --mode rules is only the supplied CLI option",
+      "recovered_gpu_ids": "No recovery execution occurred",
+      "recovery_checkpoint_step": "No checkpoint was loaded for recovery in this control",
+      "rollback_steps": "No actual rollback executed; do not substitute zero or uncommitted progress",
+      "final_completed_step": "Target training did not complete; final step 7 is observed progress, not completed workload",
+      "detection_delay_ms": "No controller detection timestamp is stored for baseline/no-repair; no zero or upper-bound substitution",
+      "observed_failure_to_resumed_progress_ms": "No resumed training progress: metric absent/not applicable",
+      "fault_to_terminal_ms": "No controller terminal interval is recorded for baseline/no-repair",
+      "incident_id": "No Agent incident for this control"
+    }
+  },
+  "gpt2_recover": {
+    "values": {
+      "experiment_path": "gpu_matrix_01/gpt2_recover",
+      "experiment_class": "formal_GPT2_control",
+      "model": "gpt2",
+      "parameter_count": 124439808,
+      "execution_backend": "live_gpu",
+      "requested_mode": "rules",
+      "actual_agent_mode": "rules",
+      "sequence_length": 128,
+      "input_semantics": "synthetic token shape (1,128) per rank",
+      "world_size": 2,
+      "allowed_gpu_ids": [
+        "2",
+        "3",
+        "4"
+      ],
+      "initial_gpu_ids": [
+        "2",
+        "3"
+      ],
+      "attempt_count": 1,
+      "recovered_gpu_ids": [
+        "2",
+        "4"
+      ],
+      "actual_terminal_state": "recovered",
+      "acceptance_passed": true,
+      "fault_pre_progress": 7,
+      "last_committed_step_before_fault": 5,
+      "recovery_checkpoint_step": 5,
+      "rollback_steps": 2,
+      "training_completed": true,
+      "final_completed_step": 20,
+      "last_observed_step": 20,
+      "detection_delay_ms": 70.76454162597656,
+      "observed_failure_to_resumed_progress_ms": 12551.890134811401,
+      "fault_to_terminal_ms": 94940.06419181824,
+      "fault_to_terminal_interpretation": "Includes restart, checkpoint loading, resumed training to target and verification; NOT pure recovery latency",
+      "incident_id": "incident-20361f4c7c3942d3bd13e11d7da1dfbb",
+      "worker_run_id": "b8169b2eba6c45578365d4e91879779b"
+    },
+    "sources": {
+      "model": {
+        "file": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+        "json_pointer": "/model"
+      },
+      "parameter_count": [
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+          "json_pointer": "/parameter_count"
+        }
+      ],
+      "execution_backend": {
+        "file": "gpu_matrix_01/gpt2_recover/result.json",
+        "json_pointer": "/backend"
+      },
+      "requested_mode": {
+        "file": "gpu_matrix_01/command_gpt2_recover.json",
+        "json_pointer": "",
+        "derivation": "argument after --mode"
+      },
+      "actual_agent_mode": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/effective_mode"
+      },
+      "sequence_length": {
+        "file": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+        "json_pointer": "/sequence_length"
+      },
+      "world_size": {
+        "file": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+        "json_pointer": "/world_size"
+      },
+      "allowed_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+        "json_pointer": "/allowed_slots"
+      },
+      "initial_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+        "json_pointer": "/initial_slots"
+      },
+      "attempt_count": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/attempts",
+        "derivation": "array length; zero for controls with no Agent"
+      },
+      "recovered_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/to_slots"
+      },
+      "actual_terminal_state": {
+        "file": "gpu_matrix_01/gpt2_recover/result.json",
+        "json_pointer": "/status"
+      },
+      "acceptance_passed": {
+        "file": "gpu_matrix_01/gpt2_recover/result.json",
+        "json_pointer": "/checks",
+        "derivation": "nonempty and every passed=true"
+      },
+      "fault_pre_progress": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/last_common_reported_step"
+      },
+      "last_committed_step_before_fault": {
+        "file": "gpu_matrix_01/gpt2_recover/backend/checkpoints/manifest-e0-s5.json",
+        "json_pointer": "/step",
+        "derivation": "latest committed_at before ground_truth.injected_at; post-run scoring only"
+      },
+      "recovery_checkpoint_step": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/checkpoint/step"
+      },
+      "rollback_steps": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/rollback_reported_steps"
+      },
+      "training_completed": [
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+          "json_pointer": "/status"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+          "json_pointer": "/status"
+        }
+      ],
+      "final_completed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+          "json_pointer": "/step"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+          "json_pointer": "/step"
+        }
+      ],
+      "last_observed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        }
+      ],
+      "detection_delay_ms": {
+        "file": "gpu_matrix_01/gpt2_recover/result.json",
+        "json_pointer": "/detection_delay_ms"
+      },
+      "observed_failure_to_resumed_progress_ms": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/verification/details/observed_failure_to_resumed_progress_ms"
+      },
+      "fault_to_terminal_ms": {
+        "file": "gpu_matrix_01/gpt2_recover/result.json",
+        "json_pointer": "/fault_to_terminal_ms"
+      },
+      "incident_id": {
+        "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+        "json_pointer": "/incident_id"
+      },
+      "worker_run_id": [
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+          "json_pointer": "/run_id"
+        }
+      ]
+    },
+    "missing_values": {}
+  },
+  "gpt2_blocked": {
+    "values": {
+      "experiment_path": "gpu_matrix_01/gpt2_blocked",
+      "experiment_class": "formal_GPT2_control",
+      "model": "gpt2",
+      "parameter_count": 124439808,
+      "execution_backend": "live_gpu",
+      "requested_mode": "rules",
+      "actual_agent_mode": "rules",
+      "sequence_length": 128,
+      "input_semantics": "synthetic token shape (1,128) per rank",
+      "world_size": 2,
+      "allowed_gpu_ids": [
+        "2",
+        "3"
+      ],
+      "initial_gpu_ids": [
+        "2",
+        "3"
+      ],
+      "attempt_count": 0,
+      "recovered_gpu_ids": null,
+      "actual_terminal_state": "blocked",
+      "acceptance_passed": true,
+      "fault_pre_progress": 7,
+      "last_committed_step_before_fault": 5,
+      "recovery_checkpoint_step": null,
+      "rollback_steps": null,
+      "training_completed": false,
+      "final_completed_step": null,
+      "last_observed_step": 7,
+      "detection_delay_ms": 20.940065383911133,
+      "observed_failure_to_resumed_progress_ms": null,
+      "fault_to_terminal_ms": 115.86189270019531,
+      "fault_to_terminal_interpretation": "Time to blocked controller terminal, NOT training completion",
+      "incident_id": "incident-4867442d75134e1790bbfd42f9d5c13e",
+      "worker_run_id": "ce6286802215447693dd33e4d123d6a8"
+    },
+    "sources": {
+      "model": {
+        "file": "gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+        "json_pointer": "/model"
+      },
+      "parameter_count": [
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+          "json_pointer": "/parameter_count"
+        }
+      ],
+      "execution_backend": {
+        "file": "gpu_matrix_01/gpt2_blocked/result.json",
+        "json_pointer": "/backend"
+      },
+      "requested_mode": {
+        "file": "gpu_matrix_01/command_gpt2_blocked.json",
+        "json_pointer": "",
+        "derivation": "argument after --mode"
+      },
+      "actual_agent_mode": {
+        "file": "gpu_matrix_01/gpt2_blocked/agent/incident.json",
+        "json_pointer": "/effective_mode"
+      },
+      "sequence_length": {
+        "file": "gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+        "json_pointer": "/sequence_length"
+      },
+      "world_size": {
+        "file": "gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+        "json_pointer": "/world_size"
+      },
+      "allowed_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+        "json_pointer": "/allowed_slots"
+      },
+      "initial_gpu_ids": {
+        "file": "gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+        "json_pointer": "/initial_slots"
+      },
+      "attempt_count": {
+        "file": "gpu_matrix_01/gpt2_blocked/agent/incident.json",
+        "json_pointer": "/attempts",
+        "derivation": "array length; zero for controls with no Agent"
+      },
+      "recovered_gpu_ids": [],
+      "actual_terminal_state": {
+        "file": "gpu_matrix_01/gpt2_blocked/result.json",
+        "json_pointer": "/status"
+      },
+      "acceptance_passed": {
+        "file": "gpu_matrix_01/gpt2_blocked/result.json",
+        "json_pointer": "/checks",
+        "derivation": "nonempty and every passed=true"
+      },
+      "fault_pre_progress": [
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step",
+          "derivation": "minimum across both ranks retained at fault"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step",
+          "derivation": "minimum across both ranks retained at fault"
+        }
+      ],
+      "last_committed_step_before_fault": {
+        "file": "gpu_matrix_01/gpt2_blocked/backend/checkpoints/manifest-e0-s5.json",
+        "json_pointer": "/step",
+        "derivation": "latest committed_at before ground_truth.injected_at; post-run scoring only"
+      },
+      "recovery_checkpoint_step": [],
+      "rollback_steps": [],
+      "training_completed": [
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+          "json_pointer": "/status"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+          "json_pointer": "/status"
+        }
+      ],
+      "final_completed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step"
+        }
+      ],
+      "last_observed_step": [
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        }
+      ],
+      "detection_delay_ms": {
+        "file": "gpu_matrix_01/gpt2_blocked/result.json",
+        "json_pointer": "/detection_delay_ms"
+      },
+      "observed_failure_to_resumed_progress_ms": {
+        "file": "gpu_matrix_01/gpt2_blocked/agent/incident.json",
+        "json_pointer": "/verification/details/observed_failure_to_resumed_progress_ms"
+      },
+      "fault_to_terminal_ms": {
+        "file": "gpu_matrix_01/gpt2_blocked/result.json",
+        "json_pointer": "/fault_to_terminal_ms"
+      },
+      "incident_id": {
+        "file": "gpu_matrix_01/gpt2_blocked/agent/incident.json",
+        "json_pointer": "/incident_id"
+      },
+      "worker_run_id": [
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+          "json_pointer": "/run_id"
+        }
+      ]
+    },
+    "missing_values": {
+      "recovered_gpu_ids": "No recovery execution occurred",
+      "recovery_checkpoint_step": "No checkpoint was loaded for recovery in this control",
+      "rollback_steps": "No actual rollback executed; do not substitute zero or uncommitted progress",
+      "final_completed_step": "Target training did not complete; final step 7 is observed progress, not completed workload",
+      "observed_failure_to_resumed_progress_ms": "No resumed training progress: metric absent/not applicable"
+    }
+  },
+  "tiny_smoke": {
+    "values": {
+      "experiment_path": "gpu_matrix_01/tiny_smoke",
+      "experiment_class": "smoke_only_not_formal_GPT2",
+      "model": "tiny",
+      "parameter_count": 3152,
+      "execution_backend": "live_gpu",
+      "requested_mode": "rules",
+      "actual_agent_mode": "rules",
+      "sequence_length": 128,
+      "input_semantics": "tiny input shape (8,32); sequence_length CLI setting is unused by this network",
+      "world_size": 2,
+      "allowed_gpu_ids": [
+        "2",
+        "3",
+        "4"
+      ],
+      "initial_gpu_ids": [
+        "2",
+        "3"
+      ],
+      "attempt_count": 1,
+      "recovered_gpu_ids": [
+        "2",
+        "4"
+      ],
+      "actual_terminal_state": "recovered",
+      "acceptance_passed": true,
+      "fault_pre_progress": 7,
+      "last_committed_step_before_fault": 5,
+      "recovery_checkpoint_step": 5,
+      "rollback_steps": 2,
+      "training_completed": true,
+      "final_completed_step": 20,
+      "last_observed_step": 20,
+      "detection_delay_ms": 63.35043907165527,
+      "observed_failure_to_resumed_progress_ms": 6732.889413833618,
+      "fault_to_terminal_ms": 9309.37123298645,
+      "fault_to_terminal_interpretation": "Includes restart, checkpoint loading, resumed training to target and verification; NOT pure recovery latency",
+      "incident_id": "incident-9ccb9537730a414fb022e741e8e8d6c0",
+      "worker_run_id": "90b3adb17c2f46a39ae3c9962918c1b7"
+    },
+    "sources": {
+      "model": {
+        "file": "gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+        "json_pointer": "/model"
+      },
+      "parameter_count": [
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+          "json_pointer": "/parameter_count"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+          "json_pointer": "/parameter_count"
+        }
+      ],
+      "execution_backend": {
+        "file": "gpu_matrix_01/tiny_smoke/result.json",
+        "json_pointer": "/backend"
+      },
+      "requested_mode": {
+        "file": "gpu_matrix_01/command_tiny_smoke.json",
+        "json_pointer": "",
+        "derivation": "argument after --mode"
+      },
+      "actual_agent_mode": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/effective_mode"
+      },
+      "sequence_length": {
+        "file": "gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+        "json_pointer": "/sequence_length"
+      },
+      "world_size": {
+        "file": "gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+        "json_pointer": "/world_size"
+      },
+      "allowed_gpu_ids": {
+        "file": "gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+        "json_pointer": "/allowed_slots"
+      },
+      "initial_gpu_ids": {
+        "file": "gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+        "json_pointer": "/initial_slots"
+      },
+      "attempt_count": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/attempts",
+        "derivation": "array length; zero for controls with no Agent"
+      },
+      "recovered_gpu_ids": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/to_slots"
+      },
+      "actual_terminal_state": {
+        "file": "gpu_matrix_01/tiny_smoke/result.json",
+        "json_pointer": "/status"
+      },
+      "acceptance_passed": {
+        "file": "gpu_matrix_01/tiny_smoke/result.json",
+        "json_pointer": "/checks",
+        "derivation": "nonempty and every passed=true"
+      },
+      "fault_pre_progress": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/last_common_reported_step"
+      },
+      "last_committed_step_before_fault": {
+        "file": "gpu_matrix_01/tiny_smoke/backend/checkpoints/manifest-e0-s5.json",
+        "json_pointer": "/step",
+        "derivation": "latest committed_at before ground_truth.injected_at; post-run scoring only"
+      },
+      "recovery_checkpoint_step": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/checkpoint/step"
+      },
+      "rollback_steps": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/attempts/0/receipt/rollback_reported_steps"
+      },
+      "training_completed": [
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+          "json_pointer": "/status"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+          "json_pointer": "/status"
+        }
+      ],
+      "final_completed_step": [
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+          "json_pointer": "/step"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+          "json_pointer": "/step"
+        }
+      ],
+      "last_observed_step": [
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+          "json_pointer": "/step",
+          "derivation": "minimum of final rank snapshots"
+        }
+      ],
+      "detection_delay_ms": {
+        "file": "gpu_matrix_01/tiny_smoke/result.json",
+        "json_pointer": "/detection_delay_ms"
+      },
+      "observed_failure_to_resumed_progress_ms": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/verification/details/observed_failure_to_resumed_progress_ms"
+      },
+      "fault_to_terminal_ms": {
+        "file": "gpu_matrix_01/tiny_smoke/result.json",
+        "json_pointer": "/fault_to_terminal_ms"
+      },
+      "incident_id": {
+        "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+        "json_pointer": "/incident_id"
+      },
+      "worker_run_id": [
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+          "json_pointer": "/run_id"
+        },
+        {
+          "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+          "json_pointer": "/run_id"
+        }
+      ]
+    },
+    "missing_values": {}
+  }
+}

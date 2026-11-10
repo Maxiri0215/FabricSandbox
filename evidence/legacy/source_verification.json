@@ -1,0 +1,29 @@
+{
+  "scope": "PPT batch 20261102_005258; current repository benchmark entry and three explicitly recorded core dependencies",
+  "checks": [
+    {
+      "path": "scripts/benchmark_review.py",
+      "sha256": "dab2e9e13686e4f561c14c0c7df537d44afcfc8a398a505dec69b32bb177bb1b",
+      "recorded_sha256": "dab2e9e13686e4f561c14c0c7df537d44afcfc8a398a505dec69b32bb177bb1b",
+      "matches": true
+    },
+    {
+      "path": "packages/fabric-domain/src/fabric_domain/evaluation.py",
+      "sha256": "1834fa59712bdd5d61ad0560ad0f4055a76268f7f3c1975d8b5e3699491dd0ce",
+      "recorded_sha256": "1834fa59712bdd5d61ad0560ad0f4055a76268f7f3c1975d8b5e3699491dd0ce",
+      "matches": true
+    },
+    {
+      "path": "services/planner/src/planner/coordinator.py",
+      "sha256": "fcf39eb10364ea4ae1f701522b40f6bf1182e7f4bfa3441a66511e0e3a587280",
+      "recorded_sha256": "fcf39eb10364ea4ae1f701522b40f6bf1182e7f4bfa3441a66511e0e3a587280",
+      "matches": true
+    },
+    {
+      "path": "services/aggregator/src/aggregator/merge.py",
+      "sha256": "af87c1faceadd21ad28db6e55b4bc3f11027f285ed5af5da0220463bd50b06f1",
+      "recorded_sha256": "af87c1faceadd21ad28db6e55b4bc3f11027f285ed5af5da0220463bd50b06f1",
+      "matches": true
+    }
+  ]
+}

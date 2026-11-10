@@ -1,0 +1,576 @@
+[
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/result.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/report.html",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/experiment_config.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/preflight.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/preflight.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/executor.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/checkpoint_manifest.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/command_gpt2_baseline.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-0.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/rank-1.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/torchrun-epoch-0.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/completion-epoch-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/exit-0.json",
+    "required": false,
+    "exists": false,
+    "reason": "Successful ranks do not generate failure exit records"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/epoch-0/exit-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Successful ranks do not generate failure exit records"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/agent/incident.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/execution-epoch-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_baseline/backend/verification-epoch-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/result.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/report.html",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/experiment_config.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/preflight.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/preflight.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/executor.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/checkpoint_manifest.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/command_gpt2_no_repair.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-0.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/rank-1.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/torchrun-epoch-0.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/ground_truth.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/epoch-0/exit-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/agent/incident.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/execution-epoch-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_no_repair/backend/verification-epoch-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/result.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/report.html",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/preflight.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/preflight.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/checkpoint_manifest.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/command_gpt2_recover.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-0.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/torchrun-epoch-1.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/ground_truth.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/agent/trace.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/execution-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/completion-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/verification-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/exit-0.json",
+    "required": false,
+    "exists": false,
+    "reason": "Successful ranks do not generate failure exit records"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_recover/backend/epoch-1/exit-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Successful ranks do not generate failure exit records"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/result.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/report.html",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/experiment_config.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/preflight.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/preflight.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/executor.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/checkpoint_manifest.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/command_gpt2_blocked.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-0.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/rank-1.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/torchrun-epoch-0.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/ground_truth.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/epoch-0/exit-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/agent/incident.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/agent/trace.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/execution-epoch-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/gpt2_blocked/backend/verification-epoch-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Control has no Agent/recovery execution; expected absence"
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/result.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/report.html",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/experiment_config.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/preflight.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/preflight.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/executor.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/checkpoint_manifest.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/command_tiny_smoke.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-0.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/rank-1.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-0.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-0.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/rank-1.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/torchrun-epoch-1.log",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/ground_truth.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-0/exit-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/agent/incident.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/agent/trace.jsonl",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/execution-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/resume-for-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/completion-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/verification-epoch-1.json",
+    "required": true,
+    "exists": true
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/exit-0.json",
+    "required": false,
+    "exists": false,
+    "reason": "Successful ranks do not generate failure exit records"
+  },
+  {
+    "file": "gpu_matrix_01/tiny_smoke/backend/epoch-1/exit-1.json",
+    "required": false,
+    "exists": false,
+    "reason": "Successful ranks do not generate failure exit records"
+  }
+]

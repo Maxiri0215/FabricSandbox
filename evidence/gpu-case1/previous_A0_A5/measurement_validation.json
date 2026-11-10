@@ -1,0 +1,106 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "A1_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1_forward_backward_ms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1_optimizer_ms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1_cuda_step_ms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1_wall_step_ms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1_memory_budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2_rank_samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2_recomputed_statistics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_decode_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_decode_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_decode_rank_samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_decode_recomputed_statistics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_prefill_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_prefill_configuration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_prefill_rank_samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A5_prefill_recomputed_statistics",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "raw_sha256": {
+    "tp_message_917504.json": "e40d94f88a1ef7c899a101d2129cd64e6dd983ae6af6f5986fbfa71c8ee9ba1c",
+    "allreduce_gradient.json": "657298f22c14e3fd0a20ffab278d182c35324aada17ec1fa7c6f73148af80526",
+    "tp_message_7168.json": "03412069b3896c9d471c3db01df60acb79c9b7275a4afd2629119e3c5b8242a0",
+    "gpt2_profile.json": "16c1c10024953a2f76f923aede859085756c975c158cc71db98382c48c5eaae2"
+  }
+}

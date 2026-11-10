@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "mode": "recorded_gpu_evidence",
+  "incident_id": "incident-20361f4c7c3942d3bd13e11d7da1dfbb",
+  "run_id": "b8169b2eba6c45578365d4e91879779b",
+  "source_root": "evidence/gpu-case1",
+  "source_run": "gpu_matrix_01/gpt2_recover",
+  "sources": [
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/experiment_config.json",
+      "sha256": "4f9d85b0ae624516712c8d0a609af13a2df6679fde4a15ddd5c3a95e2999eb61",
+      "bytes": 451
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/agent/incident.json",
+      "sha256": "8fe4293256dce4aa15aa3023a7ea2f7992bf209cef199b167bf521af8e929912",
+      "bytes": 78134
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/exit-1.json",
+      "sha256": "35276f359296033a4c717dff803feeb082ca273c03d68c85ab8f1643939fde2a",
+      "bytes": 451
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/execution-epoch-1.json",
+      "sha256": "547dbb4d0ba395f9f6444ecb64a0a2b53a94785269a60cd316bb9538ded2435b",
+      "bytes": 908
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/verification-epoch-1.json",
+      "sha256": "5f9accd0f5efee165a678dd5b8bb7acc98286c278ac8524d0316b27468eb1cb9",
+      "bytes": 8050
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/resume-for-epoch-1.json",
+      "sha256": "649e878b08525a9423313ebc8eaf1d424faa277940b77486262bf60f185430a4",
+      "bytes": 284
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/preflight.json",
+      "sha256": "af79195b7cf3c3047d7839f5538b6d1e96a27cb61138ae31d1cd6a5e4598d004",
+      "bytes": 890
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/executor.jsonl",
+      "sha256": "14b08d99b2d572bec5c70bb524801fc9af2b355a6c5df106f7d9dbd7e7c23b53",
+      "bytes": 682
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-0.json",
+      "sha256": "cdf3f98e07082610c68b9c733ca04ccef2b85b6733e766395f645dcee61332d2",
+      "bytes": 986
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-0/rank-1.json",
+      "sha256": "7d9fa30f1e6ba0cf3f209a738edb93767e63aa078ab934183fda576e5382964b",
+      "bytes": 984
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.json",
+      "sha256": "342a7df9be50227ecf171f724ac384706383274808df6eba6d66ecbb05e846e4",
+      "bytes": 1051
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.json",
+      "sha256": "122979faa78e885152b803011d0b2ac0db3d51927a968e77eec69cc53b495c57",
+      "bytes": 1052
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-0.jsonl",
+      "sha256": "e3fd0b007a521ce3a44edcce751aca3e5499fd7c096ce63248d31473ae437c2e",
+      "bytes": 10605
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/epoch-1/rank-1.jsonl",
+      "sha256": "d61099a5f2ca1492263b97854855a67e85707da25fb8e5a3932681d6c77adf88",
+      "bytes": 10605
+    },
+    {
+      "path": "gpu_matrix_01/gpt2_recover/backend/ground_truth.json",
+      "sha256": "bc7a642822fa0a5b5e2e0ad547195971ecefdb338f1a8c82b876d86c3fbbf571",
+      "bytes": 207
+    }
+  ],
+  "output": {
+    "path": "data/gpu_evidence.json",
+    "sha256": "6a8f882e493f7382d4c96a60d878bade4570a4e9b5ef9d8227149bd45f14e26d",
+    "bytes": 73439
+  },
+  "validation": {
+    "same_incident_and_run": true,
+    "exactly_seven_stages": true,
+    "three_candidates_one_feasible": true,
+    "all_11_checks_passed": true,
+    "both_rank_steps_6_through_20": true,
+    "same_frozen_checkpoint_hash": true,
+    "old_group_stopped_before_new_start": true,
+    "new_worker_pids": true,
+    "physical_uuid_matches_preflight": true
+  },
+  "checkpoint_blob_copied": false,
+  "checkpoint_blob_rehashed_by_this_export": false,
+  "privacy": {
+    "status": "sanitized_public_copy",
+    "release_marker": "evidence/public_release.json",
+    "pseudonymized_fields": [
+      "personal_paths",
+      "host_identifiers",
+      "gpu_uuids",
+      "pci_addresses"
+    ],
+    "execution_checks_scope": "historical_original_execution_checks",
+    "source_hash_scope": "sanitized_public_copies",
+    "checkpoint_digest_scope": "retained_historical_digests_not_rehashed",
+    "disclosure": "这是脱敏公开副本：个人路径、主机标识、GPU UUID 和 PCI 地址均为代称。11 项执行检查记录原始实验的历史结论，不代表对这些代称重新验证了硬件。来源文件 SHA256 对应脱敏后的公开副本；检查点摘要保留历史记录值，本导出没有重新计算检查点权重的摘要。"
+  },
+  "disclosure": "这是脱敏公开副本：个人路径、主机标识、GPU UUID 和 PCI 地址均为代称。11 项执行检查记录原始实验的历史结论，不代表对这些代称重新验证了硬件。来源文件 SHA256 对应脱敏后的公开副本；检查点摘要保留历史记录值，本导出没有重新计算检查点权重的摘要。",
+  "validation_scope": "export_consistency_of_sanitized_copies_not_hardware_reverification"
+}

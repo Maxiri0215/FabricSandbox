@@ -1,0 +1,20 @@
+{
+  "backend": "live_gpu",
+  "allowed_slots": [
+    "2",
+    "3",
+    "4"
+  ],
+  "world_size": 2,
+  "model": "gpt2",
+  "steps": 20,
+  "checkpoint_every": 5,
+  "sequence_length": 128,
+  "initial_slots": [
+    "2",
+    "3"
+  ],
+  "fault_gate_step": 7,
+  "boundary": "Explicitly allocated slots only. Worker termination is not GPU hardware failure.",
+  "performance_note": "Gate/checkpoint/restart overhead is separate from per-step training duration."
+}

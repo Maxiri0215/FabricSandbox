@@ -1,0 +1,323 @@
+{
+  "schema_version": 2,
+  "scenario": "tp",
+  "model": {
+    "name": "Qwen2.5-7B-Instruct",
+    "parameter_count": 7610000000,
+    "parameter_source": "MODEL_CARD_ROUNDED",
+    "layers": 28,
+    "hidden_size": 3584,
+    "query_heads": 28,
+    "kv_heads": 4,
+    "head_dim": 128,
+    "dtype_bytes": 2,
+    "max_context_tokens": 32768
+  },
+  "profile": {
+    "source": "SYNTHETIC",
+    "workspace_gib": 2,
+    "prefill_ms_per_token_by_tp": {
+      "1": 0.3,
+      "2": 0.2,
+      "4": 0.16
+    },
+    "decode_ms_per_token_by_tp": {
+      "1": 12.0,
+      "2": 8.0,
+      "4": 7.0
+    },
+    "model_reload_ms": 40.0
+  },
+  "summary": {
+    "requests": 4,
+    "completed": 4,
+    "failed": 0,
+    "rejected": 0,
+    "incomplete": 0,
+    "simulated_end_ms": 150.7740467199976,
+    "successful_output_tokens": 16,
+    "successful_output_throughput_window_ms": 150.7740467199976,
+    "successful_output_tokens_per_second": 106.1190592682943,
+    "mean_ttft_ms": 81.97518335999922,
+    "kv_bytes_per_token_whole_model": 57344,
+    "allreduce_calls": 896,
+    "stale_callbacks_ignored": 0,
+    "profile_source": "SYNTHETIC"
+  },
+  "requests": [
+    {
+      "id": "request-1",
+      "arrival_ms": 0.0,
+      "prompt_tokens": 128,
+      "max_new_tokens": 4,
+      "state": "completed",
+      "reason": "",
+      "replica_id": "replica-0",
+      "started_ms": 0.0,
+      "completed_ms": 75.3870233599995,
+      "first_token_ms": 44.28167168000004,
+      "generated_tokens": 4,
+      "token_times_ms": [
+        44.28167168000004,
+        54.65012224000059,
+        65.01857280000094,
+        75.3870233599995
+      ],
+      "wait_ms": 0.0,
+      "ttft_ms": 44.28167168000004,
+      "latency_ms": 75.3870233599995,
+      "inter_token_ms": [
+        10.368450560000554,
+        10.368450560000348,
+        10.368450559998564
+      ],
+      "kv_peak_bytes_per_gpu": 3756032,
+      "reserved_kv_bytes_per_gpu": 3784704,
+      "admission_memory_bytes_per_gpu": 9761268352.0,
+      "communication_calls": 224
+    },
+    {
+      "id": "request-2",
+      "arrival_ms": 0.0,
+      "prompt_tokens": 128,
+      "max_new_tokens": 4,
+      "state": "completed",
+      "reason": "",
+      "replica_id": "replica-1",
+      "started_ms": 0.0,
+      "completed_ms": 75.3870233599995,
+      "first_token_ms": 44.28167168000004,
+      "generated_tokens": 4,
+      "token_times_ms": [
+        44.28167168000004,
+        54.65012224000059,
+        65.01857280000094,
+        75.3870233599995
+      ],
+      "wait_ms": 0.0,
+      "ttft_ms": 44.28167168000004,
+      "latency_ms": 75.3870233599995,
+      "inter_token_ms": [
+        10.368450560000554,
+        10.368450560000348,
+        10.368450559998564
+      ],
+      "kv_peak_bytes_per_gpu": 3756032,
+      "reserved_kv_bytes_per_gpu": 3784704,
+      "admission_memory_bytes_per_gpu": 9761268352.0,
+      "communication_calls": 224
+    },
+    {
+      "id": "request-3",
+      "arrival_ms": 0.0,
+      "prompt_tokens": 128,
+      "max_new_tokens": 4,
+      "state": "completed",
+      "reason": "",
+      "replica_id": "replica-0",
+      "started_ms": 75.3870233599995,
+      "completed_ms": 150.7740467199976,
+      "first_token_ms": 119.66869503999841,
+      "generated_tokens": 4,
+      "token_times_ms": [
+        119.66869503999841,
+        130.0371455999973,
+        140.40559615999746,
+        150.7740467199976
+      ],
+      "wait_ms": 75.3870233599995,
+      "ttft_ms": 119.66869503999841,
+      "latency_ms": 150.7740467199976,
+      "inter_token_ms": [
+        10.368450559998891,
+        10.368450560000156,
+        10.368450560000156
+      ],
+      "kv_peak_bytes_per_gpu": 3756032,
+      "reserved_kv_bytes_per_gpu": 3784704,
+      "admission_memory_bytes_per_gpu": 9761268352.0,
+      "communication_calls": 224
+    },
+    {
+      "id": "request-4",
+      "arrival_ms": 0.0,
+      "prompt_tokens": 128,
+      "max_new_tokens": 4,
+      "state": "completed",
+      "reason": "",
+      "replica_id": "replica-1",
+      "started_ms": 75.3870233599995,
+      "completed_ms": 150.7740467199976,
+      "first_token_ms": 119.66869503999841,
+      "generated_tokens": 4,
+      "token_times_ms": [
+        119.66869503999841,
+        130.0371455999973,
+        140.40559615999746,
+        150.7740467199976
+      ],
+      "wait_ms": 75.3870233599995,
+      "ttft_ms": 119.66869503999841,
+      "latency_ms": 150.7740467199976,
+      "inter_token_ms": [
+        10.368450559998891,
+        10.368450560000156,
+        10.368450560000156
+      ],
+      "kv_peak_bytes_per_gpu": 3756032,
+      "reserved_kv_bytes_per_gpu": 3784704,
+      "admission_memory_bytes_per_gpu": 9761268352.0,
+      "communication_calls": 224
+    }
+  ],
+  "replicas": [
+    {
+      "id": "replica-0",
+      "tp_size": 2,
+      "gpu_ids": [
+        "n0:gpu0",
+        "n2:gpu0"
+      ],
+      "epoch": 2,
+      "state": "ready",
+      "reason": "",
+      "weight_bytes_per_gpu": 7610000000,
+      "workspace_bytes_per_gpu": 2147483648,
+      "base_memory_bytes_per_gpu": 9757483648.0,
+      "capacity_bytes_per_gpu": 25769803776.0,
+      "reserved_kv_bytes_per_gpu": 0,
+      "current_kv_bytes_per_gpu": 0,
+      "active_request": null,
+      "max_observed_memory_bytes_per_gpu": 9761268352.0,
+      "allocated_gpu_ids": [
+        "n0:gpu0",
+        "n2:gpu0"
+      ],
+      "resident_memory_bytes_per_gpu": 9757483648.0
+    },
+    {
+      "id": "replica-1",
+      "tp_size": 2,
+      "gpu_ids": [
+        "n1:gpu0",
+        "n3:gpu0"
+      ],
+      "epoch": 2,
+      "state": "ready",
+      "reason": "",
+      "weight_bytes_per_gpu": 7610000000,
+      "workspace_bytes_per_gpu": 2147483648,
+      "base_memory_bytes_per_gpu": 9757483648.0,
+      "capacity_bytes_per_gpu": 25769803776.0,
+      "reserved_kv_bytes_per_gpu": 0,
+      "current_kv_bytes_per_gpu": 0,
+      "active_request": null,
+      "max_observed_memory_bytes_per_gpu": 9761268352.0,
+      "allocated_gpu_ids": [
+        "n1:gpu0",
+        "n3:gpu0"
+      ],
+      "resident_memory_bytes_per_gpu": 9757483648.0
+    }
+  ],
+  "engine_stats": {
+    "processed_events": 8968,
+    "total_sent_bytes": 420675584.0,
+    "completed_transfer_bytes": 420675584,
+    "completed_flows": 3584,
+    "cancelled_flows": 0,
+    "pending_flows": 0,
+    "active_flows": 0,
+    "capacity_checks": 35856,
+    "max_capacity_ratio": 1.0,
+    "horizon_reached": false,
+    "simulated_time_ms": 150.7740467199976
+  },
+  "invariant_checks": [
+    {
+      "name": "replica_gpu_exclusivity",
+      "passed": true,
+      "detail": "validated 4 distinct assigned GPUs"
+    },
+    {
+      "name": "memory_capacity",
+      "passed": true,
+      "detail": "20 admission/token checks; 0 violations"
+    },
+    {
+      "name": "output_token_limit",
+      "passed": true,
+      "detail": "16 observed token commits"
+    },
+    {
+      "name": "kv_growth",
+      "passed": true,
+      "detail": "16 KV updates checked"
+    },
+    {
+      "name": "link_capacity",
+      "passed": true,
+      "detail": "maximum observed ratio=1.0"
+    },
+    {
+      "name": "failed_requests_not_completed",
+      "passed": true,
+      "detail": "0 interrupted requests; no retry/resume implemented"
+    },
+    {
+      "name": "scenario_same_requested_output_work",
+      "passed": true,
+      "detail": [
+        {
+          "id": "request-1",
+          "generated_tokens": 4,
+          "max_new_tokens": 4
+        },
+        {
+          "id": "request-2",
+          "generated_tokens": 4,
+          "max_new_tokens": 4
+        },
+        {
+          "id": "request-3",
+          "generated_tokens": 4,
+          "max_new_tokens": 4
+        },
+        {
+          "id": "request-4",
+          "generated_tokens": 4,
+          "max_new_tokens": 4
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "Megatron-style two AllReduce operations per transformer-layer forward; no vLLM/continuous batching emulation.",
+    "One active request per replica; independent replicas may compete for network resources.",
+    "No computation/communication overlap; decode compute timing is a configured constant per generated-token forward.",
+    "Uniform weight sharding plus explicit workspace is a memory estimate, not exact framework allocation.",
+    "Only transformer-layer activation collectives are modeled; embedding/logit collectives, input transport and sampling compute are omitted.",
+    "KV admission reserves prompt+max_new_tokens conservatively; last sampled token need not yet be cached.",
+    "First token is produced by prefill; each subsequent token requires one decode forward.",
+    "Replica failure fails its active request and discards KV; recovery reloads the model for queued/new requests.",
+    "Successful-output throughput uses first request arrival to last successful completion; failures/rejections are reported separately.",
+    "Synthetic leaf-spine topology is not the supplied single-host eight-3090 NUMA topology.",
+    "Compute profile source: SYNTHETIC; Qwen demo parameter count is model-card rounded, not exact tensor enumeration."
+  ],
+  "input_hash": "16e532a96e3f40bc78461f6aef233812acd3abada01b74a7de43ba266b46a7a3",
+  "simulator_version": "0.2.0",
+  "implementation_hash": "d844734439ed524fe81d843d0065a17510ebf161c5efc036f31cf4bb061cd4e3",
+  "engine_wall_ms": 58.969040866941214,
+  "measurement_status": "SIMULATION_NOT_GPU_MEASUREMENT",
+  "_archive": {
+    "kind": "EXCERPT_NOT_RERUN",
+    "source_file": "evidence/v2/revalidated/T2_competition/result.json",
+    "source_sha256": "f932fce6dc846d1b47742fc1a6b1c454aa8f41daeb3f20c73f620b22fe207ac4",
+    "source_size_bytes": 10338277,
+    "omitted_fields": [
+      "events",
+      "resource_samples"
+    ],
+    "note": "All retained original fields are unchanged; full event and capacity-sample arrays are omitted to keep the repository small."
+  }
+}
